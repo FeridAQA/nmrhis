@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { HelmetProvider } from 'react-helmet-async'
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
-   <h1>ferid </h1>
-   <h1>tagi</h1>
+      <HelmetProvider>
+        <BrowserRouter>
+          
+        </BrowserRouter>
+      </HelmetProvider>
    </>
   )
 }
