@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss';
+import { HelmetProvider } from 'react-helmet-async'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Mainlayout from './layout/mainlayout';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   <>
-   <h1>ferid </h1>
-   <h1>tagi</h1>
-   </>
+    <>
+      <HelmetProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Mainlayout />} >
+              <Route index element={<Home></Home>}></Route>
+              <Route path='about' element={<About></About>}></Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
+    </>
   )
 }
 
