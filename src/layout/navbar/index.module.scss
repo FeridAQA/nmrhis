@@ -1,0 +1,42 @@
+.navbar.scrolled {
+  min-height: 50px;
+  background-color: #29a0c6; /* Adjust this color based on the image */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+
+  .navbar_search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    input {
+      border: none;
+      outline: none;
+      font-size: 14px; /* Reduced typography size for input */
+      padding: 5px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      svg {
+        fill: #29a0c6;
+
+        &:hover{
+          fill: whitesmoke;
+        }
+      }
+    }
+  }
+}
