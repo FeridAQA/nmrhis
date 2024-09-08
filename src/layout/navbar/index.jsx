@@ -1,10 +1,33 @@
 import React from 'react'
 import Links from '../../components/navbar components/links'
 import style from "./index.module.scss"
+import NavLogo from "./../../assets/NavLogo.png"
 
 function Navbar() {
+
+  const [scrolled, setScrolled] = React.useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 5) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={`${style.navbar} ${style.scrolled}`}>
+    <div className={`${style.navbar} ${scrolled ? style.scrolled : ""}`} onScroll={(e) => handleScroll(e)}>
+      <div className={style.triangle}>
+        <img alt='Logo' src={NavLogo} />
+      </div>
       <Links />
       <div className={style.navbar_search}>
         <input type="text" placeholder="Axtar..." />

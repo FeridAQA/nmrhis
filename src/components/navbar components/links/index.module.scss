@@ -1,7 +1,8 @@
 .navbar_links {
+  padding-left: 6em;
   height: 100%;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 
   li {
     display: flex;
@@ -14,17 +15,13 @@
       width: max-content;
       display: inline-block;
       text-decoration: none;
-      color: white;
+      color: inherit;
       font-size: 16px;
       font-weight: 400;
       transition: 0.5s;
 
       &:global.active {
         font-weight: 700;
-      }
-
-      &:hover {
-        color: whitesmoke;
       }
 
       &::after {
@@ -34,7 +31,7 @@
         left: 0;
         width: 100%;
         height: 0.1em;
-        background-color: white;
+        background-color: #68b6e4;
         opacity: 0;
         transform: translate3d(-100%, 0, 0);
         transition:
@@ -54,7 +51,7 @@
       width: max-content;
       display: inline-block;
       text-decoration: none;
-      color: white;
+      color: inherit;
       font-size: 16px;
       font-weight: 400;
       transition: 0.5s;
@@ -64,8 +61,6 @@
       }
 
       &:hover {
-        color: whitesmoke;
-
         .icon {
           transform: rotate(90deg);
         }
@@ -78,7 +73,7 @@
         left: 0;
         width: 100%;
         height: 0.1em;
-        background-color: white;
+        background-color: #68b6e4;
         opacity: 0;
         transform: translate3d(-100%, 0, 0);
         transition:
@@ -104,6 +99,7 @@
       position: absolute;
       top: 120%;
       left: 0;
+      z-index: 10;
       border-top: 5px solid #2394bc;
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
