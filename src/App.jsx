@@ -8,7 +8,7 @@ function App() {
 
   return (
    <>
-   <h1>ferid</h1>
+   <h1>ferid </h1>
    </>
   )
 }
