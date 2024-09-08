@@ -8,6 +8,9 @@ function Navbar() {
       <br />
       <hr />
       < Link to={'/about'}>About</Link>
+      <br />
+      <hr />
+      < Link to={'/form'}>Form</Link>
     </div>
   )
 }
