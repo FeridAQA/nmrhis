@@ -1,6 +1,6 @@
 .navbar.scrolled {
-  min-height: 50px;
-  background-color: #29a0c6; /* Adjust this color based on the image */
+  height: 50px;
+  background-color: #29a0c6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +18,12 @@
     background-color: white;
     border-radius: 20px;
     padding: 5px 10px;
+    border: 2px solid #29a0c6;
 
     input {
       border: none;
       outline: none;
-      font-size: 14px; /* Reduced typography size for input */
+      font-size: 14px;
       padding: 5px;
     }
 
@@ -32,10 +33,6 @@
       cursor: pointer;
       svg {
         fill: #29a0c6;
-
-        &:hover{
-          fill: whitesmoke;
-        }
       }
     }
   }
