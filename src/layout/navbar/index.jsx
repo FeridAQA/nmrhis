@@ -24,7 +24,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`${style.navbar} ${scrolled ? style.scrolled : ""}`} onScroll={(e) => handleScroll(e)}>
+    <div style={{ color: scrolled ? "white" : "black" }} className={`${style.navbar} ${scrolled ? style.scrolled : ""}`} onScroll={(e) => handleScroll(e)}>
       <div className={style.triangle}>
         <img alt='Logo' src={NavLogo} />
       </div>

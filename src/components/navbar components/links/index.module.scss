@@ -18,7 +18,7 @@
       color: inherit;
       font-size: 16px;
       font-weight: 400;
-      transition: 0.5s;
+      transition: 0.3s;
 
       &:global.active {
         font-weight: 700;
@@ -54,10 +54,11 @@
       color: inherit;
       font-size: 16px;
       font-weight: 400;
-      transition: 0.5s;
+      transition: 0.3s;
 
       .icon {
-        transition: 0.5s;
+        color: inherit;
+        transition: transform 0.3s;
       }
 
       &:hover {
