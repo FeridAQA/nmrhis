@@ -18,17 +18,17 @@ function Links() {
       <li><NavLink className={`${style.NavLink} ${style.Dropdown}`}>İCTİMAİYYƏTLƏ ƏLAQƏLƏR <i className={`fa-solid fa-angle-right ${style.icon}`}></i></NavLink>
         <ul className={style.dropdownMenu}>
           <li><NavLink className={style.subLink} to={"/xeberler"}>Xəbərlər</NavLink></li>
-          <li><NavLink className={style.subLink} to={"/bize-yazilar"}>Bizə Yazılar</NavLink></li>
-          <li><NavLink className={style.subLink} to={"/foto-xronika"}>Foto Xronika</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/bize_yazirlar"}>Bizə Yazırlar</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/foto_xronika"}>Foto Xronika</NavLink></li>
         </ul>
       </li>
       <li><NavLink className={`${style.NavLink} ${style.Active}`} to={"/sosial-terefdasliq"}>SOSİAL TƏRƏFDAŞLIQ</NavLink></li>
       <li><NavLink className={`${style.NavLink} ${style.Dropdown}`}>FƏALİYYƏTİMİZ <i className={`fa-solid fa-angle-right ${style.icon}`}></i></NavLink>
         <ul className={style.dropdownMenu}>
-          <li><NavLink className={style.subLink} to={"/gencler-siyaseti"}>Gənclər Siyayəti</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/gencler_siyaseti"}>Gənclər Siyayəti</NavLink></li>
           <li><NavLink className={style.subLink} to={"/emek-huquqlari"}>Əmək Hüquqları</NavLink></li>
-          <li><NavLink className={style.subLink} to={"/emeyin-tehlukesizliyi"}>Əməyin Təhlükəsizliyi</NavLink></li>
-          <li><NavLink className={style.subLink} to={"/sosial-telimatlar"}>Sosial Təlimatlar</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/emeyin_tehlukesizliyi"}>Əməyin Təhlükəsizliyi</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/sosial_telimatlar"}>Sosial Təlimatlar</NavLink></li>
         </ul>
       </li>
       <li><NavLink className={`${style.NavLink} ${style.Active}`} to={"/elaqe"}>ƏLAQƏ</NavLink></li>

@@ -1,134 +1,274 @@
-.navbar_links {
-  padding-left: 6em;
-  height: 100%;
-  display: flex;
-  gap: 20px;
-
-  li {
+@media only screen and (min-width: 1200px) {
+  .navbar_links {
+    padding-left: 6em;
+    height: 100%;
     display: flex;
-    align-items: center;
-    position: relative;
+    gap: 20px;
 
-    .NavLink.Active {
+    li {
+      display: flex;
+      align-items: center;
       position: relative;
-      padding: 10px 0;
-      width: max-content;
-      display: inline-block;
-      text-decoration: none;
-      color: inherit;
-      font-size: 16px;
-      font-weight: 400;
-      transition: 0.3s;
 
-      &:global.active {
-        font-weight: 700;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.1em;
-        background-color: #68b6e4;
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-        transition:
-          opacity 300ms,
-          transform 300ms;
-      }
-
-      &:hover::after {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
-    .NavLink {
-      position: relative;
-      padding: 10px 0;
-      width: max-content;
-      display: inline-block;
-      text-decoration: none;
-      color: inherit;
-      font-size: 16px;
-      font-weight: 400;
-      transition: 0.3s;
-
-      .icon {
+      .NavLink.Active {
+        position: relative;
+        padding: 10px 0;
+        width: max-content;
+        display: inline-block;
+        text-decoration: none;
         color: inherit;
-        transition: transform 0.3s;
-      }
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
 
-      &:hover {
-        .icon {
-          transform: rotate(90deg);
+        &:global.active {
+          font-weight: 700;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.1em;
+          background-color: #68b6e4;
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+          transition:
+            opacity 300ms,
+            transform 300ms;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
         }
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.1em;
-        background-color: #68b6e4;
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-        transition:
-          opacity 300ms,
-          transform 300ms;
-      }
+      .NavLink {
+        position: relative;
+        padding: 10px 0;
+        width: max-content;
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
 
-      &:hover::after {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
+        .icon {
+          color: inherit;
+          transition: transform 0.3s;
+        }
 
-    .dropdownMenu {
-      width: max-content;
-      padding: 1.5em 1em;
-      visibility: hidden;
-      opacity: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      row-gap: 1em;
-      position: absolute;
-      top: 120%;
-      left: 0;
-      z-index: 10;
-      border-top: 5px solid #2394bc;
-      background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
-      transition: 0.5s;
+        &:hover {
+          .icon {
+            transform: rotate(90deg);
+          }
+        }
 
-      li {
-        .subLink {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
           width: 100%;
-          text-transform: capitalize;
-          font-size: 15px;
-          font-weight: 500;
-          font-family: "Roboto", sans-serif;
-          color: #2394bc;
-          transition: 0.3s;
+          height: 0.1em;
+          background-color: #68b6e4;
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+          transition:
+            opacity 300ms,
+            transform 300ms;
+        }
 
-          &:hover {
-            color: #00445d;
-            transform: translateX(5px);
+        &:hover::after {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .dropdownMenu {
+        width: max-content;
+        padding: 1.5em 1em;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1em;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        z-index: 10;
+        border-top: 5px solid #2394bc;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
+        transition: 0.5s;
+
+        li {
+          .subLink {
+            width: 100%;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            color: #2394bc;
+            transition: 0.3s;
+
+            &:hover {
+              color: #00445d;
+              transform: translateX(5px);
+            }
           }
         }
       }
-    }
 
-    &:hover {
+      &:hover {
+        .dropdownMenu {
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+  .navbar_links {
+    padding-left: 6em;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .NavLink.Active {
+        position: relative;
+        padding: 10px 0;
+        width: max-content;
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
+
+        &:global.active {
+          font-weight: 700;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.1em;
+          background-color: #68b6e4;
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+          transition:
+            opacity 300ms,
+            transform 300ms;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .NavLink {
+        position: relative;
+        padding: 10px 0;
+        width: max-content;
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
+
+        .icon {
+          color: inherit;
+          transition: transform 0.3s;
+        }
+
+        &:hover {
+          .icon {
+            transform: rotate(90deg);
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.1em;
+          background-color: #68b6e4;
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+          transition:
+            opacity 300ms,
+            transform 300ms;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
       .dropdownMenu {
-        visibility: visible;
-        opacity: 1;
-        top: 100%;
+        width: max-content;
+        padding: 1.5em 1em;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1em;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        z-index: 10;
+        border-top: 5px solid #2394bc;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
+        transition: 0.5s;
+
+        li {
+          .subLink {
+            width: 100%;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            color: #2394bc;
+            transition: 0.3s;
+
+            &:hover {
+              color: #00445d;
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .dropdownMenu {
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
       }
     }
   }
