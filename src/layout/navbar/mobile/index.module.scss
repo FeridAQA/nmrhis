@@ -1,0 +1,115 @@
+@media screen and (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    height: 48px;
+    padding: 4px 16px;
+    background-color: #2393bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 88px;
+    color: white;
+
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .title {
+      font-weight: 400;
+      text-align: center;
+      font-size: 12px;
+      line-height: 13.8px;
+      letter-spacing: -0.3px;
+    }
+
+    .toggleBar {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .dropdownMenu {
+      width: 100%;
+      height: max-content;
+      background-color: #e9f4f8 !important;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 12px 34px;
+      color: black;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .link {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 14.95px;
+        letter-spacing: -0.3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    position: relative;
+    height: 48px;
+    padding: 4px 16px;
+    background-color: #2393bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: white;
+
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .title {
+      font-weight: 400;
+      text-align: center;
+      font-size: 12px;
+      line-height: 13.8px;
+      letter-spacing: -0.3px;
+    }
+
+    .toggleBar {
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .dropdownMenu {
+      background-color: #bbdeea;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 12px 34px;
+      color: black;
+      background-color: white;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
