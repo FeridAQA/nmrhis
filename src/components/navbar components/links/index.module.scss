@@ -136,12 +136,12 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width:1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .navbar_links {
     padding-left: 6em;
     height: 100%;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 
     li {
       display: flex;
@@ -155,7 +155,7 @@
         display: inline-block;
         text-decoration: none;
         color: inherit;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         transition: 0.3s;
 
@@ -191,7 +191,7 @@
         display: inline-block;
         text-decoration: none;
         color: inherit;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         transition: 0.3s;
 
@@ -271,5 +271,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar_links {
+    display: none;
   }
 }
