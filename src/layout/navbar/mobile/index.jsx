@@ -14,8 +14,8 @@ function MobileNavbar() {
         <img src={NavLogo} alt='Logo' />
       </div>
       <p className={style.title}>Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurası</p>
-      <i onClick={() => setIsOpen(!isOpen)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
-      <div className={style.dropdownMenu}>
+      <i onClick={() => setIsOpen(true)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
+      <div className={`${style.dropdownMenu} ${isOpen ? "" : style.hide}`}>
         <Dropdown title={"HIŞ"}>
           <Link to={"rehberlik"}>Rəhbərlik</Link>
           <Link to={"struktur"}>Stuktur</Link>
@@ -37,6 +37,7 @@ function MobileNavbar() {
         </Dropdown>
         <Link className={style.link} to={"elaqe"}>ƏLAQƏ</Link>
       </div>
+      <div className={`${style.overlay} ${isOpen ? "" : style.hide}`} onClick={() => setIsOpen(false)}></div>
     </nav>
   )
 }
