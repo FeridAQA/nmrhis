@@ -9,9 +9,9 @@ function Footer() {
   return (
     <div id='footer'>
       <div className="ag_rend"></div>
-      <div className="img">
+      {/* <div className="img">
         <img src={gerb} alt="" />
-      </div>
+      </div> */}
       <div className="bigbox">
         <div className="head">
           <h3>BİZİMLƏ ƏLAQƏ !</h3>
