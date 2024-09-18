@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from "./index.module.scss";
 import NavLogo from "./../../../assets/NavLogo.png";
 import Dropdown from '../../../components/navbar components/dropdown';
@@ -7,6 +7,19 @@ import { Link } from 'react-router-dom';
 function MobileNavbar() {
 
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen])
+
 
   return (
     <nav className={style.container}>
