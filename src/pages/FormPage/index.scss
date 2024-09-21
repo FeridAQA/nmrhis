@@ -214,8 +214,12 @@
                 }
     
                 .column {
+                    max-width: 336px;
+                        width: 100%;
                     .box {
-                        width: 336px;
+                        padding: 0 10px;
+                        max-width: 336px;
+                        width: 100%;
                         height: 74px;
                         gap: 8px;
                         display: flex;
@@ -231,9 +235,7 @@
                         }
     
                         .input_div {
-                            max-width: 336px;
-                            width: 100px !important;
-                            min-width: 280px;
+                            width: 100%;
                             height: 48px;
                             background-color: white;
                             border-radius: 12px;

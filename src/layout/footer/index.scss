@@ -77,6 +77,10 @@
                 letter-spacing: -0.3px;
                 font-weight: 400;
                 color: white;
+                @media (max-width: 370px) {
+                    width: 100px;
+                    
+                }
             }
 
             .mesaj {
