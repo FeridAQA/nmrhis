@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import style from "./index.module.scss";
-import NavLogo from "./../../../assets/NavLogo.png";
-import Dropdown from '../../../components/navbar components/dropdown';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Dropdown from '../../../components/navbar components/dropdown';
+import NavLogo from "./../../../assets/NavLogo.png";
+import style from "./index.module.scss";
 
 function MobileNavbar() {
 
   const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    
-    return () => {
-      document.body.style.overflow = 'auto';
-    }
-  }, [isOpen])
-
 
   return (
     <nav className={style.container}>
@@ -27,7 +14,7 @@ function MobileNavbar() {
         <img src={NavLogo} alt='Logo' />
       </div>
       <p className={style.title}>Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurası</p>
-      <i onClick={() => setIsOpen(true)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
+      <i onClick={() => setIsOpen(!isOpen)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
       <div className={`${style.dropdownMenu} ${isOpen ? "" : style.hide}`}>
         <Dropdown title={"HIŞ"}>
           <Link to={"rehberlik"}>Rəhbərlik</Link>
@@ -50,7 +37,6 @@ function MobileNavbar() {
         </Dropdown>
         <Link className={style.link} to={"elaqe"}>ƏLAQƏ</Link>
       </div>
-      <div className={`${style.overlay} ${isOpen ? "" : style.hide}`} onClick={() => setIsOpen(false)}></div>
     </nav>
   )
 }
