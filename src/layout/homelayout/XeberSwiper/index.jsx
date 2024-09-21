@@ -3,7 +3,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import style from "./index.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import XeberCard from '../../../components/home components/XeberCard';
@@ -18,9 +18,14 @@ function XeberSwiper() {
 
       <Swiper
         className={style.content}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         slidesPerView={4}
         spaceBetween={60}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         loop={true}
         navigation={{
           prevEl: "#prevBtn",
