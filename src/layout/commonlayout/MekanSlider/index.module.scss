@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+  overflow-x: hidden;
+
+  .titleBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    user-select: none;
+
+    .title {
+      font-size: 300%;
+      font-weight: 400;
+      line-height: 46px;
+    }
+
+    .link {
+      cursor: pointer;
+      color: #585b5b;
+      font-size: 16px;
+      line-height: 19.2px;
+      text-decoration: underline;
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    padding: 0px 70px 7rem 70px;
+
+    .slide {
+      transition: transform 0.3s ease-in-out;
+      transform: scale(0.8);
+    }
+
+    .slide.active {
+      transform: scale(1);
+      transition:
+        transform 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 1290px) {
+      column-gap: 30px;
+    }
+  }
+}
+
+/* Specific Swiper Pagination Styling */
+:global {
+  .swiper-pagination-bullet {
+      background-color: #2393bb !important; // Force background color
+    width: 12px !important; // Force width
+    height: 12px !important;
+    opacity: 1 !important; // Force opacity
+    border-radius: 13px !important; // Ensure border-radius
+    transition: width 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 28px !important; // Force width on active state
+  }
+}
