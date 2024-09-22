@@ -1,0 +1,21 @@
+.FotoXronikaCard {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  display: flex;
+
+  .imgBox {
+    width: 100%;
+    aspect-ratio: 10 / 6;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: min(100%);
+      height: min(100%);
+    }
+  }
+}
