@@ -2,12 +2,14 @@ import React from 'react'
 import QuickAccessPanel from '../../layout/homelayout/QuickAccessPanel'
 import XeberSwiper from '../../layout/homelayout/XeberSwiper'
 import MekanSlider from '../../layout/commonlayout/MekanSlider'
+import FotoXronikaSlider from '../../layout/commonlayout/FotoXronikaSlider'
 
 function Home() {
   return (
     <>
       <QuickAccessPanel />
       <XeberSwiper />
+      <FotoXronikaSlider />
       <MekanSlider />
       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim velit. Nulla laoreet semper euismod. Fusce at ligula eu erat facilisis mollis. Cras commodo condimentum neque, eget posuere tortor feugiat et. Fusce et vestibulum justo, quis malesuada massa. Cras viverra feugiat erat ac sagittis. Nulla scelerisque metus congue ligula mattis, eu feugiat nibh placerat. Curabitur at suscipit velit. Vivamus nunc nunc, sagittis nec velit ac, molestie tincidunt tellus. Mauris varius ut quam id malesuada.
 
