@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import style from './index.module.scss';
 import FotoXronikaCard from '../../../components/common components/FotoXronikaCard';
@@ -22,7 +22,7 @@ function FotoXronikaSlider() {
 
       <Swiper
         className={style.content}
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay, Pagination]}
         slidesPerView={slidesPerView}
         spaceBetween={36}
         autoplay={{
@@ -36,6 +36,23 @@ function FotoXronikaSlider() {
           prevEl: "#prevBtn",
           nextEl: "#nextBtn",
         }}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          300: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 36
+          }
+        }}
       >
         {Array.from({ length: totalSlides }, (_, i) => {
           const isCenterSlide =
@@ -47,8 +64,6 @@ function FotoXronikaSlider() {
               className={`${style.slide} ${isCenterSlide ? style.active : ''}`} // Apply active class conditionally
             >
               <FotoXronikaCard
-                date={'22 iyul 2024 16:07'}
-                title={'“Azərbaycan Silahlı Qüvvələrinin qüdrəti ilbəil yüksəlir”'}
                 image={
                   'https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg'
                 }
