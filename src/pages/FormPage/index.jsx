@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.scss'
 import gerb from '../../assets/img/image.png'
-
+import SendRoundedIcon from '@mui/icons-material/SendRounded';
 function FormPage() {
     return (
         <div id='Form_page'>
             <div className="rectangle">
-            <div className="img"><img src={gerb} alt="" /></div>
+
+                <div className="img"><img src={gerb} alt="" /></div>
                 <div className="head C">
                     <h3>EMAİL FORMASI</h3>
                 </div>
@@ -67,6 +68,9 @@ function FormPage() {
                             <label htmlFor="">Müraciət</label>
                             <div id='muraciyet' className="input_div ">
                                 <textarea type="" placeholder="Müraciət" />
+                                <div className="sendForm">
+                                    <SendRoundedIcon className="iconn" style={{ fontSize: 40 }} />
+                                </div>
                             </div>
                         </div>
                     </div>
