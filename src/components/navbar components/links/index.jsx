@@ -8,7 +8,7 @@ function Links() {
       <li><NavLink className={`${style.NavLink} ${style.Active}`} to={"/"}>ANA SƏHİFƏ</NavLink></li>
       <li><NavLink className={`${style.NavLink} ${style.Dropdown}`}>HIŞ <i className={`fa-solid fa-angle-right ${style.icon}`}></i></NavLink>
         <ul className={style.dropdownMenu}>
-          <li><NavLink className={style.subLink} to={"/rehberlik"}>Rəhbərlik</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/rehberlik/sedr"}>Rəhbərlik</NavLink></li>
           <li><NavLink className={style.subLink} to={"/struktur"}>Struktur</NavLink></li>
           <li><NavLink className={style.subLink} to={"/orqanlar"}>Orqanlar</NavLink></li>
           <li><NavLink className={style.subLink} to={"/haqqimizda"}>Haqqımızda</NavLink></li>
