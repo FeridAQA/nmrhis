@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import FormPage from './pages/FormPage';
 import ScrollToTop from './components/səifəni_yuxarı_qaldır';
+import Test from './TEST';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
               <Route index element={<Home></Home>}></Route>
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
+              <Route path='test' element={<Test></Test>}></Route>
+
             </Route>
           </Routes>
         </BrowserRouter>

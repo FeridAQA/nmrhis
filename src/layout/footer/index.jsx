@@ -24,7 +24,7 @@ function Footer() {
         <div className="under">
           <div>
             <ul>
-              <p>HƏMKARLAR İTTİFAQLARI ŞUaRASI</p>
+              <p>HƏMKARLAR İTTİFAQLARI ŞUARASI</p>
               <li><Link to="/haqqimizda" >Haqqımızd</Link></li>
               <li><Link to="/his_in_orqanlari" >HİŞ-in orqanları</Link></li>
               <li><Link to="/struktur" >Struktur</Link></li>
