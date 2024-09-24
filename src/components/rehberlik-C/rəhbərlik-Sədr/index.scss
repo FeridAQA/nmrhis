@@ -1,0 +1,105 @@
+#sedr {
+    hr {
+
+        width: 100%;
+        max-width: 1116px;
+        margin: 0 auto 20px auto;
+        border: none;
+        border-top: 1px solid #2393BB;
+      }
+    .container {
+        width: 100%;
+        padding: 50px;
+        display: flex;
+
+        .left_imges {
+            padding-left: 70px;
+            
+            .img_div {
+                position: relative;
+                width: 100%;
+                width:  495px;
+
+                img {
+                    border-radius: 14px;
+                    width: 100%;
+                }
+
+                .adi {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 63px;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-bottom-left-radius: 14px;
+                    border-bottom-right-radius: 14px;
+                    font-size: 20px;
+
+                }
+            }
+
+            .text {
+
+                margin-top: 40px;
+                width: 100%;
+                max-width: 446px;
+            }
+        }
+
+        .right {
+            margin-left: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .heyat {
+                width: 100%;
+                max-width: 553px;
+                h3 {
+                    color: #104254;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: -0.3px;
+                    line-height: 27.6px;
+                }
+
+                ul {
+                    padding: 20px;
+
+                    li {
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: -0.3px;
+                        line-height: 26px;
+                        list-style-type: disc;
+                    }
+                }
+            }
+            .emek_fealiyyeti {
+                width: 100%;
+                max-width: 634px;
+                h3 {
+                    color: #104254;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: -0.3px;
+                    line-height: 27.6px;
+                }
+
+                ul {
+                    padding: 20px;
+
+                    li {
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: -0.3px;
+                        line-height: 26px;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+    }
+
+}
