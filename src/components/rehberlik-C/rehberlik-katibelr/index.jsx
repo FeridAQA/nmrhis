@@ -1,9 +1,14 @@
 import React from 'react'
+import gerb from '../../../assets/img/image.png' 
 import '../rəhbərlik-Sədr/index.scss'
+
 function Katib() {
   return (
     <div id='sedr'>
       <div className="container">
+        <div className="gerb ">
+          <img src={gerb} alt="" />
+        </div>
         <div className="left_imges">
           <div className="img_div">
             <img src="https://s3-alpha-sig.figma.com/img/18db/9f3e/16f3c31dfb4b35a4d576363bc5a1b00b?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aIjUYY3txX-ACQGPnio3a1gqsGbAAtTRQt6xwNwnR1v0m4zgzyW0Q6I7K2LqjYgt0dvtXqsllWaNQyV0H7filkThc1bW49NIBv8o6d1vmxd2m3sZ~oYuiC07kjE75B5KlVKP93RAwu51elcz7Xf9joINvXFf9B-ZHMiP~ZECnPtkrPCgFgG1a45Uw8JPfAodZLIdezvLtw6Zxj3ARJtLLhBvD4Un9g5yWRDD7WXflou1JDgGsZc3~VItvF1wi4ly8OAgnTBJZ4fLQaVre~GDRRbLc8j1-TLYxGZx~PCbEWacEEibvU02-jPKDvJgP2EBOkBjGVxoQiBwEC8MBuGZGA__" alt="" />
@@ -12,7 +17,7 @@ function Katib() {
             </div>
           </div>
           <div className="text T">
-          Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurasında Katib          </div>
+            Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurasında Katib          </div>
         </div>
         <div className="right">
           <div className="heyat">

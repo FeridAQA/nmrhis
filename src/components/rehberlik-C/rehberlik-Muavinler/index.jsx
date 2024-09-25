@@ -1,9 +1,11 @@
 import React from 'react'
+import gerb from '../../../assets/img/image.png'
 import '../rəhbərlik-Sədr/index.scss'
 function Muavinler() {
   return (
     <div id='sedr'>
       <div className="container">
+
         <div className="left_imges">
           <div className="img_div">
             <img src="https://s3-alpha-sig.figma.com/img/5d6f/845b/ffd475ae8db1603b6ca48b9e6cff30bb?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aN7~Y4SjW8WurZYo4NtIka3Y4loiS0UxezUhtyA~BsBvZkYtrH5PRQJ0nxTigXjRws18ydM0RQ90ACMR81OCUKWC2oAEDK0gR6OW6YSCWEAdxx7UxvfYbWwchSaK9aPd6VLs6mRORx569myirEudEX4-O4N5azlm9TUrmPEt0h~s3-GiLi~lgDVnJauvdqhM2KCyttLmmlMzkCh2FsWuS7BpH3qVb1qGnBqctSolw7P6SlwcUBWgsafdcMP5xAqezQi5h6lYxoSy9HCB1vWs6pNOUHBzd8JURrhRYsz8WDb0OP7eGN5BOqLiI2dpY6-T7scMdibKoR~B4KzV8N85jQ__" alt="" />
@@ -45,7 +47,12 @@ function Muavinler() {
           </div>
         </div>
       </div>
-      <hr />
+      <div className="h">
+        <hr />
+        <div className="gerb_kicik">
+          <img src={gerb} alt="" />
+        </div>
+      </div>
       <div className="container">
         <div className="left_imges">
           <div className="img_div">
@@ -78,6 +85,11 @@ function Muavinler() {
             </ul>
           </div>
 
+        </div>
+      </div>
+      <div className="responsiv">
+        <div className="gerb_kicik">
+          <img src={gerb} alt="" />
         </div>
       </div>
     </div>
