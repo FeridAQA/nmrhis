@@ -7,13 +7,14 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import XeberCard from '../../../components/home components/XeberCard';
+import { Link } from 'react-router-dom';
 
 function XeberSwiper() {
   return (
     <div className={style.container}>
       <div className={style.titleBox}>
         <h2 className={style.title}>Xəbərlər</h2>
-        <span className={style.link}>Daha ətraflı məlumat</span>
+        <Link to={"/xeberler"} className={style.link}>Daha ətraflı məlumat</Link>
       </div>
 
       <Swiper

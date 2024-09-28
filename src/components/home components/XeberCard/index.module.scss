@@ -24,12 +24,12 @@
   .content {
     width: 100%;
     display: flex;
-    column-gap: 12px;
+    justify-content: space-between;
 
     .textBox {
       --title: 20px;
       --line_height: 23px;
-      --date: 12px;
+      --description: 12px;
       --gap: 12px;
 
       display: flex;
@@ -43,9 +43,9 @@
         line-height: var(--line_height);
       }
 
-      .date {
+      .description {
         color: #707372;
-        font-size: var(--date);
+        font-size: var(--description);
         font-weight: 400;
         line-height: 13.8px;
       }
@@ -53,15 +53,22 @@
       @media only screen and (min-width: 1500px) {
         --title: 25px;
         --line_height: 28.75px;
-        --date: 15px;
+        --description: 15px;
         --gap: 15px;
       }
 
       @media only screen and (max-width: 1200px) {
         --title: 15px;
         --line_height: 17px;
-        --date: 9px;
+        --description: 9px;
         --gap: 9px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        --title: 10px;
+        --line_height: 17px;
+        --description: 6px;
+        --gap: 6px;
       }
     }
 
@@ -104,6 +111,25 @@
         --fontSizeBtn: 12px;
         --lineHeightBtn: 12px;
         --paddingBtn: 12px 15px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        --widthBtn: 78px;
+        --heigthBtn: 40px;
+        --radiusBtn: 17px;
+        --fontSizeBtn: 12px;
+        --lineHeightBtn: 12px;
+        --paddingBtn: 12px 15px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        --widthBtn: 58.5px;
+        --heigthBtn: 30px;
+        --radiusBtn: 13px;
+        --fontSizeBtn: 9px;
+        --lineHeightBtn: 9px;
+        --paddingBtn: 9px 11px;
+        font-weight: 400;
       }
     }
   }
