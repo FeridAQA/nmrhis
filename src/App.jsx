@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import FormPage from './pages/FormPage';
 import ScrollToTop from './components/səifəni_yuxarı_qaldır';
+import XeberlerPage from './pages/XeberlerPage';
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
     <>
       <HelmetProvider>
         <BrowserRouter>
-        <ScrollToTop/>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Mainlayout />} >
               <Route index element={<Home></Home>}></Route>
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
+              <Route path='xeberler' element={<XeberlerPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
