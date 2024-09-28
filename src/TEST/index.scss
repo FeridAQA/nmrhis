@@ -1,0 +1,22 @@
+.test{
+  // img{
+  //   width: 500px;
+  //   height: 500px;
+
+  //   clip-path: path("M 0 100 Q 50 50 100 100 Q 150 150 200 100 Q 250 50 300 100 Q 300 150 250 200 Q 200 250 150 200 Q 100 150 50 200 Q 0 150 0 100 Z")
+  // }
+  .t{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-radius: 30px;
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+      color: white;
+      width: 100px;
+    }
+  }
+}
