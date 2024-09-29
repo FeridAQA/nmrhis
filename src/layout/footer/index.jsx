@@ -28,9 +28,9 @@ function Footer() {
               <li><Link to="/haqqimizda" >Haqqımızd</Link></li>
               <li><Link to="/his_in_orqanlari" >HİŞ-in orqanları</Link></li>
               <li><Link to="/struktur" >Struktur</Link></li>
-              <li><Link to="/sedr" >Sədr</Link></li>
-              <li><Link to="/muavinler" >Müavinlər</Link></li>
-              <li><Link to="/katibler" >Katiblər</Link></li>
+              <li><Link to="/rehberlik/sedr" >Sədr</Link></li>
+              <li><Link to="/rehberlik/muavinler" >Müavinlər</Link></li>
+              <li><Link to="/rehberlik/katibler" >Katiblər</Link></li>
             </ul>
           </div>
 

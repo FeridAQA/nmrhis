@@ -1,0 +1,251 @@
+#sedr {
+    .responsiv{
+        display: none;
+    }
+    .h {
+        position: relative;
+
+        hr {
+            width: 100%;
+            max-width: 1116px;
+            margin: 0 auto 20px auto;
+            border: none;
+            border-top: 1px solid #2393BB;
+        }
+
+        .gerb_kicik {
+            position: absolute;
+            width: 450px;
+            top: -450px;
+            opacity: 12%;
+            left: -33px;
+        }
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        padding: 50px;
+        display: flex;
+
+        .gerb {
+            position: absolute;
+            width: 625px;
+            bottom: -250px;
+            opacity: 12%;
+            left: -109px;
+        }
+
+        .left_imges {
+            padding-left: 70px;
+
+            .img_div {
+                position: relative;
+                width: max-content;
+                max-width: 495px;
+
+                img {
+                    border-radius: 14px;
+                    width: 100%;
+                }
+
+                .adi {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 63px;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-bottom-left-radius: 14px;
+                    border-bottom-right-radius: 14px;
+                    font-size: 20px;
+
+                }
+            }
+
+            .text {
+
+                margin-top: 40px;
+                width: 100%;
+                max-width: 446px;
+            }
+        }
+
+        .right {
+            padding-left: 100px;
+            width: 100%;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .heyat {
+                width: 100%;
+                max-width: 553px;
+
+                h3 {
+                    color: #104254;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: -0.3px;
+                    line-height: 27.6px;
+                }
+
+                ul {
+                    padding: 20px;
+
+                    li {
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: -0.3px;
+                        line-height: 26px;
+                        list-style-type: disc;
+                    }
+                }
+            }
+
+            .emek_fealiyyeti {
+                width: 100%;
+                max-width: 553px;
+
+                h3 {
+                    color: #104254;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: -0.3px;
+                    line-height: 27.6px;
+                }
+
+                ul {
+                    padding: 20px;
+
+                    li {
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: -0.3px;
+                        line-height: 26px;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #sedr {
+        .container {
+            .left_imges {
+                padding-left: 50px;
+
+                .img_div {
+                    width: max-content;
+                    width: 395px;
+                    .adi{
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .right {
+                padding-left: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #sedr {
+        .h{
+            display: none;
+        }
+        .responsiv {
+            display: block;
+            position: relative;
+            .gerb_kicik {
+                // display: none;
+                position: absolute;
+                width: 325px;
+                bottom:-100px;
+                opacity:12%;
+                left: -70px;
+            }
+        }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+
+        .gerb {
+            position: absolute;
+            width: 325px;
+            bottom: -100px;
+            opacity: 12%;
+            left: -50px;
+        }
+
+        .left_imges {
+            padding-left: 0px;
+            padding: 5px;
+            width: 100%;
+            max-width: 344px;
+
+            .img_div {
+                width: 100%;
+
+                .adi {
+                    font-size: 16px;
+
+                    @media (max-width:380px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .text {
+                max-width: 344px;
+                font-size: 16px;
+
+            }
+
+        }
+
+        .right {
+            padding-top: 70px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-width: 0;
+
+            .heyat {
+                h3 {
+                    font-size: 24px;
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .emek_fealiyyeti {
+                h3 {
+                    font-size: 24px;
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
