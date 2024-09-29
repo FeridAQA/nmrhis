@@ -41,7 +41,7 @@
 
             .img_div {
                 position: relative;
-                width: 100%;
+                width: max-content;
                 max-width: 495px;
 
                 img {
@@ -140,8 +140,11 @@
                 padding-left: 50px;
 
                 .img_div {
-                    width: 100%;
-                    width: 365px;
+                    width: max-content;
+                    width: 395px;
+                    .adi{
+                        font-size: 18px;
+                    }
                 }
             }
 
