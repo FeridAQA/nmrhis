@@ -12,6 +12,7 @@ import Sedr from './components/rehberlik-C/rəhbərlik-Sədr';
 import Muavinler from './components/rehberlik-C/rehberlik-Muavinler';
 import Katib from './components/rehberlik-C/rehberlik-katibelr';
 import XeberlerPage from './pages/XeberlerPage';
+import HaqqimizdaPage from './pages/Haqqimizda';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
               <Route path='xeberler' element={<XeberlerPage />} />
+              <Route path='haqqimizda' element={<HaqqimizdaPage />} />
               <Route path='rehberlik' element={<Rehberlik></Rehberlik>}>
                 <Route path='sedr' element={<Sedr></Sedr>}></Route>
                 <Route path='muavinler' element={<Muavinler></Muavinler>}></Route>
