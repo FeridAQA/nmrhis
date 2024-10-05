@@ -1,0 +1,170 @@
+.SonXeberCard {
+  width: 100%;
+  aspect-ratio: 10 / 9;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media screen and (max-width: 768px) {
+    row-gap: 12px;
+  }
+
+  .imgBox {
+    width: 100%;
+    aspect-ratio: 10 / 6;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: min(100%);
+      height: min(100%);
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .textBox {
+      --title: 20px;
+      --line_height: 23px;
+      --date: 12px;
+      --gap: 12px;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--gap);
+
+      .title {
+        text-wrap: balance;
+        font-size: var(--title);
+        font-weight: 400;
+        line-height: var(--line_height);
+      }
+
+      .date {
+        color: #707372;
+        font-size: var(--date);
+        font-weight: 400;
+        line-height: 13.8px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+      }
+
+      @media only screen and (min-width: 1500px) {
+        --title: 25px;
+        --line_height: 28.75px;
+        --date: 15px;
+        --gap: 15px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        --title: 15px;
+        --line_height: 17px;
+        --date: 9px;
+        --gap: 9px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        --title: 12px;
+        --line_height: 14px;
+        --date: 8px;
+        --gap: 5px;
+
+        .date {
+          max-width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        --title: 8px;
+        --line_height: 12px;
+        --date: 6px;
+        --gap: 6px;
+
+        .date {
+          line-height: 10px;
+        }
+      }
+    }
+
+    .btn {
+      --widthBtn: 105px;
+      --heigthBtn: 54px;
+      --radiusBtn: 23px;
+      --fontSizeBtn: 15px;
+      --lineHeightBtn: 18px;
+      --paddingBtn: 18px 20px;
+
+      color: #fff;
+      background-color: #2084a8;
+      align-self: flex-end;
+      text-align: center;
+      width: var(--widthBtn);
+      height: var(--heigthBtn);
+      border: 0px solid;
+      border-radius: var(--radiusBtn);
+      padding: var(--paddingBtn);
+      gap: 10px;
+      font-size: var(--fontSizeBtn);
+      font-weight: 700;
+      line-height: var(--lineHeightBtn);
+      text-transform: uppercase;
+
+      @media only screen and (min-width: 1500px) {
+        --widthBtn: 131.25px;
+        --heigthBtn: 67.5px;
+        --radiusBtn: 28.75px;
+        --fontSizeBtn: 18.75px;
+        --lineHeightBtn: 22.5px;
+        --paddingBtn: 22.5px 25px;
+      }
+
+      @media only screen and (max-width: 1200px) and (min-width: 768px) {
+        --widthBtn: 78px;
+        --heigthBtn: 40px;
+        --radiusBtn: 17px;
+        --fontSizeBtn: 12px;
+        --lineHeightBtn: 12px;
+        --paddingBtn: 12px 15px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 76px;
+        height: 34px;
+        border-radius: 14px;
+        font-size: 11px;
+        line-height: 13.2px;
+        padding: 16px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 370px) {
+        width: 57px;
+        height: 25.5px;
+        border-radius: 10.5px;
+        font-size: 8.25px;
+        line-height: 9.9px;
+        padding: 12px 13.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
