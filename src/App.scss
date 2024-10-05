@@ -1,5 +1,12 @@
-.C{
+.C {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+hr.line {
+    height: 1.5px;
+    margin-block: 20px;
+    background-color: #bbdeea;
+    border: 0px;
 }
