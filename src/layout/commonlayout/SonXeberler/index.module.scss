@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  .sectionTitle {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    padding: 3rem 0;
+    position: relative;
+    user-select: none;
+
+    .slide {
+      transition: transform 0.3s ease-in-out;
+      transform: scale(0.8);
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 140%;
+      transform: translateX(-12%);
+      padding: 2rem 0 2rem 0;
+
+      .slide {
+        transform: scale(1);
+      }
+    }
+
+    :global {
+      /* Position pagination without blocking swipe interactions */
+      .swiper-pagination {
+        position: absolute;
+        top: 0px; /* Position it above the swiper container */
+        left: 0;
+        right: 0;
+        text-align: center;
+        pointer-events: none; /* Ensure the pagination doesn't block swipe gestures */
+      }
+
+      .swiper-pagination-bullet {
+        pointer-events: auto;
+        background-color: #2393bb !important;
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        border-radius: 13px;
+        transition: width 0.3s ease;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 28px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+          width: 22px;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+        }
+
+        .swiper-pagination-bullet-active {
+          width: 19px;
+        }
+      }
+    }
+  }
+}
