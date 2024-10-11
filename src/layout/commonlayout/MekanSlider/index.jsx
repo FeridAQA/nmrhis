@@ -21,7 +21,7 @@ function MekanSlider({ title = "" }) {
         className={style.content}
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={slidesPerView}
-        spaceBetween={70}
+        spaceBetween={64}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
@@ -33,13 +33,21 @@ function MekanSlider({ title = "" }) {
           clickable: true,
         }}
         breakpoints={{
+          300: {
+            spaceBetween: 20,
+          },
+          400: {
+            spaceBetween: 30,
+          },
+          500: {
+            spaceBetween: 40,
+          },
           768: {
-            spaceBetween: 60,
-          }
+            spaceBetween: 64,
+          },
         }}
       >
         {Array.from({ length: totalSlides }, (_, i) => {
-          // Calculate the center slide considering the total number of slides and loop
           const isCenterSlide =
             (i === (activeIndex + Math.floor(slidesPerView / 2)) % totalSlides);
 
