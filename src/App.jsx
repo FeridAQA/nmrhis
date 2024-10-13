@@ -14,6 +14,11 @@ import Katib from './components/rehberlik-C/rehberlik-katibelr';
 import XeberlerPage from './pages/XeberlerPage';
 import HaqqimizdaPage from './pages/Haqqimizda';
 import XeberDetailPage from './pages/XeberDetailPage';
+import FealiyyetmizPage from './pages/Fealiyyetimiz';
+import GenclerSiyaseti from './layout/fealiyyetimizlayout/GenclerSiyaseti/index';
+import EmekHuquqlari from './layout/fealiyyetimizlayout/EmekHuquqlari';
+import EmeyinTehlukesizliyi from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/index';
+import SosialTelimatlar from './layout/fealiyyetimizlayout/SosialTelimatlar/index';
 
 function App() {
 
@@ -34,6 +39,12 @@ function App() {
                 <Route path='sedr' element={<Sedr></Sedr>}></Route>
                 <Route path='muavinler' element={<Muavinler></Muavinler>}></Route>
                 <Route path='katibler' element={<Katib></Katib>}></Route>
+              </Route>
+              <Route path='Fealiyyetimiz' element={<FealiyyetmizPage />}>
+                <Route path='gencler_siyaseti' element={<GenclerSiyaseti />} />
+                <Route path='emek_huquqlari' element={<EmekHuquqlari />} />
+                <Route path='emeyin_tehlukesizliyi' element={<EmeyinTehlukesizliyi />} />
+                <Route path='sosial_telimatlar' element={<SosialTelimatlar />} />
               </Route>
             </Route>
           </Routes>
