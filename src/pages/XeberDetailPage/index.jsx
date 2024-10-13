@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTitle from '../../components/common components/PageTitle';
 import SonXeberler from '../../layout/commonlayout/SonXeberler';
+import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import ContentBox from './Content';
 import ImageBox from './Image';
 import style from "./index.module.scss";
@@ -23,6 +24,7 @@ function XeberDetailPage() {
         </div>
         <hr className={`line`} />
         <SonXeberler />
+        <img className={"Gerb"} id={"bottom"} src={Gerb} />
       </div>
     </>
   )

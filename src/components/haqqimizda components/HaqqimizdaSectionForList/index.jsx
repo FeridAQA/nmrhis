@@ -7,8 +7,8 @@ function HaqqimizdaSectionForList({ title, data }) {
     <div className={style.container}>
       <h3 className={style.title}>{title}</h3>
       <ul className={style.content}>
-        {data && data.map((content) => (
-          <li>{content}</li>
+        {data && data.map((content, i) => (
+          <li key={i}>{content}</li>
         ))}
       </ul>
     </div>

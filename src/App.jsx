@@ -28,7 +28,7 @@ function App() {
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
               <Route path='xeberler' element={<XeberlerPage />} />
-              <Route path='xeberlerdetail' element={<XeberDetailPage />} />
+              <Route path='xeber/:id' element={<XeberDetailPage />} />
               <Route path='haqqimizda' element={<HaqqimizdaPage />} />
               <Route path='rehberlik' element={<Rehberlik></Rehberlik>}>
                 <Route path='sedr' element={<Sedr></Sedr>}></Route>
