@@ -1,6 +1,6 @@
 .SonXeberCard {
   width: 100%;
-  aspect-ratio: 10 / 9;
+  height: max-content;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -27,6 +27,7 @@
 
   .content {
     width: 100%;
+    height: max-content;
     display: flex;
     gap: 12px;
 
@@ -79,13 +80,24 @@
       }
 
       @media only screen and (max-width: 992px) {
-        --title: 12px;
-        --line_height: 14px;
-        --date: 8px;
-        --gap: 5px;
+        --title: 20px;
+        --line_height: 23px;
+        --date: 12px;
+        --gap: 12px;
 
         .date {
           max-width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        --title: 15px;
+        --line_height: 17px;
+        --date: 9px;
+        --gap: 9px;
+
+        .date {
+          line-height: 10px;
         }
       }
 
@@ -143,18 +155,30 @@
       }
 
       @media only screen and (max-width: 992px) {
-        width: 76px;
-        height: 34px;
-        border-radius: 14px;
-        font-size: 11px;
-        line-height: 13.2px;
-        padding: 16px 18px;
+        --widthBtn: 105px;
+        --heigthBtn: 54px;
+        --radiusBtn: 23px;
+        --fontSizeBtn: 15px;
+        --lineHeightBtn: 18px;
+        --paddingBtn: 18px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      @media only screen and (max-width: 370px) {
+      @media only screen and (max-width: 600px) {
+        width: 78.75px;
+        height: 40.5px;
+        border-radius: 17.25px;
+        font-size: 11.25px;
+        line-height: 13.5px;
+        padding: 13.5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 400px) {
         width: 57px;
         height: 25.5px;
         border-radius: 10.5px;

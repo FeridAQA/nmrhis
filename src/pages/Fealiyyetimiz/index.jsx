@@ -1,5 +1,5 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import PageTabs from '../../components/common components/PageTabs'
 
 const Data = [
@@ -22,6 +22,18 @@ const Data = [
 ]
 
 function FealiyyetmizPage() {
+
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  useEffect(() => {
+    const currentPath = location.pathname.split("/").pop()
+    if (!Data.some(tab => tab.path === currentPath)) {
+      navigate("/fealiyyetimiz/gencler_siyaseti")
+    }
+  }, [location.pathname])
+
+
   return (
     <div>
       <PageTabs title={"FƏALİYYƏTİMİZ"} tabs={Data} />

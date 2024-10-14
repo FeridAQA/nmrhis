@@ -1,9 +1,14 @@
 import React from 'react'
+import { Data } from '../../../TEST/temporaryApi'
+import CardHolder from '../../../components/common components/CardHolder'
 
 function SosialTelimatlar() {
+
+  // You have to fetch the necessary data
+
   return (
     <div>
-      SosialTelimatlar
+      <CardHolder data={Data} />
     </div>
   )
 }
