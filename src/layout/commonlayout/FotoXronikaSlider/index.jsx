@@ -33,8 +33,8 @@ function FotoXronikaSlider() {
         loop={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         navigation={{
-          prevEl: "#prevBtn",
-          nextEl: "#nextBtn",
+          prevEl: "#prevBtnFoto",
+          nextEl: "#nextBtnFoto",
         }}
         pagination={{
           clickable: true,
@@ -72,10 +72,10 @@ function FotoXronikaSlider() {
           );
         })}
       </Swiper>
-      <div className={style.prevBtn} id="prevBtn">
+      <div className={style.prevBtn} id="prevBtnFoto">
         <ArrowBackIcon className={style.arrow} />
       </div>
-      <div className={style.nextBtn} id="nextBtn">
+      <div className={style.nextBtn} id="nextBtnFoto">
         <ArrowForwardIcon className={style.arrow} />
       </div>
     </div>

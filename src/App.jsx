@@ -40,7 +40,7 @@ function App() {
                 <Route path='muavinler' element={<Muavinler></Muavinler>}></Route>
                 <Route path='katibler' element={<Katib></Katib>}></Route>
               </Route>
-              <Route path='Fealiyyetimiz' element={<FealiyyetmizPage />}>
+              <Route path='/' element={<FealiyyetmizPage />}>
                 <Route path='gencler_siyaseti' element={<GenclerSiyaseti />} />
                 <Route path='emek_huquqlari' element={<EmekHuquqlari />} />
                 <Route path='emeyin_tehlukesizliyi' element={<EmeyinTehlukesizliyi />} />

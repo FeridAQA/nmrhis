@@ -1,6 +1,6 @@
 import React from 'react'
 import { Data } from '../../../TEST/temporaryApi'
-import CardHolder from '../../../components/common components/CardHolder'
+import CardHolder from '../../../components/common components/FealiyyetimizCardHolder'
 
 function GenclerSiyaseti() {
   

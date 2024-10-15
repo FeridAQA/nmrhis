@@ -47,6 +47,7 @@ function SonXeberler() {
                 image={
                   'https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg'
                 }
+                path={"xeber"}
               />
             </SwiperSlide>
           );
