@@ -5,6 +5,10 @@
   justify-content: center;
   row-gap: 1rem;
 
+  @media screen and (max-width: 992px) {
+    padding: 0 2rem;
+  }
+
   .content {
     font-weight: 400;
     font-size: 20px;
@@ -13,6 +17,11 @@
     @media screen and (max-width: 992px) {
       font-size: 14px;
       line-height: 18.2px;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+      line-height: 12.2px;
     }
   }
 
