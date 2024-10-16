@@ -8,7 +8,7 @@ function GenclerSiyaseti() {
 
   return (
     <div>
-      <CardHolder data={Data} />
+      <CardHolder data={Data} path={"gencler_siyaseti"} />
     </div>
   )
 }

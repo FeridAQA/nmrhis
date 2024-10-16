@@ -8,7 +8,7 @@ function SosialTelimatlar() {
 
   return (
     <div>
-      <CardHolder data={Data} />
+      <CardHolder data={Data} path={"sosial_telimatlar"} />
     </div>
   )
 }

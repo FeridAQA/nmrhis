@@ -3,7 +3,7 @@ import style from "./index.module.scss"
 import Gerb from "./../../../assets/img/NMR-HIŞ.png"
 import SonXeberCard from './../SonXeberCard/index';
 
-function CardHolder({ data }) {
+function CardHolder({ data, path }) {
   return (
     <div className={style.container}>
       <div className={style.content}>
@@ -13,6 +13,7 @@ function CardHolder({ data }) {
             title={item.title}
             image={item.image}
             date={item.description}
+            path={path}
           />
         ))}
       </div>

@@ -8,7 +8,7 @@ function EmeyinTehlukesizliyi() {
 
   return (
     <div>
-      <CardHolder data={Data} />
+      <CardHolder data={Data} path={"emeyin_tehlukesizliyi"} />
     </div>
   )
 }

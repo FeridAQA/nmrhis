@@ -8,7 +8,7 @@ function EmekHuquqlari() {
 
   return (
     <div>
-      <CardHolder data={Data} />
+      <CardHolder data={Data} path={"emek_huquqlari"} />
     </div>
   )
 }

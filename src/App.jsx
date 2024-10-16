@@ -19,6 +19,12 @@ import GenclerSiyaseti from './layout/fealiyyetimizlayout/GenclerSiyaseti/index'
 import EmekHuquqlari from './layout/fealiyyetimizlayout/EmekHuquqlari';
 import EmeyinTehlukesizliyi from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/index';
 import SosialTelimatlar from './layout/fealiyyetimizlayout/SosialTelimatlar/index';
+import FealiyyetimizDetail from './pages/Fealiyyetimiz/Detail';
+import FealiyyetimizDetailPage from './pages/Fealiyyetimiz/Detail';
+import EmekHuqulariDetail from './layout/fealiyyetimizlayout/EmekHuquqlari/detail';
+import GenclerSiyasetiDetail from './layout/fealiyyetimizlayout/GenclerSiyaseti/detail';
+import EmeyinTehlukesizliyiDetail from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/detail';
+import SosialTelimatlarDetail from './layout/fealiyyetimizlayout/SosialTelimatlar/detail';
 
 function App() {
 
@@ -45,6 +51,12 @@ function App() {
                 <Route path='emek_huquqlari' element={<EmekHuquqlari />} />
                 <Route path='emeyin_tehlukesizliyi' element={<EmeyinTehlukesizliyi />} />
                 <Route path='sosial_telimatlar' element={<SosialTelimatlar />} />
+              </Route>
+              <Route path='/' element={<FealiyyetimizDetailPage />}>
+                <Route path='gencler_siyaseti/:id' element={<GenclerSiyasetiDetail />} />
+                <Route path='emek_huquqlari/:id' element={<EmekHuqulariDetail />} />
+                <Route path='emeyin_tehlukesizliyi/:id' element={<EmeyinTehlukesizliyiDetail />} />
+                <Route path='sosial_telimatlar/:id' element={<SosialTelimatlarDetail />} />
               </Route>
             </Route>
           </Routes>
