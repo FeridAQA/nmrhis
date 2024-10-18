@@ -25,6 +25,8 @@ import EmekHuqulariDetail from './layout/fealiyyetimizlayout/EmekHuquqlari/detai
 import GenclerSiyasetiDetail from './layout/fealiyyetimizlayout/GenclerSiyaseti/detail';
 import EmeyinTehlukesizliyiDetail from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/detail';
 import SosialTelimatlarDetail from './layout/fealiyyetimizlayout/SosialTelimatlar/detail';
+import SosialTerefdasliq from './pages/SosialTerefdasliq';
+import SosialTerefdasliqDetail from './pages/SosialTerefdasliq/detail';
 
 function App() {
 
@@ -58,6 +60,8 @@ function App() {
                 <Route path='emeyin_tehlukesizliyi/:id' element={<EmeyinTehlukesizliyiDetail />} />
                 <Route path='sosial_telimatlar/:id' element={<SosialTelimatlarDetail />} />
               </Route>
+              <Route path='/sosial_terefdasliq' element={<SosialTerefdasliq />} />
+              <Route path='/sosial_terefdasliq/:id' element={<SosialTerefdasliqDetail />} />
             </Route>
           </Routes>
         </BrowserRouter>
