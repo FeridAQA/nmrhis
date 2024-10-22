@@ -27,6 +27,7 @@ import EmeyinTehlukesizliyiDetail from './layout/fealiyyetimizlayout/EmeyinTehli
 import SosialTelimatlarDetail from './layout/fealiyyetimizlayout/SosialTelimatlar/detail';
 import SosialTerefdasliq from './pages/SosialTerefdasliq';
 import SosialTerefdasliqDetail from './pages/SosialTerefdasliq/detail';
+import FotoXronikaPage from './pages/FotoXronika';
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
               </Route>
               <Route path='/sosial_terefdasliq' element={<SosialTerefdasliq />} />
               <Route path='/sosial_terefdasliq/:id' element={<SosialTerefdasliqDetail />} />
+              <Route path='/foto_xronika' element={<FotoXronikaPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
