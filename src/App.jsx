@@ -11,6 +11,10 @@ import Rehberlik from './pages/rehberlik';
 import Sedr from './components/rehberlik-C/rəhbərlik-Sədr';
 import Muavinler from './components/rehberlik-C/rehberlik-Muavinler';
 import Katib from './components/rehberlik-C/rehberlik-katibelr';
+import Struktur from './pages/struktur';
+import Uzv_teskilat from './pages/uzvtesgilatlari';
+import Tabe_teskilatlar from './pages/tabe_teskilatlar';
+import His_sobeleri from './pages/his_sobeleri';
 
 function App() {
 
@@ -21,6 +25,8 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Mainlayout />} >
+              <Route path='/test' element={<Test />} />
+              {/* <Route path='/struktur' element={<Struktur />} /> */}
               <Route index element={<Home></Home>}></Route>
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
@@ -30,6 +36,11 @@ function App() {
                 <Route path='muavinler' element={<Muavinler></Muavinler>}></Route>
                 <Route path='katibler' element={<Katib></Katib>}></Route>
               </Route>
+
+              <Route path='struktur' element={<Struktur></Struktur>}></Route>
+              <Route path='struktur/uzv_teskilatlar' element={<Uzv_teskilat></Uzv_teskilat>}></Route>
+              <Route path='struktur/tabe_teskilatlar' element={<Tabe_teskilatlar></Tabe_teskilatlar>}></Route>
+              <Route path='struktur/his_sobeleri' element={<His_sobeleri></His_sobeleri>}></Route>
 
 
             </Route>

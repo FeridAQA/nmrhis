@@ -1,4 +1,4 @@
-.test{
+// .test{
   // img{
   //   width: 500px;
   //   height: 500px;
@@ -19,4 +19,20 @@
       width: 100px;
     }
   }
-}
+  .d{
+    color: #FF0000;
+    .custom-svg {
+      /* SVG-nin ümumi rəngi */
+      // stroke: #0000FF; /* Mavi */
+    }
+    
+    .line {
+      stroke: #FF0000; /* Qırmızı xətlər */
+    }
+    
+    .path {
+      // stroke: #00FF00; /* Yaşıl yollar */
+    }
+    
+  }
+// }
