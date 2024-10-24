@@ -40,7 +40,7 @@ function Footer() {
               <li><Link to="/xeberler" >Xəbərlər</Link></li>
               <li><Link to="/sosial_terefdasliq" >Sosial tərəfdaşlıq</Link></li>
               <li><Link to="/uzv_teskilatlar" >Üzv Təşkilatlar</Link></li>
-              <li><Link to="/tabelikde_olan_teskilatlar" >Tabelikdə olan təşkilatlar</Link></li>
+              <li><Link to="/tabe_teskilatlar" >Tabelikdə olan təşkilatlar</Link></li>
               <li><Link to="/foto_xronika" >Foto Xronika</Link></li>
               <li><Link to="/bize_yazirlar" >Bizə yazırlar</Link></li>
             </ul>

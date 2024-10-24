@@ -1,0 +1,29 @@
+#SubNavbar_iki {
+
+    .tab-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      
+        .tab-item {
+          padding: 10px 20px;
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 30px;
+          transition: background-color 0.3s ease, color 0.3s ease; /* Transition üçün animasiya */
+          
+          &:hover {
+            background-color: #2393BB; /* Hover zamanı fon rəngi */
+            color: white; /* Hover zamanı mətn rəngi */
+          }
+        }
+      
+        .active {
+          background-color: #2393BB; /* Aktiv olan düymənin fon rəngi */
+          color: white;
+        }
+      }
+      
+}
