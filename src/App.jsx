@@ -18,6 +18,20 @@ import Struktur from './pages/struktur';
 import Uzv_teskilat from './pages/uzvtesgilatlari';
 import Tabe_teskilatlar from './pages/tabe_teskilatlar';
 import His_sobeleri from './pages/his_sobeleri';
+import FealiyyetmizPage from './pages/Fealiyyetimiz';
+import GenclerSiyaseti from './layout/fealiyyetimizlayout/GenclerSiyaseti/index';
+import EmekHuquqlari from './layout/fealiyyetimizlayout/EmekHuquqlari';
+import EmeyinTehlukesizliyi from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/index';
+import SosialTelimatlar from './layout/fealiyyetimizlayout/SosialTelimatlar/index';
+import FealiyyetimizDetail from './pages/Fealiyyetimiz/Detail';
+import FealiyyetimizDetailPage from './pages/Fealiyyetimiz/Detail';
+import EmekHuqulariDetail from './layout/fealiyyetimizlayout/EmekHuquqlari/detail';
+import GenclerSiyasetiDetail from './layout/fealiyyetimizlayout/GenclerSiyaseti/detail';
+import EmeyinTehlukesizliyiDetail from './layout/fealiyyetimizlayout/EmeyinTehlikesizliyi/detail';
+import SosialTelimatlarDetail from './layout/fealiyyetimizlayout/SosialTelimatlar/detail';
+import SosialTerefdasliq from './pages/SosialTerefdasliq';
+import SosialTerefdasliqDetail from './pages/SosialTerefdasliq/detail';
+import FotoXronikaPage from './pages/FotoXronika';
 
 function App() {
 
@@ -34,7 +48,7 @@ function App() {
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
               <Route path='xeberler' element={<XeberlerPage />} />
-              <Route path='xeberlerdetail' element={<XeberDetailPage />} />
+              <Route path='xeber/:id' element={<XeberDetailPage />} />
               <Route path='haqqimizda' element={<HaqqimizdaPage />} />
               <Route path='rehberlik' element={<Rehberlik></Rehberlik>}>
                 <Route path='sedr' element={<Sedr></Sedr>}></Route>
@@ -48,6 +62,21 @@ function App() {
               <Route path='struktur/his_sobeleri' element={<His_sobeleri></His_sobeleri>}></Route>
 
 
+              <Route path='/' element={<FealiyyetmizPage />}>
+                <Route path='gencler_siyaseti' element={<GenclerSiyaseti />} />
+                <Route path='emek_huquqlari' element={<EmekHuquqlari />} />
+                <Route path='emeyin_tehlukesizliyi' element={<EmeyinTehlukesizliyi />} />
+                <Route path='sosial_telimatlar' element={<SosialTelimatlar />} />
+              </Route>
+              <Route path='/' element={<FealiyyetimizDetailPage />}>
+                <Route path='gencler_siyaseti/:id' element={<GenclerSiyasetiDetail />} />
+                <Route path='emek_huquqlari/:id' element={<EmekHuqulariDetail />} />
+                <Route path='emeyin_tehlukesizliyi/:id' element={<EmeyinTehlukesizliyiDetail />} />
+                <Route path='sosial_telimatlar/:id' element={<SosialTelimatlarDetail />} />
+              </Route>
+              <Route path='/sosial_terefdasliq' element={<SosialTerefdasliq />} />
+              <Route path='/sosial_terefdasliq/:id' element={<SosialTerefdasliqDetail />} />
+              <Route path='/foto_xronika' element={<FotoXronikaPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+  overflow-x: hidden;
+
+  .titleBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    user-select: none;
+
+    .title {
+      font-size: 300%;
+      font-weight: 400;
+      line-height: 46px;
+    }
+
+    .link {
+      cursor: pointer;
+      color: #585b5b;
+      font-size: 16px;
+      line-height: 19.2px;
+      text-decoration: underline;
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 50px 7rem;
+
+    .slide {
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+      transform: scale(0.8);
+    }
+
+    .slide.active {
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 992px) {
+      width: 190%;
+      transform: translateX(-24%);
+
+      .slide {
+        transform: scale(1);
+      }
+    }
+
+    :global {
+      .swiper-pagination {
+        top: 0;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #2393bb !important;
+        width: 12px !important;
+        height: 12px !important;
+        opacity: 1 !important;
+        border-radius: 13px !important;
+        transition: width 0.3s ease;
+
+        @media only screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 28px !important;
+      }
+    }
+  }
+
+  .navBtn {
+    --size: 12px;
+
+    cursor: pointer;
+    width: calc(var(--size) * 4);
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+    border: 3px solid #2393bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - var(--size) / 2);
+    z-index: 4;
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+
+    .arrow {
+      font-size: calc(var(--size) * 3);
+    }
+  }
+
+  .prevBtn {
+    background-color: #fff;
+    left: 1rem;
+
+    .arrow {
+      color: #2393bb;
+    }
+  }
+
+  .nextBtn {
+    background-color: #2393bb;
+    right: 1rem;
+
+    .arrow {
+      color: #fff;
+    }
+  }
+}

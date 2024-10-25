@@ -5,7 +5,7 @@
   flex-direction: column;
   row-gap: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     row-gap: 12px;
   }
 
@@ -30,7 +30,7 @@
     display: flex;
     gap: 12px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column;
     }
 
@@ -78,7 +78,7 @@
         --gap: 9px;
       }
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 992px) {
         --title: 12px;
         --line_height: 14px;
         --description: 8px;
@@ -133,7 +133,7 @@
         --paddingBtn: 22.5px 25px;
       }
 
-      @media only screen and (max-width: 1200px) and (min-width: 768px) {
+      @media only screen and (max-width: 1200px) and (min-width: 992px) {
         --widthBtn: 78px;
         --heigthBtn: 40px;
         --radiusBtn: 17px;
@@ -142,7 +142,7 @@
         --paddingBtn: 12px 15px;
       }
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 992px) {
         width: 76px;
         height: 34px;
         border-radius: 14px;

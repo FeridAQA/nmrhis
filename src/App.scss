@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.T{
+.T {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: -0.3px;
@@ -16,4 +16,23 @@ hr.line {
     margin-block: 20px;
     background-color: #bbdeea;
     border: 0px;
+}
+
+.Gerb {
+    width: clamp(300px, 50%, 625px);
+    opacity: 12%;
+    position: absolute;
+    z-index: -5;
+}
+
+#bottom.Gerb {
+    bottom: 0;
+    left: 0;
+    transform: translate(-20%, 50%);
+}
+
+#top.Gerb {
+    top: 0;
+    right: 0;
+    transform: translate(20%, 0%);
 }

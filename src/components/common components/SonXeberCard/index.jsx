@@ -1,7 +1,15 @@
 import React from 'react'
 import style from "./index.module.scss";
+import { useNavigate } from 'react-router-dom';
 
-function SonXeberCard({ image, title, date }) {
+function SonXeberCard({ image, title, date, id = 0, path = "xeber" }) {
+
+  const navigate = useNavigate()
+
+  function handleNavigate(path, id) {
+    navigate(`/${path}/${id}`)
+  }
+
   return (
     <div className={style.SonXeberCard}>
       <div className={style.imgBox}>
@@ -12,7 +20,7 @@ function SonXeberCard({ image, title, date }) {
           <span className={style.title}>{title}</span>
           <time className={style.date}>{date}</time>
         </div>
-        <button className={style.btn}>Ətraflı</button>
+        <button onClick={() => handleNavigate(path, id)} className={style.btn}>Ətraflı</button>
       </div>
     </div>
   )

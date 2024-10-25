@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   width: 100%;
   padding: 56px 5rem;
   display: flex;
@@ -12,9 +13,26 @@
     color: #bbdeea;
     border: 0px;
   }
+
+  .Gerb {
+    width: clamp(300px, 50%, 625px);
+    opacity: 12%;
+    position: absolute;
+    z-index: -5;
+  }
+
+  #top {
+    right: 0;
+    transform: translate(20%, 0%);
+  }
+
+  #bottom {
+    bottom: 0;
+    transform: translate(-20%, 50%);
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .container {
     padding: 26px 0px;
   }

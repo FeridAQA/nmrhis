@@ -1,13 +1,14 @@
 .FotoXronikaCard {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  // aspect-ratio: 3 / 2;
   display: flex;
+  flex-direction: column;
 
   .imgBox {
     width: 100%;
     aspect-ratio: 10 / 6;
     overflow: hidden;
-    border: 0px solid;
+    border: 1px solid #2393bb;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -16,6 +17,28 @@
     img {
       width: min(100%);
       height: min(100%);
+    }
+  }
+
+  .date {
+    color: #707372;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 14px;
+      line-height: 15.2px;
+    }
+
+    @media only screen and (max-width: 676px) {
+      font-size: 8px;
+      line-height: 9px;
+    }
+
+    @media only screen and (max-width: 676px) {
+      font-size: 6px;
+      line-height: 7px;
     }
   }
 }

@@ -22,11 +22,11 @@ function Links() {
           <li><NavLink className={style.subLink} to={"/foto_xronika"}>Foto Xronika</NavLink></li>
         </ul>
       </li>
-      <li><NavLink className={`${style.NavLink} ${style.Active}`} to={"/sosial-terefdasliq"}>SOSİAL TƏRƏFDAŞLIQ</NavLink></li>
+      <li><NavLink className={`${style.NavLink} ${style.Active}`} to={"/sosial_terefdasliq"}>SOSİAL TƏRƏFDAŞLIQ</NavLink></li>
       <li><NavLink className={`${style.NavLink} ${style.Dropdown}`}>FƏALİYYƏTİMİZ <i className={`fa-solid fa-angle-right ${style.icon}`}></i></NavLink>
         <ul className={style.dropdownMenu}>
           <li><NavLink className={style.subLink} to={"/gencler_siyaseti"}>Gənclər Siyayəti</NavLink></li>
-          <li><NavLink className={style.subLink} to={"/emek-huquqlari"}>Əmək Hüquqları</NavLink></li>
+          <li><NavLink className={style.subLink} to={"/emek_huquqlari"}>Əmək Hüquqları</NavLink></li>
           <li><NavLink className={style.subLink} to={"/emeyin_tehlukesizliyi"}>Əməyin Təhlükəsizliyi</NavLink></li>
           <li><NavLink className={style.subLink} to={"/sosial_telimatlar"}>Sosial Təlimatlar</NavLink></li>
         </ul>
