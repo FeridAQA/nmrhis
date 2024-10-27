@@ -1,9 +1,10 @@
 import React from 'react'
-import PDFBlock from '../../commonlayout/PDFBlock'
 import STDContent from '../Content'
 import STDImage from '../Image'
 import Gerb from "./../../../assets/img/NMR-HIŞ.png"
 import style from "./index.module.scss"
+import PDF from "./../../../TEST/PythonParallelProgramming.pdf"
+import PDFBlock from './../../commonlayout/PDFBlock/index';
 
 function STDContainer() {
   return (
@@ -20,7 +21,7 @@ function STDContainer() {
           />
         </div>
       </div>
-      <PDFBlock />
+      <PDFBlock src={PDF} />
       <img className={`Gerb`} id={"top"} src={Gerb} />
       <img className={"Gerb"} id={'bottom'} src={Gerb} />
     </div>

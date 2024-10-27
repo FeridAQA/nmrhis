@@ -1,0 +1,15 @@
+.container {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+
+  .pdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}

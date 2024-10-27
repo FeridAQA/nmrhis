@@ -1,10 +1,13 @@
 import React from 'react'
 import style from "./index.module.scss"
 
-function PDFBlock() {
+function PDFBlock({ src }) {
   return (
     <div className={style.container}>
-      PDF OLCEY BURADA
+      <iframe
+        className={style.pdf}
+        src={src}
+      ></iframe>
     </div>
   )
 }
