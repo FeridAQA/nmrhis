@@ -7,7 +7,7 @@
     .corner {
         position: absolute;
         bottom: 50px;
-        right: 0px;
+        right: -1px;
         width: 60px;
         z-index: 1;
 
@@ -61,7 +61,7 @@
         border-radius: 12px;
 
         .imgbox {
-            border-radius: 12px;
+            border-radius: 12px !important;
 
             img {
                 min-height: 500px;

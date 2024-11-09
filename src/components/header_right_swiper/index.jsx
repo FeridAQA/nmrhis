@@ -2,18 +2,17 @@ import React, { useRef } from 'react';
 import './index.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import { Pagination,Autoplay  } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper';
-
 
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-import corner from '../../assets/img/header/corner.png'
+import corner from '../../assets/img/header/corner.png';
 import { Link } from 'react-router-dom';
 
 import image1 from '../../assets/img/header_img/image.png';
 
-SwiperCore.use([Pagination,Autoplay]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const NewsSwiper = () => {
     const swiperRef = useRef(null);
@@ -40,15 +39,16 @@ const NewsSwiper = () => {
         <div className="news-swiper">
             <Swiper
                 modules={[Pagination, Autoplay]}
-                pagination={{ type: 'fraction' }} // "1 / 3" formatında səhifələmə
-                spaceBetween={10}
+                pagination={{ type: 'fraction' }}
+                spaceBetween={0} // Boşluq olmadan bitişik slaydlar
                 slidesPerView={1}
                 loop={true}
-                onSwiper={(swiper) => (swiperRef.current = swiper)} // Swiper obyektini ref-ə veririk
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
                 autoplay={{
-                    delay: 3000, // Slayd dəyişmə intervalı (milisaniyələrlə, burada 3 saniyə)
-                    disableOnInteraction: false, // İstifadəçi ilə qarşılıqlı təsirdən sonra autoplay dayanmır
+                    delay: 2000, // 2 saniyədən bir dəyişsin
+                    disableOnInteraction: false,
                 }}
+                speed={500} // Keçid sürətini sürətləndirir
             >
                 {newsData.map((news) => (
                     <SwiperSlide key={news.id}>
@@ -67,29 +67,27 @@ const NewsSwiper = () => {
                 ))}
             </Swiper>
 
-            {/*  */}
             <div className="corner">
                 <img src={corner} alt="" />
             </div>
-            <Link to='xeberler'>
+            <Link to="xeberler">
                 <div className="ox">
-                    <ArrowOutwardIcon className='oxx' />
+                    <ArrowOutwardIcon className="oxx" />
                 </div>
             </Link>
-            {/*  */}
             <div className="xeberler">
                 Xəbərlər
             </div>
             <div className="custom-navigation">
                 <div
                     className="custom-prev"
-                    onClick={() => swiperRef.current?.slidePrev()} // Əvvəlki slayda keçid
+                    onClick={() => swiperRef.current?.slidePrev()}
                 >
                     &lt;
                 </div>
                 <div
                     className="custom-next"
-                    onClick={() => swiperRef.current?.slideNext()} // Növbəti slayda keçid
+                    onClick={() => swiperRef.current?.slideNext()}
                 >
                     &gt;
                 </div>
