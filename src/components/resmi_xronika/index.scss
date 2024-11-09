@@ -1,0 +1,65 @@
+#resmi_xronika {
+    position: relative;
+    overflow: hidden;
+
+    .gerb {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 517px;
+        height: 517px;
+        opacity: 12%;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .text {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 56.41px;
+                letter-spacing: 0.3px;
+                color: black;
+            }
+
+            
+        }
+
+        .down {
+            height: 100vh;
+
+            .imgbox {
+                position: relative;
+                width: 300px;
+                height: 600px;
+
+                .ipone {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // z-index: -1;
+                }
+
+                .img {
+                    // display: none;
+                    position: absolute;
+                    width: 280px;
+                    height: 500px;
+                    top: 10px;
+                    left: 10px;
+                    border-radius: 12px;
+
+                    img {
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
