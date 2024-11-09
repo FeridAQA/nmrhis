@@ -4,11 +4,15 @@ import XeberSwiper from '../../layout/homelayout/XeberSwiper'
 import MekanSlider from '../../layout/commonlayout/MekanSlider'
 import FotoXronikaSlider from '../../layout/commonlayout/FotoXronikaSlider'
 import MekanSliderWithNav from '../../components/common components/MekanSliderWithNav'
+import Main_header from '../../components/header_copm'
+import Resmi_xronika from '../../components/resmi_xronika'
 
 function Home() {
   return (
     <>
+      <Main_header></Main_header>
       <XeberSwiper />
+      <Resmi_xronika></Resmi_xronika>
       <QuickAccessPanel />
       <FotoXronikaSlider />
       <MekanSlider />
