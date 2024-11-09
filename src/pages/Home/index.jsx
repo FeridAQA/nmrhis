@@ -6,6 +6,7 @@ import FotoXronikaSlider from '../../layout/commonlayout/FotoXronikaSlider'
 import MekanSliderWithNav from '../../components/common components/MekanSliderWithNav'
 import Main_header from '../../components/header_copm'
 import Resmi_xronika from '../../components/resmi_xronika'
+import Iphone12 from '../../components/common components/Iphone12'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <QuickAccessPanel />
       <FotoXronikaSlider />
       <MekanSlider />
+      <Iphone12 image={"https://i.pinimg.com/736x/68/8d/d3/688dd325dbbdc238f4b70caffe77a5af.jpg"} />
       {/* <MekanSliderWithNav /> */}
       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim velit. Nulla laoreet semper euismod. Fusce at ligula eu erat facilisis mollis. Cras commodo condimentum neque, eget posuere tortor feugiat et. Fusce et vestibulum justo, quis malesuada massa. Cras viverra feugiat erat ac sagittis. Nulla scelerisque metus congue ligula mattis, eu feugiat nibh placerat. Curabitur at suscipit velit. Vivamus nunc nunc, sagittis nec velit ac, molestie tincidunt tellus. Mauris varius ut quam id malesuada.
 

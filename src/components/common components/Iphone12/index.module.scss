@@ -1,0 +1,28 @@
+.container {
+  --width: 200px;
+  --height: calc(var(--width) * 2);
+
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: calc(var(--width) / 5);
+
+  #phone {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+  .iphoneCon {
+    padding: 5% 5%;
+
+    #screen {
+      height: 100%;
+      // position: absolute;
+      // top: 0;
+    }
+  }
+}
