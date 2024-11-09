@@ -1,8 +1,10 @@
 .container {
-  --width: 200px;
+  --width: 300px;
   --height: calc(var(--width) * 2);
 
-  width: var(--width);
+  min-width: 260px;
+  width: 100%;
+  max-width: var(--width);
   height: var(--height);
   position: relative;
   display: flex;
