@@ -1,0 +1,108 @@
+.news-swiper {
+    position: relative;
+    border-radius: 12px;
+    min-height: 550px;
+    width: 100%;
+
+    .corner {
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+        width: 60px;
+        z-index: 1;
+
+    }
+    .ox {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        z-index: 1;
+
+        .oxx {
+            color: white;
+            font-size: 40px;
+        }
+    }
+    .xeberler{
+        position: absolute;
+        bottom: 53px;
+        z-index: 1;
+        color: white;
+        right: 80px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .custom-navigation{
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+        .custom-prev,
+        .custom-next {
+            font-size: 20px;
+            cursor: pointer;
+            pointer-events: auto; /* Klikləməyi təmin etmək üçün */
+        }
+
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .news-slide {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        min-height: 550px;
+        width: 100%;
+        border-radius: 12px;
+
+        .imgbox {
+            border-radius: 12px;
+
+            img {
+                min-height: 500px;
+                border-radius: 12px;
+            }
+        }
+
+        .news-content {
+            position: absolute;
+            bottom: 0px;
+            width: 80%;
+            font-size: 11px;
+            font-weight: 100;
+            line-height: 19.4px;
+            letter-spacing: 0.3px;
+            padding: 5px 10px;
+        }
+
+        .number {
+            position: absolute;
+            bottom: 13px;
+            right: 25px;
+        }
+    }
+
+   
+
+        // .swiper-button-prev:after {
+        //     position: absolute !important;
+        //     bottom: -240px !important;
+        //     left:  200px !important;
+        //     color: red !important;
+        //     font-size: 20px;
+        // }
+
+        // .swiper-button-next:after {
+        //     font-size: 20px;
+        //     position: absolute;
+        //     bottom: -240px;
+        //     right: 0px;
+        //     color: red;
+        // }
+
+}
