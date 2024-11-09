@@ -8,11 +8,11 @@ import MekanSliderWithNav from '../../components/common components/MekanSliderWi
 function Home() {
   return (
     <>
-      <QuickAccessPanel />
       <XeberSwiper />
+      <QuickAccessPanel />
       <FotoXronikaSlider />
       <MekanSlider />
-      <MekanSliderWithNav />
+      {/* <MekanSliderWithNav /> */}
       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim velit. Nulla laoreet semper euismod. Fusce at ligula eu erat facilisis mollis. Cras commodo condimentum neque, eget posuere tortor feugiat et. Fusce et vestibulum justo, quis malesuada massa. Cras viverra feugiat erat ac sagittis. Nulla scelerisque metus congue ligula mattis, eu feugiat nibh placerat. Curabitur at suscipit velit. Vivamus nunc nunc, sagittis nec velit ac, molestie tincidunt tellus. Mauris varius ut quam id malesuada.
 
         Nunc egestas a ante id mattis. Integer tempor ornare nisl, vel suscipit dui mattis vel. Donec mollis neque at tincidunt aliquam. Curabitur et orci a mi porttitor tempus. Nulla pretium ligula et laoreet tempor. In faucibus ac velit ac cursus. Aenean porta feugiat augue. Etiam auctor mattis metus sed viverra. Nam et pharetra elit, in vulputate mauris. Sed facilisis eros non orci fringilla, sed elementum erat imperdiet. Duis vitae porttitor enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;

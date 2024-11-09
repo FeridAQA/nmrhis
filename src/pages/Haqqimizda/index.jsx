@@ -54,8 +54,8 @@ function HaqqimizdaPage() {
       <HaqqimizdaSection title={"HİŞ-in beynəlxalq əlaqələri"}>
         AHİK 17 oktyabr 2000-ci il tarixdən Beynəlxalq Həmkarlar İttifaqları Konfederasiyasının üzvüdür və bu beynəlxalq təşkilatın keçirdiyi bütün tədbirlərdə fəal iştirak edir. AHİK-in nümayəndəsi bu mötəbər beynəlxalq həmkarlar ittifaqı təşkilatının icraiyyə komitəsində təmsil olunur. AHİK 26 may 2004-cü ildən Ümumhəmkarlar İttifaqları Konfederasiyasının üzv təşkilatıdır. Elektroenergetika və Elektrotexnika Sənayesi İşçiləri Həmkarlar İttifaqı, Neft və Qaz Sənayesi İşçiləri Həmkarlar İttifaqı, “İnşaat-iş” Həmkarlar İttifaqı, Metal İşçiləri Həmkarlar İttifaqı Federasiyası Beynəlxalq “İndustry All” təşkilatının, Dəniz Nəqliyyatı İşçiləri Həmkarlar İttifaqı Beynəlxalq Nəqliyyat Federasiyasının (London), Səhiyyə işçilərinin, Yerli, Sənaye və Kommunal Məişət Müəssisələri İşçilərinin, Müdafiə Sənayesi İşçilərinin həmkarlar ittifaqları PSI-nın üzvüdürlər. Türkiyə, Fransa, Belçika, İngiltərə, Almaniya, Misir, Yaponiya, Bolqariya MDB dövlətləri, Çin Respublikası və 70-ə yaxın ölkələrin həmkarlar ittifaqları mərkəzləri ilə ikitərəfli dostluq əlaqələrindədir.
       </HaqqimizdaSection>
-      <img className={`${style.Gerb}`} id={style.top} src={Gerb} />
-      <img className={"Gerb"} id={style.bottom} src={Gerb} />
+      <img className={`Gerb`} id={"top"} src={Gerb} />
+      <img className={"Gerb"} id={"bottom"} src={Gerb} />
     </div>
   )
 }
