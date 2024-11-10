@@ -1,0 +1,49 @@
+.MekanCardWithTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  .imgBox {
+    width: 100%;
+    aspect-ratio: 10 / 6;
+    overflow: hidden;
+    border: 1px solid #2393bb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: min(100%);
+      height: min(100%);
+    }
+  }
+
+  .title {
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27.6px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      font-size: 14px;
+      line-height: 15.2px;
+    }
+
+    @media only screen and (max-width: 676px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 6px;
+      line-height: 7px;
+    }
+  }
+}
