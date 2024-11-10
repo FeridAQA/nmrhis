@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #2393bb;
+  border-radius: 16px;
+
+  .titleBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 16px;
+    outline: 2px solid #2393bb;
+    border-radius: 16px;
+    transition: 0.3s;
+
+    @media only screen and (max-width: 992px) {
+      padding: 8px 16px;
+    }
+
+    .title {
+      user-select: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27.6px;
+
+      @media only screen and (max-width: 992px) {
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        line-height: 17.6px;
+        font-size: 12px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        line-height: 15.6px;
+        font-size: 8px;
+      }
+    }
+
+    .icon {
+      font-size: 30px;
+      transition: 0.1s;
+
+      @media only screen and (max-width: 992px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 12px;
+      }
+    }
+
+    .icon.active {
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      background-color: #deeff5;
+    }
+  }
+
+  .titleBox.active {
+    color: #fff;
+    background-color: #2393bb;
+  }
+
+  .content {
+    overflow: hidden;
+    max-height: 0px;
+    width: 100%;
+    padding: 0px 16px;
+    transition: 0.2s;
+
+    .textBox {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+
+      @media only screen and (max-width: 992px) {
+        font-size: 13px;
+        line-height: 16.9px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        line-height: 12.6px;
+        font-size: 8px;
+      }
+    }
+  }
+
+  .content.active {
+    padding: 10px 16px;
+    max-height: 160px;
+  }
+}

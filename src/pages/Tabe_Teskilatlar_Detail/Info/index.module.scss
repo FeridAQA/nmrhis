@@ -4,16 +4,41 @@
   flex-direction: column;
   padding-inline: 3rem;
 
+  @media only screen and (max-width: 992px) {
+    padding-inline: 2rem;
+  }
+
   .title {
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 24px;
     line-height: 27.6px;
+
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 18.4px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 12px;
+      line-height: 16.4px;
+    }
   }
 
   .content {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 14px;
+      line-height: 18.2px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 10px;
+      line-height: 14.4px;
+    }
   }
 }
