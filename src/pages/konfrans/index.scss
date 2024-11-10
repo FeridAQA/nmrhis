@@ -1,17 +1,19 @@
 #konfrans {
     margin: 30px 0;
+
     .container {
         width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 50px;
-        
+
 
         .down {
             display: flex;
             flex-direction: column;
             gap: 30px;
+
             .title {
                 font-family: Arial;
                 font-size: 24px;
@@ -22,9 +24,13 @@
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
 
+                @media screen and (max-width: 992px) {
+                    font-size: 16px;
+                }
             }
 
             .text {
+                
                 font-family: Arial;
                 font-size: 20px;
                 font-weight: 400;
@@ -33,6 +39,9 @@
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
 
             }
         }
