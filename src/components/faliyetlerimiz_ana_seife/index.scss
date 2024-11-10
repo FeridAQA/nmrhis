@@ -1,0 +1,111 @@
+#ana_s_fealiyet {
+    margin-bottom: 50px;
+    .container {
+        width: 90%;
+        margin: auto;
+
+        .h2 {
+            margin: 30px 0;
+            font-family: Arial;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 46px;
+            letter-spacing: -0.30000001192092896px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            @media only screen and (max-width: 600px) {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+
+        .bigbox {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            @media only screen and (max-width: 992px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                position: relative;
+                max-width: 400px;
+                width: 100%;
+                height: 330px;
+                border-radius: 14px;
+
+                @media only screen and (max-width: 600px) {
+                    max-width: 300px;
+                    height: 250px;
+                }
+
+                .imgbox {
+                    border-radius: 12px;
+                    position: absolute;
+                    z-index: -1;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                }
+
+                .text {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 20px;
+                    color: white;
+                    font-family: Arial;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 27.6px;
+                    letter-spacing: -0.30000001192092896px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+
+
+                .corner {
+                    position: absolute;
+                    top: -1px;
+                    left: -1px;
+                    transform: rotate(180deg);
+                    width: 60px;
+                    @media only screen and (max-width: 600px) {
+                        width: 50px;
+                    }
+                }
+
+                .ox {
+                    position: absolute;
+                    top: 0;
+                    left:3px;
+
+                    .oxx {
+                        color: white;
+                        font-size: 42px;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 32px;                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
