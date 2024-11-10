@@ -32,6 +32,7 @@ import SosialTelimatlarDetail from './layout/fealiyyetimizlayout/SosialTelimatla
 import SosialTerefdasliq from './pages/SosialTerefdasliq';
 import SosialTerefdasliqDetail from './pages/SosialTerefdasliq/detail';
 import FotoXronikaPage from './pages/FotoXronika';
+import Organlar from './pages/orqanlar';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
               <Route path='/test' element={<Test />} />
               {/* <Route path='/struktur' element={<Struktur />} /> */}
               <Route index element={<Home></Home>}></Route>
+              <Route path='orqanlar' element={<Organlar></Organlar>}></Route>
               <Route path='about' element={<About></About>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
               <Route path='xeberler' element={<XeberlerPage />} />

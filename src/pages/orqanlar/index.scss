@@ -1,4 +1,4 @@
-#Struk_uc {
+#organlar {
     --container-width: 100%;
     display: flex;
     padding: 50px 10px;
@@ -22,7 +22,7 @@
         justify-content: space-evenly;
 
         .box {
-            width: calc(var(--container-width) / 3 - 50px);
+            width: calc(var(--container-width) / 4 - 30px);
             height: 296px;
             border-radius: 19px;
             border: 3px solid #2393BB;
@@ -41,6 +41,8 @@
                 }
 
                 .text {
+                    padding: 0 5px;
+                    text-align: center;
                     display: flex;
                     justify-content: center;
                     color: #2393BB;
@@ -52,6 +54,7 @@
                 }
 
                 .x {
+                    text-align: center;
                     @media (max-width: 1300px) {
                         text-align: center;
                         width: 200px;
