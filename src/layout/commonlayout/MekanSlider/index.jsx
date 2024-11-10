@@ -6,11 +6,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import MekanCard from '../../../components/common components/MekanCard';
+import MekanData from '../../../Data/MekanData';
 
 function MekanSlider({ title = "" }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const slidesPerView = 3;
-  const totalSlides = 8; // Number of slides
+  const totalSlides = 8;
 
   return (
     <div className={style.container}>
@@ -47,21 +48,20 @@ function MekanSlider({ title = "" }) {
           },
         }}
       >
-        {Array.from({ length: totalSlides }, (_, i) => {
+        {MekanData && MekanData.map((item, i) => {
           const isCenterSlide =
             (i === (activeIndex + Math.floor(slidesPerView / 2)) % totalSlides);
 
           return (
             <SwiperSlide
               key={i}
-              className={`${style.slide} ${isCenterSlide ? style.active : ''}`} // Apply active class conditionally
+              className={`${style.slide} ${isCenterSlide ? style.active : ''}`}
             >
               <MekanCard
-                description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"}
-                title={'“Azərbaycan Silahlı Qüvvələrinin qüdrəti ilbəil yüksəlir”'}
-                image={
-                  'https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg'
-                }
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                description={item.info[0].context}
               />
             </SwiperSlide>
           );
