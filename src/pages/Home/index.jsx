@@ -8,6 +8,7 @@ import Main_header from '../../components/header_copm'
 import Resmi_xronika from '../../components/resmi_xronika'
 import Iphone12 from '../../components/common components/Iphone12'
 import Ana_s_fealiyet from '../../components/faliyetlerimiz_ana_seife'
+import BizeYazirlar from '../../layout/homelayout/BizeYazirlar'
 
 function Home() {
   return (
@@ -16,10 +17,11 @@ function Home() {
       <XeberSwiper />
       <Resmi_xronika></Resmi_xronika>
       <QuickAccessPanel />
-      <Ana_s_fealiyet/>
+      <Ana_s_fealiyet />
+      <BizeYazirlar />
       <FotoXronikaSlider />
       <MekanSlider />
-    
+
     </>
   )
 }
