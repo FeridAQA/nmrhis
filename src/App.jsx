@@ -35,6 +35,7 @@ import FotoXronikaPage from './pages/FotoXronika';
 import Organlar from './pages/orqanlar';
 import Konfrans from './pages/konfrans';
 import MekanSliderWithNav from './pages/Tabe_Teskilatlar_Detail';
+import Elaqe from './pages/elaqe';
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
                 <Route path='orqanlar/konfrans' element={<Konfrans></Konfrans>}></Route>
               <Route path='orqanlar' element={<Organlar></Organlar>}></Route>
               <Route path='about' element={<About></About>}></Route>
+              <Route path='elaqe' element={<Elaqe></Elaqe>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
               <Route path='xeberler' element={<XeberlerPage />} />
               <Route path='xeber/:id' element={<XeberDetailPage />} />
