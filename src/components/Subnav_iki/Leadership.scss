@@ -1,5 +1,5 @@
 #SubNavbar_iki {
-
+  margin-top: 30px;
     .tab-menu {
         display: flex;
         justify-content: space-evenly;
@@ -13,7 +13,14 @@
           font-weight: 700;
           border-radius: 30px;
           transition: background-color 0.3s ease, color 0.3s ease; /* Transition üçün animasiya */
-          
+          @media screen and (max-width: 700px) {
+            padding: 5px 5px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 10px
+          }
           &:hover {
             background-color: #2393BB; /* Hover zamanı fon rəngi */
             color: white; /* Hover zamanı mətn rəngi */
