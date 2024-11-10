@@ -1,0 +1,40 @@
+#konfrans {
+    margin: 30px 0;
+    .container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+
+        .down {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .title {
+                font-family: Arial;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 27.6px;
+                letter-spacing: -0.30000001192092896px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+
+            .text {
+                font-family: Arial;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: -0.30000001192092896px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+        }
+    }
+}

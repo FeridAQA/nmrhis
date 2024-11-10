@@ -60,6 +60,10 @@
                         width: 200px;
                     }
                 }
+                .u {
+                    text-align: center;
+                        width: 200px;
+                }
             }
 
             &:hover {
@@ -73,6 +77,21 @@
 
                 .text {
                     color: white;
+                }
+            }
+        }
+        .box:last-child {
+            &:hover {
+                background-color: inherit;
+                color: inherit;
+                border-color: #2393BB;
+
+                .icon .line {
+                    stroke: #2393BB;
+                }
+
+                .text {
+                    color: #2393BB;
                 }
             }
         }
