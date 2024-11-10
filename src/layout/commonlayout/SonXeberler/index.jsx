@@ -18,7 +18,7 @@ function SonXeberler() {
         slidesPerView={slidesPerView}
         spaceBetween={60}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}

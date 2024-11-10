@@ -12,7 +12,7 @@ function XeberlerSwiperMobile() {
         slidesPerView={1}
         spaceBetween={41}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           pauseOnMouseEnter: true,
         }}
         loop={true}

@@ -25,7 +25,7 @@ function XeberSwiper() {
           slidesPerView={4}
           spaceBetween={60}
           autoplay={{
-            delay: 1000,
+            delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}

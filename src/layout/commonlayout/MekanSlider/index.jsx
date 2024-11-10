@@ -23,7 +23,7 @@ function MekanSlider({ title = "" }) {
         slidesPerView={slidesPerView}
         spaceBetween={64}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
