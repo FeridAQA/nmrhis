@@ -85,7 +85,7 @@ function Elaqe() {
                             <div className="title">
                                 MÜRACİYƏT FORMASI
                             </div>
-                            <Link to={'form'}>
+                            <Link to={'/form'}>
                                 <div className="mesaj">
                                     <ForwardToInboxIcon className='icon'></ForwardToInboxIcon>
                                 </div>
