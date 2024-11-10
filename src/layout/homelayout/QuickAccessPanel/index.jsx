@@ -12,12 +12,12 @@ function QuickAccessPanel() {
   return (
     <>
       <div className={style.container}>
-        <AccessCard title={"Orqanlar"} img={Orqanlar} />
-        <AccessCard title={"ÜzvTəşkilatlar"} img={UzvTeskilatlar} />
-        <AccessCard title={"Tabeçilik"} img={Tabecilik} />
-        <AccessCard title={"Qanunvericilik"} img={Qanunvericilik} />
-        <AccessCard title={"Pensiya"} img={Pensiya} />
-        <AccessCard title={"Keçidlər"} img={Kecidler} />
+        <AccessCard path={"/orqanlar"} title={"Orqanlar"} img={Orqanlar} />
+        <AccessCard path={"/struktur/uzv_teskilatlar"} title={"ÜzvTəşkilatlar"} img={UzvTeskilatlar} />
+        <AccessCard path={"/struktur/tabe_teskilatlar/1"} title={"Tabeçilik"} img={Tabecilik} />
+        <AccessCard path={"/qanunvericilik"} title={"Qanunvericilik"} img={Qanunvericilik} />
+        <AccessCard path={"https://e-sosial.az/#/eServiceFrame/5721"} title={"Pensiya"} img={Pensiya} />
+        <AccessCard path={"/kecidler"} title={"Keçidlər"} img={Kecidler} />
       </div>
     </>
   )
