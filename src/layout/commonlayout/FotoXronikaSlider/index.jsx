@@ -24,9 +24,9 @@ function FotoXronikaSlider() {
         className={style.content}
         modules={[Navigation, Autoplay, Pagination]}
         slidesPerView={slidesPerView}
-        spaceBetween={36}
+        spaceBetween={0}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
@@ -48,9 +48,9 @@ function FotoXronikaSlider() {
             slidesPerView: 3,
             spaceBetween: 24,
           },
-          768: {
+          992: {
             slidesPerView: 4,
-            spaceBetween: 36
+            spaceBetween: 0
           }
         }}
       >

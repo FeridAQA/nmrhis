@@ -34,6 +34,7 @@ import SosialTerefdasliqDetail from './pages/SosialTerefdasliq/detail';
 import FotoXronikaPage from './pages/FotoXronika';
 import Organlar from './pages/orqanlar';
 import Konfrans from './pages/konfrans';
+import MekanSliderWithNav from './pages/Tabe_Teskilatlar_Detail';
 
 function App() {
 
@@ -62,7 +63,7 @@ function App() {
 
               <Route path='struktur' element={<Struktur></Struktur>}></Route>
               <Route path='struktur/uzv_teskilatlar' element={<Uzv_teskilat></Uzv_teskilat>}></Route>
-              <Route path='struktur/tabe_teskilatlar' element={<Tabe_teskilatlar></Tabe_teskilatlar>}></Route>
+              <Route path='struktur/tabe_teskilatlar/:id' element={<Tabe_teskilatlar />}></Route>
               <Route path='struktur/his_sobeleri' element={<His_sobeleri></His_sobeleri>}></Route>
 
 
