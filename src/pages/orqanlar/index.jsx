@@ -1,34 +1,34 @@
 import React from 'react'
 import gerb from '../../assets/img/image.png'
 
+import ulfet from '../../assets/img/ulfet.png'
+
 import './index.scss'
 import { Link } from 'react-router-dom'
-function Struk_uc() {
+function Organlar() {
     return (
-        <div id='Struk_uc'>
+        <div id='organlar'>
             <div className="img">
                 <img src={gerb} alt="gerb" />
             </div>
             <div className="container">
                 <div className="box ">
-                    <Link className='l C' to='uzv_teskilatlar'>
+                    <Link className='l C' to='konfrans'>
                         <div className="icon">
-                            <svg className="custom-svg" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M110 110H10" className="line" strokeWidth="3" strokeLinecap="round" />
-                                <path d="M105 110V30C105 20.5719 105 15.8579 102.071 12.9289C99.1419 10 94.4278 10 84.9998 10H74.9998C65.5717 10 60.8576 10 57.9287 12.9289C55.571 15.2866 55.1112 18.8011 55.0215 25" className="line" strokeWidth="3" />
-                                <path d="M75 110V45C75 35.5719 75 30.8579 72.0711 27.9289C69.1421 25 64.4281 25 55 25H35C25.5719 25 20.8579 25 17.9289 27.9289C15 30.8579 15 35.5719 15 45V110" className="line" strokeWidth="3" />
-                                <path d="M45 110V95" className="line" strokeWidth="3" strokeLinecap="round" />
-                                <path d="M30 40H60" className="line" strokeWidth="3" strokeLinecap="round" />
-                                <path d="M30 55H60" className="line" strokeWidth="3" strokeLinecap="round" />
-                                <path d="M30 70H60" className="line" strokeWidth="3" strokeLinecap="round" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="121" height="120" viewBox="0 0 121 120" fill="none">
+                                <circle className='line'  cx="30.5" cy="20" r="10" stroke="#FAFFFE" stroke-width="3" />
+                                <ellipse className='line'  cx="30.5" cy="40" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
+                                <circle  className='line' cx="90.5" cy="80" r="10" stroke="#FAFFFE" stroke-width="3" />
+                                <path className='line' d="M110.5 60C110.5 32.3858 88.1142 10 60.5 10M60.5 110C32.8858 110 10.5 87.6142 10.5 60" stroke="#FAFFFE" stroke-width="3" stroke-linecap="round" />
+                                <ellipse className='line'  cx="90.5" cy="100" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
                             </svg>
                         </div>
-                        <div className="text">ÜZV TƏŞKİLATLAR</div>
+                        <div className="text">KONFRANS</div>
                     </Link>
                 </div>
 
                 <div className="box ">
-                    <Link className='l C' to='tabe_teskilatlar/1'>
+                    <Link className='l C' to='/struktur/tabe_teskilatlar'>
                         <div className="icon">
                             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path className='line' d="M62.5 25C71.9281 25 76.6421 25 79.5711 27.9289C82.5 30.8579 82.5 35.5719 82.5 45V75C82.5 84.4281 82.5 89.1421 79.5711 92.0711C76.6421 95 71.9281 95 62.5 95H57.5C48.0719 95 43.3579 95 40.4289 92.0711C37.5 89.1421 37.5 84.4281 37.5 75L37.5 45C37.5 35.5719 37.5 30.8579 40.4289 27.9289C43.3579 25 48.0719 25 57.5 25L62.5 25Z" stroke="#2393BB" stroke-width="3" />
@@ -41,7 +41,7 @@ function Struk_uc() {
                     </Link>
                 </div>
                 <div className="box C">
-                    <Link className='l C' to='his_sobeleri'>
+                    <Link className='l C' to='/struktur/his_sobeleri'>
                         <div className="icon">
                             <svg width="121" height="120" viewBox="0 0 121 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 {/* <rect x="0.5" width="120" height="120" rx="3" fill="white" /> */}
@@ -61,9 +61,19 @@ function Struk_uc() {
                         </div>
                     </Link>
                 </div>
+                <div className="box C">
+                    <a href="https://ulfet-az.com/" target="_blank" rel="noopener noreferrer" className='l C'>
+                        <img src={ulfet} alt="" />
+                        <div className="text u ">MƏTBU ORQAN ÜLFƏT QƏZETİ
+                        </div>
+                    </a>
+                </div>
+                
             </div>
         </div>
     )
 }
 
-export default Struk_uc
+export default Organlar
+
+
