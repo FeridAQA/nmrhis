@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  @media screen and (max-width: 992px) {
+    row-gap: 20px;
+  }
+
+  .writer {
+    color: #1c7696;
+    font-weight: 400;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .content {
+    font-weight: 400;
+    font-size: inherit;
+    line-height: inherit;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+  }
+}
