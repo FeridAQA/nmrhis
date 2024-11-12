@@ -37,6 +37,7 @@ import Konfrans from './pages/konfrans';
 import MekanSliderWithNav from './pages/Tabe_Teskilatlar_Detail';
 import Elaqe from './pages/elaqe';
 import BizeYazirlarPage from './pages/BizeYazirlar';
+import BizeYazirlarDetailPage from './pages/BizeYazirlarDetail';
 
 function App() {
 
@@ -86,6 +87,7 @@ function App() {
               <Route path='/sosial_terefdasliq/:id' element={<SosialTerefdasliqDetail />} />
               <Route path='/foto_xronika' element={<FotoXronikaPage />} />
               <Route path='/bize_yazirlar' element={<BizeYazirlarPage />} />
+              <Route path='/bize_yazirlar/:id' element={<BizeYazirlarDetailPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

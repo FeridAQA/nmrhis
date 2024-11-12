@@ -11,11 +11,11 @@ function YaziCard(props) {
         {props.writer}
       </h3>
       <p
-        className={`${style.content} ${props.isFirstSlide ? style.firstSlide : ""}`}
+        className={`${style.content} ${props.isFirstSlide ? style.firstSlide : ""} ${props.truncate ? style.truncate : ""}`}
       >
         {props.content}
       </p>
-      <span className={style.date}>{props.date}</span>
+      <span className={`${style.date} ${props.desktopDate ? "" : style.none}`}>{props.date}</span>
     </div>
   )
 }
