@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1200px) {
   .navbar_links {
     padding-left: 6em;
-    height: 100%;
+    height: 60%;
     display: flex;
     gap: 20px;
 
@@ -19,7 +19,7 @@
         color: inherit;
         font-size: 16px;
         font-weight: 400;
-        transition: 0.3s;
+        transition: 0.2s;
 
         &:global.active {
           font-weight: 700;
@@ -36,8 +36,8 @@
           opacity: 0;
           transform: translate3d(-100%, 0, 0);
           transition:
-            opacity 300ms,
-            transform 300ms;
+            opacity 200ms,
+            transform 200ms;
         }
 
         &:hover::after {
@@ -55,11 +55,11 @@
         color: inherit;
         font-size: 16px;
         font-weight: 400;
-        transition: 0.3s;
+        transition: 0.2s;
 
         .icon {
           color: inherit;
-          transition: transform 0.3s;
+          transition: transform 0.2s;
         }
 
         &:hover {
@@ -79,8 +79,8 @@
           opacity: 0;
           transform: translate3d(-100%, 0, 0);
           transition:
-            opacity 300ms,
-            transform 300ms;
+            opacity 0.2s,
+            transform 0.2s;
         }
 
         &:hover::after {
@@ -105,7 +105,7 @@
         border-top: 5px solid #2394bc;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
-        transition: 0.25s ease-in;
+        transition: 0.2s ease-in;
 
         li {
           .subLink {
@@ -115,7 +115,7 @@
             font-weight: 500;
             font-family: "Roboto", sans-serif;
             color: #2394bc;
-            transition: 0.3s;
+            transition: 0.2s;
 
             &:hover {
               color: #00445d;
@@ -139,7 +139,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .navbar_links {
     padding-left: 6em;
-    height: 100%;
+    height: 50%;
     display: flex;
     gap: 24px;
 
@@ -157,7 +157,7 @@
         color: inherit;
         font-size: 12px;
         font-weight: 400;
-        transition: 0.3s;
+        transition: 0.2s;
 
         &:global.active {
           font-weight: 700;
@@ -174,8 +174,8 @@
           opacity: 0;
           transform: translate3d(-100%, 0, 0);
           transition:
-            opacity 300ms,
-            transform 300ms;
+            opacity 0.2s,
+            transform 0.2s;
         }
 
         &:hover::after {
@@ -193,11 +193,11 @@
         color: inherit;
         font-size: 12px;
         font-weight: 400;
-        transition: 0.3s;
+        transition: 0.2s;
 
         .icon {
           color: inherit;
-          transition: transform 0.3s;
+          transition: transform 0.2s;
         }
 
         &:hover {
@@ -217,8 +217,8 @@
           opacity: 0;
           transform: translate3d(-100%, 0, 0);
           transition:
-            opacity 300ms,
-            transform 300ms;
+            opacity 0.2s,
+            transform 0.2s;
         }
 
         &:hover::after {
@@ -243,7 +243,7 @@
         border-top: 5px solid #2394bc;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
-        transition: 0.25s ease-in;
+        transition: 0.2s ease-in;
 
         li {
           .subLink {
@@ -253,7 +253,7 @@
             font-weight: 500;
             font-family: "Roboto", sans-serif;
             color: #2394bc;
-            transition: 0.3s;
+            transition: 0.2s;
 
             &:hover {
               color: #00445d;
