@@ -61,7 +61,7 @@
       transition: all 0.2s;
 
       .link {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 14.95px;
         letter-spacing: -0.3px;
@@ -71,7 +71,7 @@
     .dropdownMenu.hide {
       visibility: hidden;
       opacity: 0;
-      // transform: translateY(-100%);
+      pointer-events: none;
     }
   }
 }
