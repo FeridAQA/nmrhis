@@ -17,7 +17,7 @@ function MobileNavbar() {
       <i onClick={() => setIsOpen(!isOpen)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
       <div className={`${style.dropdownMenu} ${isOpen ? "" : style.hide}`}>
         <Dropdown title={"HIŞ"}>
-          <Link to={"rehberlik"}>Rəhbərlik</Link>
+          <Link to={"rehberlik/sedr"}>Rəhbərlik</Link>
           <Link to={"struktur"}>Stuktur</Link>
           <Link to={"orqanlar"}>Orqanlar</Link>
           <Link to={"haqqimizda"}>Haqqımızda</Link>

@@ -1,6 +1,10 @@
 import React from 'react'
 import gerb from '../../../assets/img/image.png'
 import '../rəhbərlik-Sədr/index.scss'
+
+import i2 from '../../../assets/img/rehberlik/i2.png'
+import i3 from '../../../assets/img/rehberlik/i3.png'
+
 function Muavinler() {
   return (
     <div id='sedr'>
@@ -8,7 +12,7 @@ function Muavinler() {
 
         <div className="left_imges">
           <div className="img_div">
-            <img src="https://s3-alpha-sig.figma.com/img/5d6f/845b/ffd475ae8db1603b6ca48b9e6cff30bb?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aN7~Y4SjW8WurZYo4NtIka3Y4loiS0UxezUhtyA~BsBvZkYtrH5PRQJ0nxTigXjRws18ydM0RQ90ACMR81OCUKWC2oAEDK0gR6OW6YSCWEAdxx7UxvfYbWwchSaK9aPd6VLs6mRORx569myirEudEX4-O4N5azlm9TUrmPEt0h~s3-GiLi~lgDVnJauvdqhM2KCyttLmmlMzkCh2FsWuS7BpH3qVb1qGnBqctSolw7P6SlwcUBWgsafdcMP5xAqezQi5h6lYxoSy9HCB1vWs6pNOUHBzd8JURrhRYsz8WDb0OP7eGN5BOqLiI2dpY6-T7scMdibKoR~B4KzV8N85jQ__" alt="" />
+            <img src={i2} alt="" />
             <div className="adi C">
               CƏFƏROV RAMİZ ƏLİ OĞLU
             </div>
@@ -56,7 +60,7 @@ function Muavinler() {
       <div className="container">
         <div className="left_imges">
           <div className="img_div">
-            <img src="https://s3-alpha-sig.figma.com/img/bd27/df1c/7fadcecd151e5d3b9a061e1e95e1522e?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FHfaW8jYTTPto3xdgiA1V6UowO3D6RlHh1d6e9VrOsBvhPvZssvUWWyVQSRUQoHJv~3aAseZJno-v~Yz-aV-TLVgeLhaGAWF-FefhXNecr909fuZx4SBWBlwzj1tIAjs~2HLkxO7IUx1e-AHnPsi9EVwXLIuxnzqKxMWV6uhhc7xB-uicKnyrGqXrWybNfUcbq9yd5-vD6YO9MkYzKWlizRhfsXfZgAzA7FvSBOjrFBaJtOjlV8-8N1ZOMBDV48GMDw0ITvMyHkykNIT9nen2m-4mppaBGgHuprV0Mk6sKChTJnyGHE-PdmJ6vVk4MiAHIuNN-XQFCmxX~FjPr6QcQ__" alt="" />
+            <img src={i3} alt="" />
             <div className="adi C">
               İBRAHİMLİ XATİRƏ MİKAYIL QIZI
             </div>

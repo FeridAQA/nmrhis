@@ -1,6 +1,8 @@
 import React from 'react'
 import './index.scss'
 import gerb from '../../../assets/img/image.png'
+
+import i1 from '../../../assets/img/rehberlik/i1.png'
 function Sedr() {
   return (
     <div id='sedr'>
@@ -10,9 +12,9 @@ function Sedr() {
         </div>
         <div className="left_imges">
           <div className="img_div">
-            <img src="https://s3-alpha-sig.figma.com/img/5fe1/e677/847469ba542830d69e835f39ea13ee5f?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VO94E8O1NHzAz-I7M-1VbB~N9h07loA4Rp2ou3yquICoRgfIXW0ALVU3wcfoeMunJSohOLOVtqS2Cc75TlBU~029IGzmKWttae8Y539Cku5k1iG0rO2mQiPvi6vI8D7yD3dQFVamxr9Wkllj50tXol-YJm6HQ29OqoIfKRcJq2w0a5kRSalXvOLYpsOANy0-NxCRoQHtQhHJyHqTApdqJpJmWalWN7j2H-yfeI4URAr4oR4xyDmr6DTEnpC5UKxh~VXGiJxC3LXiLV2WpvV87GuFSGVFOR1QiruYU3q-AdAvOLS6VUlTBkkleOQJI1syDWRSNw7J0MwFz3x9mfuGHg__" alt="" />
+            <img src={i1} alt="" />
             <div className="adi C">
-              XUDAVERDİYEV RƏŞADƏT CABBAR OĞLU
+              QƏZƏNFƏR İSMAYIL OĞLU ABDULLAYEV
             </div>
           </div>
           <div className="text T">
