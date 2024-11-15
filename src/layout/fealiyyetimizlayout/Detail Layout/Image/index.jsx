@@ -1,15 +1,14 @@
 import React from 'react'
 import style from "./index.module.scss"
 import IconContainer from '../../../../components/common components/SocialMediaIcons/IconContainer'
+import ImageSlider from './ImageSlider'
+import ImageData from '../../../../Data/ImageData'
 
-function ImageBox({ image, children, date }) {
+function ImageBox({ images, children, date }) {
   return (
     <div className={style.container}>
       <h5 className={style.title} id={style.dekstop}>{children}</h5>
-      <div className={style.imgBox}>
-        <img src={image} />
-        <h5 className={style.title}>{children}</h5>
-      </div>
+      <ImageSlider images={ImageData} />
       <div className={style.infoBox}>
         <span className={style.date}>{date}</span>
         <IconContainer />

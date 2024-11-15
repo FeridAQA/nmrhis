@@ -13,7 +13,7 @@ function FealiyyetimizContainer({ pageTitle, date, image, content, xeberTitle })
         <PageTitle>{pageTitle}</PageTitle>
         <div className={style.xeberBox}>
           <ImageBox
-            image={image}
+            images={image}
             date={date}
           >
             {xeberTitle}
