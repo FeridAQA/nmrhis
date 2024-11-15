@@ -26,7 +26,7 @@ const NewsSwiper = () => {
         // API-dən verilənləri çəkmək
         const fetchNews = async () => {
             try {
-                const response = await axios.get(`${baseURL}/news?slider=1&count=5`);
+                const response = await axios.get(`${baseURL}news?slider=1&count=5`);
                 setNewsData(response.data); // API-dən gələn verilənləri state-ə yazırıq
             } catch (error) {
                 console.error('Error fetching news data:', error);

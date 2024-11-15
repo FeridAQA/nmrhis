@@ -1,6 +1,6 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -8,11 +8,31 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import style from './index.module.scss';
 import FotoXronikaCard from '../../../components/common components/FotoXronikaCard';
+import axios from 'axios';
+import { baseURL } from '../../../confiq';
 
 function FotoXronikaSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
   const slidesPerView = 4;
   const totalSlides = 8;
+
+  const [Data, setData] = useState([])
+
+  async function GetData() {
+    try {
+      const response = await (await axios.get(baseURL.concat("photos?page=2"))).data.images
+      // console.log(response);
+      setData(response)
+
+    } catch (error) {
+      console.log("error");
+    }
+  }
+
+  useEffect(() => {
+    GetData()
+  }, [])
+
 
   return (
     <div className={style.container}>
@@ -54,19 +74,17 @@ function FotoXronikaSlider() {
           }
         }}
       >
-        {Array.from({ length: totalSlides }, (_, i) => {
+        {Data && Data.map((item, i) => {
           const isCenterSlide =
-            (i === (activeIndex + Math.floor(slidesPerView / 2 - 1)) % totalSlides);
+            (i === (activeIndex + Math.floor(1)) % totalSlides);
 
           return (
             <SwiperSlide
               key={i}
-              className={`${style.slide} ${isCenterSlide ? style.active : ''}`} // Apply active class conditionally
+              className={`${style.slide} ${isCenterSlide ? style.active : ''}`}
             >
               <FotoXronikaCard
-                image={
-                  'https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg'
-                }
+                image={item.name}
               />
             </SwiperSlide>
           );
