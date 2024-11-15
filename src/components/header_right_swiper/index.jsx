@@ -1,39 +1,42 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './index.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Pagination, Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper';
+import axios from 'axios';
 
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import corner from '../../assets/img/header/corner.png';
 import { Link } from 'react-router-dom';
 
-import image1 from '../../assets/img/header_img/image.png';
-
 SwiperCore.use([Pagination, Autoplay]);
 
 const NewsSwiper = () => {
     const swiperRef = useRef(null);
+    const [newsData, setNewsData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    const newsData = [
-        {
-            id: 1,
-            title: 'Naxçıvanda Milli Mətbuat Günü münasibətilə tədbir keçirilib.',
-            image: image1,
-        },
-        {
-            id: 2,
-            title: 'Başqa bir xəbər başlığı.',
-            image: image1,
-        },
-        {
-            id: 3,
-            title: 'Daha bir xəbər başlığı.',
-            image: image1,
-        },
-    ];
+    useEffect(() => {
+        // API-dən verilənləri çəkmək
+        const fetchNews = async () => {
+            try {
+                const response = await axios.get('https://api.nmrhis.az/news?slider=1&count=5');
+                setNewsData(response.data); // API-dən gələn verilənləri state-ə yazırıq
+            } catch (error) {
+                console.error('Error fetching news data:', error);
+            } finally {
+                setLoading(false); // Yükləmə bitdi
+            }
+        };
+
+        fetchNews();
+    }, []);
+
+    if (loading) {
+        return <div>Yüklənir...</div>; // Yükləmə ekranı
+    }
 
     return (
         <div className="news-swiper">
@@ -50,17 +53,17 @@ const NewsSwiper = () => {
                 }}
                 speed={500} // Keçid sürətini sürətləndirir
             >
-                {newsData.map((news) => (
-                    <SwiperSlide key={news.id}>
+                {newsData.map((news, index) => (
+                    <SwiperSlide key={news.id || index}>
                         <div className="news-slide">
                             <div className="imgbox">
-                                <img src={news.image} alt={news.title} className="news-image" />
+                                <img src={`https://api.nmrhis.az/uploads/${news.baslik_foto_url}`} alt={news.baslik} className="news-image" />
                             </div>
                             <div className="news-content">
-                                <h3>{news.title}</h3>
+                                <h3>{news.baslik}</h3>
                             </div>
                             <div className="number">
-                                {news.id} / {newsData.length}
+                                {index + 1} / {newsData.length}
                             </div>
                         </div>
                     </SwiperSlide>

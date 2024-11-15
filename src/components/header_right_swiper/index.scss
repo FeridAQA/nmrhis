@@ -12,6 +12,7 @@
         z-index: 1;
 
     }
+
     .ox {
         position: absolute;
         bottom: 50px;
@@ -23,7 +24,8 @@
             font-size: 40px;
         }
     }
-    .xeberler{
+
+    .xeberler {
         position: absolute;
         bottom: 53px;
         z-index: 1;
@@ -32,18 +34,21 @@
         font-size: 22px;
         font-weight: 700;
     }
-    .custom-navigation{
+
+    .custom-navigation {
         display: flex;
         gap: 40px;
         position: absolute;
         bottom: 10px;
         right: 10px;
         z-index: 1;
+
         .custom-prev,
         .custom-next {
             font-size: 20px;
             cursor: pointer;
-            pointer-events: auto; /* Klikləməyi təmin etmək üçün */
+            pointer-events: auto;
+            /* Klikləməyi təmin etmək üçün */
         }
 
     }
@@ -62,9 +67,10 @@
 
         .imgbox {
             border-radius: 12px !important;
+            // align-self: stretch;
 
             img {
-                min-height: 500px;
+                // min-height: 500px;
                 border-radius: 12px;
             }
         }
@@ -87,22 +93,22 @@
         }
     }
 
-   
 
-        // .swiper-button-prev:after {
-        //     position: absolute !important;
-        //     bottom: -240px !important;
-        //     left:  200px !important;
-        //     color: red !important;
-        //     font-size: 20px;
-        // }
 
-        // .swiper-button-next:after {
-        //     font-size: 20px;
-        //     position: absolute;
-        //     bottom: -240px;
-        //     right: 0px;
-        //     color: red;
-        // }
+    // .swiper-button-prev:after {
+    //     position: absolute !important;
+    //     bottom: -240px !important;
+    //     left:  200px !important;
+    //     color: red !important;
+    //     font-size: 20px;
+    // }
+
+    // .swiper-button-next:after {
+    //     font-size: 20px;
+    //     position: absolute;
+    //     bottom: -240px;
+    //     right: 0px;
+    //     color: red;
+    // }
 
 }
