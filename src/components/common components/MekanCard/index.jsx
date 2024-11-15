@@ -1,7 +1,15 @@
 import React from 'react'
 import style from "./index.module.scss";
+import { useNavigate } from 'react-router-dom';
 
-function MekanCard({ image, title, description }) {
+function MekanCard({ image, title, description, id }) {
+
+  const navigate = useNavigate()
+
+  function handleNavigate() {
+    navigate(`/struktur/tabe_teskilatlar/${id}`)
+  }
+
   return (
     <div className={style.MekanCard}>
       <div className={style.imgBox}>
@@ -12,7 +20,11 @@ function MekanCard({ image, title, description }) {
           <span className={style.title}>{title}</span>
           <time className={style.description}>{description}</time>
         </div>
-        <button className={style.btn}>Ətraflı</button>
+        <button
+          onClick={handleNavigate}
+          className={style.btn}>
+          Ətraflı
+        </button>
       </div>
     </div>
   )

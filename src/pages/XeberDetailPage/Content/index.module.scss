@@ -1,9 +1,13 @@
 .container {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 1rem;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 
   .content {
     font-weight: 400;

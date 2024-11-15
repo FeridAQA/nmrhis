@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 136px;
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 32px;
+    }
+
+    .leftBox {
+      width: min(50%, 310px);
+      display: flex;
+      flex-direction: column;
+      row-gap: 34px;
+
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    .rightBox {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}

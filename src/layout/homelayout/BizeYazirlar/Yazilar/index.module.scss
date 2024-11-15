@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+
+  .content {
+    padding-top: 42px;
+
+    :global {
+      .swiper-pagination {
+        width: fit-content;
+        height: fit-content;
+        top: 0;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #2393bb !important;
+        width: 12px !important;
+        height: 12px !important;
+        opacity: 1 !important;
+        border-radius: 13px !important;
+        transition: width 0.3s ease;
+
+        @media only screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 28px !important;
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@
     justify-content: space-between;
 
     .title {
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 700;
       line-height: 14.95px;
       letter-spacing: -0.3px;
@@ -29,7 +29,7 @@
 
   .subMenu {
     padding-top: 0px;
-    padding: 0px 0px;
+    padding: 0px 0px 0px 4px;
     visibility: hidden;
     opacity: 0;
     max-height: 0rem;
@@ -45,7 +45,7 @@
 
   .open {
     padding-top: 16px;
-    padding: 8px 0px;
+    padding: 8px 0px 8px 4px;
     visibility: visible;
     opacity: 1;
     max-height: 10rem;

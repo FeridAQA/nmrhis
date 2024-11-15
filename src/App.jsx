@@ -36,6 +36,8 @@ import Organlar from './pages/orqanlar';
 import Konfrans from './pages/konfrans';
 import MekanSliderWithNav from './pages/Tabe_Teskilatlar_Detail';
 import Elaqe from './pages/elaqe';
+import BizeYazirlarPage from './pages/BizeYazirlar';
+import BizeYazirlarDetailPage from './pages/BizeYazirlarDetail';
 import Qanunvericilik from './pages/qanunvericilik';
 
 function App() {
@@ -50,7 +52,7 @@ function App() {
               <Route path='/test' element={<Test />} />
               {/* <Route path='/struktur' element={<Struktur />} /> */}
               <Route index element={<Home></Home>}></Route>
-                <Route path='orqanlar/konfrans' element={<Konfrans></Konfrans>}></Route>
+              <Route path='orqanlar/konfrans' element={<Konfrans></Konfrans>}></Route>
               <Route path='orqanlar' element={<Organlar></Organlar>}></Route>
               <Route path='about' element={<About></About>}></Route>
               <Route path='qanunvericilik' element={<Qanunvericilik></Qanunvericilik>}></Route>
@@ -86,6 +88,8 @@ function App() {
               <Route path='/sosial_terefdasliq' element={<SosialTerefdasliq />} />
               <Route path='/sosial_terefdasliq/:id' element={<SosialTerefdasliqDetail />} />
               <Route path='/foto_xronika' element={<FotoXronikaPage />} />
+              <Route path='/bize_yazirlar' element={<BizeYazirlarPage />} />
+              <Route path='/bize_yazirlar/:id' element={<BizeYazirlarDetailPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

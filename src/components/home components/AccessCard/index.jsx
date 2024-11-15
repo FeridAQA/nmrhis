@@ -1,13 +1,14 @@
 import React from 'react';
 import style from "./index.module.scss";
+import { Link } from 'react-router-dom';
 
-function AccessCard({img, title}) {
+function AccessCard({img, title, path}) {
   return (
     <>
-      <a className={style.AccessCard}>
+      <Link to={path} className={style.AccessCard}>
         <img alt='Icon' src={img} />
         <span className={style.title}>{title}</span>
-      </a>
+      </Link>
     </>
   )
 }
