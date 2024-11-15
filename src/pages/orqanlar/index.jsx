@@ -28,7 +28,7 @@ function Organlar() {
                 </div>
 
                 <div className="box ">
-                    <Link className='l C' to='/struktur/tabe_teskilatlar'>
+                    <Link className='l C' to='/struktur/tabe_teskilatlar/1'>
                         <div className="icon">
                             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path className='line' d="M62.5 25C71.9281 25 76.6421 25 79.5711 27.9289C82.5 30.8579 82.5 35.5719 82.5 45V75C82.5 84.4281 82.5 89.1421 79.5711 92.0711C76.6421 95 71.9281 95 62.5 95H57.5C48.0719 95 43.3579 95 40.4289 92.0711C37.5 89.1421 37.5 84.4281 37.5 75L37.5 45C37.5 35.5719 37.5 30.8579 40.4289 27.9289C43.3579 25 48.0719 25 57.5 25L62.5 25Z" stroke="#2393BB" stroke-width="3" />
