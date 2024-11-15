@@ -10,6 +10,10 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import corner from '../../assets/img/header/corner.png';
 import { Link } from 'react-router-dom';
+import { baseURL } from '../../confiq';
+
+
+
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -22,7 +26,7 @@ const NewsSwiper = () => {
         // API-dən verilənləri çəkmək
         const fetchNews = async () => {
             try {
-                const response = await axios.get('https://api.nmrhis.az/news?slider=1&count=5');
+                const response = await axios.get(`${baseURL}/news?slider=1&count=5`);
                 setNewsData(response.data); // API-dən gələn verilənləri state-ə yazırıq
             } catch (error) {
                 console.error('Error fetching news data:', error);
