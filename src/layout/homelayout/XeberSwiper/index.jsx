@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import style from "./index.module.scss";
@@ -9,8 +9,28 @@ import 'swiper/css/navigation';
 import XeberCard from '../../../components/home components/XeberCard';
 import { Link } from 'react-router-dom';
 import XeberlerSwiperMobile from './Mobile';
+import axios from 'axios';
+import { baseURL } from '../../../confiq';
 
 function XeberSwiper() {
+
+  const [Data, setData] = useState([])
+
+  async function GetData() {
+    try {
+      const response = await (await axios.get(baseURL.concat("news?count=8"))).data
+      // console.log(response);
+      setData(response)
+
+    } catch (error) {
+      console.log("error");
+    }
+  }
+
+  useEffect(() => {
+    GetData()
+  }, [])
+
   return (
     <>
       <div className={style.container}>
@@ -35,12 +55,12 @@ function XeberSwiper() {
             nextEl: "#nextBtn",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item, i) => (
+          {Data && Data.map((item, i) => (
             <SwiperSlide key={i}>
               <XeberCard
-                description={"22 iyul 2024 16:07"}
-                title={"“Azərbaycan Silahlı Qüvvələrinin qüdrəti ilbəil yüksəlir”"}
-                image={"https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg"}
+                description={item.tarix}
+                title={item.baslik}
+                image={item.baslik_foto_url}
               />
             </SwiperSlide>
           ))}

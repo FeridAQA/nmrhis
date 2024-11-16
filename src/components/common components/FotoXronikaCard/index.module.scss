@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
 
   .imgBox {
     width: 100%;
@@ -31,8 +32,8 @@
     }
 
     @media only screen and (max-width: 676px) {
-      font-size: 8px;
-      line-height: 9px;
+      font-size: 10px;
+      line-height: 11.2px;
     }
 
     @media only screen and (max-width: 676px) {
