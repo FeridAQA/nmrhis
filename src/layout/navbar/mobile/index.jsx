@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../../../components/navbar components/dropdown';
-import NavLogo from "./../../../assets/NavLogo.png";
+import NavLogo from "./../../../assets/img/Mobile_Logo_HIS.png";
 import style from "./index.module.scss";
 
 function MobileNavbar() {
