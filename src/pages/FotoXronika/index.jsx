@@ -1,42 +1,53 @@
-import React from 'react'
-import style from "./index.module.scss"
-import FotoXronikaCard from '../../components/common components/FotoXronikaCard'
-import PageTitle from '../../components/common components/PageTitle'
-
-const Fotos = [
-  {
-    image: "https://cdn.pixabay.com/photo/2023/05/24/21/26/car-8015901_1280.jpg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/app/thread/20231112/4318020878898572541/1462181600090390537/1462181600090390537.jpeg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://cdn.pixabay.com/photo/2023/05/24/21/26/car-8015901_1280.jpg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/app/thread/20231112/4318020878898572541/1462181600090390537/1462181600090390537.jpeg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://cdn.pixabay.com/photo/2023/05/24/21/26/car-8015901_1280.jpg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/app/thread/20231112/4318020878898572541/1462181600090390537/1462181600090390537.jpeg",
-    date: "26.07.2024, 17:11:07",
-  },
-  {
-    image: "https://cdn.pixabay.com/photo/2023/05/24/21/26/car-8015901_1280.jpg",
-    date: "26.07.2024, 17:11:07",
-  },
-]
+import React, { useEffect, useState } from "react";
+import style from "./index.module.scss";
+import FotoXronikaCard from "../../components/common components/FotoXronikaCard";
+import PageTitle from "../../components/common components/PageTitle";
+import axios from "axios";
+import { baseURL } from "../../confiq";
 
 function FotoXronikaPage() {
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
 
-  // Get All Photos From Backend
+  async function fetchData(currentPage) {
+    try {
+      setLoading(true);
+      const response = await axios.get(`${baseURL}photos?page=${currentPage}`);
+      const images = response.data.images;
+
+      if (images.length === 0) {
+        setHasMore(false); // No more data
+      } else {
+        setData((prevData) => [...prevData, ...images]);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    fetchData(page);
+  }, [page]);
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop >=
+      document.documentElement.offsetHeight - 400 // Threshold of 400px
+    ) {
+      if (!loading && hasMore) {
+        setPage((prevPage) => prevPage + 1);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [loading, hasMore]);
 
   return (
     <>
@@ -44,16 +55,14 @@ function FotoXronikaPage() {
         <PageTitle>Foto Xronika</PageTitle>
       </div>
       <div className={style.container}>
-        {Fotos && Fotos.map((item, i) => (
-          <FotoXronikaCard
-            key={i}
-            date={item.date}
-            image={item.image}
-          />
+        {data.map((item, i) => (
+          <FotoXronikaCard key={i} date={item.date} image={item.name} />
         ))}
       </div>
+      {loading && <p>Loading more...</p>}
+      {!hasMore && <p>No more data available.</p>}
     </>
-  )
+  );
 }
 
-export default FotoXronikaPage
+export default FotoXronikaPage;
