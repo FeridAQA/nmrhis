@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import style from "./index.module.scss";
+import { imageURL } from '../../../../confiq';
 
 function ImageSlider(props) {
   return (
@@ -28,7 +29,7 @@ function ImageSlider(props) {
 
           return (
             <SwiperSlide className={style.imgBox} key={i}>
-              <img src={item.image} />
+              <img src={imageURL.concat(item)} />
             </SwiperSlide>
           )
         })}

@@ -60,6 +60,7 @@ function XeberlerPage() {
         {data.map((item, i) => (
           <XeberCard
             key={i}
+            id={item.id}
             title={item.baslik || "Default Title"} // Adjust based on actual API response structure
             description={item.tarix || "No description available"}
             image={item.baslik_foto_url || "https://via.placeholder.com/150"} // Default image if no image provided
