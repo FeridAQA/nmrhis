@@ -16,7 +16,7 @@ function Yazilar() {
   async function GetData() {
     try {
       const response = await (await axios.get(baseURL.concat("bize-yazirlar?page=1"))).data
-      console.log(response);
+      // console.log(response);
       setData(response)
 
     } catch (error) {
@@ -36,11 +36,11 @@ function Yazilar() {
         slidesPerView={3}
         spaceBetween={32}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        loop={true}
+        loop={Data && Data.length > 1}
         pagination={{
           clickable: true,
         }}

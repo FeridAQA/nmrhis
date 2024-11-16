@@ -4,6 +4,10 @@
   .content {
     padding-top: 42px;
 
+    .none {
+      display: none;
+    }
+
     :global {
       .swiper-pagination {
         width: fit-content;
