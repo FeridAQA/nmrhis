@@ -49,7 +49,7 @@ function XeberSwiper() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          loop={true}
+          loop={Data && Data.length > 1}
           navigation={{
             prevEl: "#prevBtn",
             nextEl: "#nextBtn",

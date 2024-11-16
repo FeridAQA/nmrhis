@@ -39,6 +39,7 @@ import Elaqe from './pages/elaqe';
 import BizeYazirlarPage from './pages/BizeYazirlar';
 import BizeYazirlarDetailPage from './pages/BizeYazirlarDetail';
 import Qanunvericilik from './pages/qanunvericilik';
+import SearchPage from './pages/SearchPage';
 
 function App() {
 
@@ -90,6 +91,7 @@ function App() {
               <Route path='/foto_xronika' element={<FotoXronikaPage />} />
               <Route path='/bize_yazirlar' element={<BizeYazirlarPage />} />
               <Route path='/bize_yazirlar/:id' element={<BizeYazirlarDetailPage />} />
+              <Route path='/axtar/:title' element={<SearchPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

@@ -4,18 +4,23 @@ import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import XeberCard from '../../components/home components/XeberCard';
 import axios from 'axios';
 import { baseURL } from '../../confiq';
+import { useParams } from 'react-router-dom';
 
-function XeberlerPage() {
+function SearchPage() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
+  const { title } = useParams()
+
   async function fetchData(currentPage) {
     try {
       setLoading(true);
-      const response = await axios.get(`${baseURL}news?page=${currentPage}&count=8`);
-      const news = response.data;
+      const response = await axios.get(
+        `${baseURL}search?id=${title}&page=${currentPage}`
+      );
+      const news = response.data.results;
 
       if (news.length === 0) {
         setHasMore(false); // No more data
@@ -30,8 +35,15 @@ function XeberlerPage() {
   }
 
   useEffect(() => {
+    // Reset state when the search term changes
+    setData([]);
+    setPage(1);
+    setHasMore(true);
+  }, [title]);
+
+  useEffect(() => {
     fetchData(page);
-  }, [page]);
+  }, [page, title]);
 
   const handleScroll = () => {
     if (
@@ -50,9 +62,9 @@ function XeberlerPage() {
   }, [loading, hasMore]);
 
   return (
-    <div className={style.XeberlerPage}>
+    <div className={style.container}>
       <div className={style.titleBox}>
-        <h1 className={style.title}>XƏBƏRLƏR</h1>
+        <h1 className={style.title}>Axtarış</h1>
         <div className={style.line}></div>
       </div>
 
@@ -76,4 +88,4 @@ function XeberlerPage() {
   );
 }
 
-export default XeberlerPage;
+export default SearchPage;
