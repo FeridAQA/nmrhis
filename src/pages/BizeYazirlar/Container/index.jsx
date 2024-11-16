@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import style from "./index.module.scss"
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,12 +9,31 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import YaziCard from '../YaziCard';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import axios from 'axios';
+import { baseURL } from './../../../confiq';
 
 function BizeYazirlarContainer() {
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const [Data, setData] = useState([])
+
+  async function GetData() {
+    try {
+      const response = await (await axios.get(baseURL.concat("bize-yazirlar?page=1"))).data
+      console.log(response);
+      setData(response)
+
+    } catch (error) {
+      console.log("error");
+    }
+  }
+
+  useEffect(() => {
+    GetData()
+  }, [])
 
   return (
     <div className={style.container}>
@@ -48,7 +67,7 @@ function BizeYazirlarContainer() {
           },
         }}
       >
-        {YaziData.map((item, i) => {
+        {Data && Data.map((item, i) => {
           const isFirstSlide = (i === activeIndex);
 
           return (

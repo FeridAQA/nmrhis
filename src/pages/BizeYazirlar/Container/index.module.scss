@@ -81,18 +81,38 @@
   .prevBtn {
     background-color: #fff;
     left: -64px;
+    transition: 0.2s;
 
     .arrow {
       color: #2393bb;
     }
+
+    &:hover {
+      background-color: #2393bb;
+      right: 20px;
+
+      .arrow {
+        color: #fff;
+      }
+    }
   }
 
   .nextBtn {
-    background-color: #2393bb;
+    background-color: #fff;
     right: 20px;
+    transition: 0.2s;
 
     .arrow {
-      color: #fff;
+      color: #2393bb;
+    }
+
+    &:hover {
+      background-color: #2393bb;
+      right: 20px;
+
+      .arrow {
+        color: #fff;
+      }
     }
   }
 }
