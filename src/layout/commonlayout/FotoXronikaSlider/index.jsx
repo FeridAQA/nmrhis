@@ -21,7 +21,7 @@ function FotoXronikaSlider() {
   async function GetData() {
     try {
       const response = await (await axios.get(baseURL.concat("photos?page=2"))).data.images
-      console.log(response);
+      // console.log(response);
       setData(response)
 
     } catch (error) {
