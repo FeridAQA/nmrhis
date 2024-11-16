@@ -20,3 +20,20 @@ export function FormatDate(incomeDate) {
 
   return formattedDate
 }
+
+export function OnlyDate(incomeDate) {
+  const date = new Date(incomeDate);
+
+  // Tarixi əldə etmək
+  const day = String(date.getDate()).padStart(2, "0"); // Gün
+  const monthNames = [
+    "yanvar", "fevral", "mart", "aprel", "may", "iyun",
+    "iyul", "avqust", "sentyabr", "oktyabr", "noyabr", "dekabr"
+  ];
+  const month = monthNames[date.getMonth()]; // Ay adı
+  const year = date.getFullYear(); // İl
+
+  // Formatlaşdırılmış nəticə
+  const formattedDate = `${day} ${month} ${year}`;
+  return formattedDate
+}

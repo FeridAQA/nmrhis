@@ -48,7 +48,7 @@ function BizeYazirlarContainer() {
           pauseOnMouseEnter: true,
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        loop={true}
+        loop={Data && Data.length > 1}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,

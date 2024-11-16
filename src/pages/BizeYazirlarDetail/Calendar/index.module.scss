@@ -5,5 +5,22 @@
   .calendar {
     border: 1px solid #2393bb;
     border-radius: 16px;
+
+    :global {
+      .Mui-selected {
+        background-color: #2393bb !important; /* Custom background color */
+        color: #ffffff !important; /* Custom text color */
+        font-weight: bold; /* Make the text bold */
+        border-radius: 0%; /* Make it circular */
+      }
+
+      .Mui-selected:hover {
+        background-color: #1e7ca1 !important; /* Change hover color */
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
   }
 }
