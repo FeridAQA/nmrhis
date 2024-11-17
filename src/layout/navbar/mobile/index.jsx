@@ -17,7 +17,7 @@ function MobileNavbar() {
       <i onClick={() => setIsOpen(!isOpen)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
       <div className={`${style.dropdownMenu} ${isOpen ? "" : style.hide}`}>
         <Dropdown title={"HIŞ"}>
-          <Link onClick={() => setIsOpen(false)} to={"rehberlik/sedr/sedr"}>Rəhbərlik</Link>
+          <Link onClick={() => setIsOpen(false)} to={"rehberlik/sedr"}>Rəhbərlik</Link>
           <Link onClick={() => setIsOpen(false)} to={"struktur"}>Stuktur</Link>
           <Link onClick={() => setIsOpen(false)} to={"orqanlar"}>Orqanlar</Link>
           <Link onClick={() => setIsOpen(false)} to={"haqqimizda"}>Haqqımızda</Link>
