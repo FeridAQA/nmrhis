@@ -31,6 +31,10 @@ function XeberDetailPage() {
 
   useEffect(() => {
     GetData()
+  }, [id])
+
+  useEffect(() => {
+    GetData()
   }, [])
 
   return (
