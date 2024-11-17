@@ -61,7 +61,6 @@ function XeberlerSwiperMobile() {
                         {/* Yuxarı Məzmun: Şəkil */}
                         <div className={style.imgBox}>
                             <img src={`https://api.nmrhis.az/uploads/${news.baslik_foto_url}`} alt={news.baslik} />
-                            <p className={style.xeberler}>Xəbərlər</p>
                         </div>
 
                         {/* Aşağı Məzmun: Mətn */}
