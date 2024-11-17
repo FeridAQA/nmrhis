@@ -1,0 +1,66 @@
+#kecidler {
+    width: 80%;
+    margin: auto;
+    max-width: 1700px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+
+        .title {
+            font-family: Arial;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27.6px;
+            letter-spacing: -0.30000001192092896px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+
+        .up {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 50px;
+
+            .text {
+                font-family: Arial;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 36.8px;
+                letter-spacing: -0.30000001192092896px;
+            }
+
+            .boxs {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                .box {
+                    max-width: 320px;
+                    width: 100%;
+                    min-width: 200px;
+                    border: 1px solid #2393BB;
+                    border-radius: 12px;
+
+                    .imgbox {
+                        width: 100%;
+                        padding: 20px 10px;
+                        border-radius: 12px;
+
+                        img {
+                            border-radius: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

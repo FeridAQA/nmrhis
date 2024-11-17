@@ -35,7 +35,7 @@
         }
 
         .down {
-            height: 110vh;
+            height: 700px;
             display: flex;
             // justify-content: space-evenly;
             gap: 60px;
@@ -50,8 +50,8 @@
             .right {
                 display: flex;
                 gap: 50px;
-                position: relative;
                 min-width: 450px;
+                position: relative;
 
                 .box1 {
                     position: absolute;

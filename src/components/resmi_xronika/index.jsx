@@ -29,7 +29,6 @@ function Resmi_xronika() {
 
                     </div>
                     <div className="down">
-
                         <div className="left">
                             <Iphone12 image={foto}></Iphone12>
                         </div>

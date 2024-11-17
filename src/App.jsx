@@ -40,6 +40,7 @@ import BizeYazirlarPage from './pages/BizeYazirlar';
 import BizeYazirlarDetailPage from './pages/BizeYazirlarDetail';
 import Qanunvericilik from './pages/qanunvericilik';
 import SearchPage from './pages/SearchPage';
+import Kecidler from './pages/kecidler';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
               <Route path='orqanlar/konfrans' element={<Konfrans></Konfrans>}></Route>
               <Route path='orqanlar' element={<Organlar></Organlar>}></Route>
               <Route path='about' element={<About></About>}></Route>
+              <Route path='kecidler' element={<Kecidler></Kecidler>}></Route>
               <Route path='qanunvericilik' element={<Qanunvericilik></Qanunvericilik>}></Route>
               <Route path='elaqe' element={<Elaqe></Elaqe>}></Route>
               <Route path='form' element={<FormPage></FormPage>}></Route>
