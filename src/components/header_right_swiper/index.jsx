@@ -44,7 +44,7 @@ const NewsSwiper = () => {
 
     return (
         <div className="news-swiper">
-            <Swiper
+            <Swiper className='borde_radius'
                 modules={[Pagination, Autoplay]}
                 pagination={{ type: 'fraction' }}
                 spaceBetween={0} // Boşluq olmadan bitişik slaydlar
@@ -58,7 +58,7 @@ const NewsSwiper = () => {
                 speed={500} // Keçid sürətini sürətləndirir
             >
                 {newsData.map((news, index) => (
-                    <SwiperSlide key={news.id || index}>
+                    <SwiperSlide className='trrrrr'  key={news.id || index}>
                         <div className="news-slide">
                             <div className="imgbox">
                                 <img src={`https://api.nmrhis.az/uploads/${news.baslik_foto_url}`} alt={news.baslik} className="news-image" />
@@ -82,9 +82,7 @@ const NewsSwiper = () => {
                     <ArrowOutwardIcon className="oxx" />
                 </div>
             </Link>
-            <div className="xeberler">
-                Xəbərlər
-            </div>
+           
             <div className="custom-navigation">
                 <div
                     className="custom-prev"
