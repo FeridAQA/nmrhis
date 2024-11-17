@@ -1,4 +1,5 @@
 .container {
+  padding-block: 56px;
   padding-inline: 4rem;
   width: 100%;
   display: flex;
@@ -26,8 +27,8 @@
 
     .title {
       color: #1c7696;
-      font-size: 32px;
       font-weight: 400;
+      font-size: 32px;
       line-height: 36.8px;
 
       @media only screen and (max-width: 992px) {

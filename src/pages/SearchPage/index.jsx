@@ -80,10 +80,19 @@ function SearchPage() {
         ))}
       </div>
 
-      {loading && <p>Ətraflı yüklənir...</p>}
-      {!hasMore && <p>Daha xəbər yoxdur.</p>}
-
-      <img className={style.Gerb} id={"bottom"} src={Gerb} alt="Gerb" />
+      {
+        loading &&
+        <div className='CC'>
+          <p className='resultText'>Ətraflı yüklənir...</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
+      {!hasMore &&
+        <div className='CC'>
+          <p className='resultText'>Daha xəbər yoxdur.</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
     </div>
   );
 }

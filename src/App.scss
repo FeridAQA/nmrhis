@@ -34,5 +34,20 @@ hr.line {
 #top.Gerb {
     top: 0;
     right: 0;
-    // transform: translate(20%, 0%);
+}
+
+.CC {
+    padding-block: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultText {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 20px;
 }
