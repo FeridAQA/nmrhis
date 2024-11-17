@@ -71,7 +71,7 @@ function XeberlerPage() {
       {loading && <p>Ətraflı yüklənir...</p>}
       {!hasMore && <p>Daha xəbər yoxdur.</p>}
 
-      <img className={style.Gerb} id={"bottom"} src={Gerb} alt="Gerb" />
+      <img className={"Gerb"} id={"bottom"} src={Gerb} alt="Gerb" />
     </div>
   );
 }

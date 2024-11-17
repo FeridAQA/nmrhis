@@ -7,12 +7,13 @@ function CardHolder({ data, path }) {
   return (
     <div className={style.container}>
       <div className={style.content}>
-        {data.map((item, i) => (
+        {data && data.map((item, i) => (
           <SonXeberCard
             key={i}
-            title={item.title}
-            image={item.image}
-            date={item.description}
+            id={item.id}
+            title={item.baslik}
+            image={item.baslik_foto_url}
+            date={item.tarix}
             path={path}
           />
         ))}

@@ -1,16 +1,65 @@
-import React from 'react'
-import { Data } from '../../../TEST/temporaryApi'
+import React, { useEffect, useState } from 'react'
 import CardHolder from '../../../components/common components/FealiyyetimizCardHolder'
+import axios from 'axios';
+import { baseURL } from '../../../confiq';
+import Gerb from "./../../../assets/img/NMR-HIŞ.png"
 
-function SosialTelimatlar() {
+function EmekHuquqlari() {
 
-  // You have to fetch the necessary data
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
+
+  async function fetchData(currentPage) {
+    try {
+      setLoading(true);
+      const response = await axios.get(`${baseURL}news?category=4&page=${currentPage}`);
+      const news = response.data;
+
+      if (news.length === 0) {
+        setHasMore(false); // No more data
+      } else {
+        setData((prevData) => [...prevData, ...news]);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    fetchData(page);
+  }, [page]);
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop >=
+      document.documentElement.offsetHeight - 400 // Threshold of 400px
+    ) {
+      if (!loading && hasMore) {
+        setPage((prevPage) => prevPage + 1);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [loading, hasMore]);
 
   return (
-    <div>
-      <CardHolder data={Data} path={"sosial_telimatlar"} />
-    </div>
+    <>
+      <div>
+        <CardHolder data={data} path={"sosial_telimatlar"} />
+      </div>
+
+      {loading && <p style={{ textAlign: "center" }}>Ətraflı yüklənir...</p>}
+      {!hasMore && <p style={{ textAlign: "center" }}>Daha xəbər yoxdur.</p>}
+      <img className={"Gerb"} id={"bottom"} src={Gerb} alt="Gerb" />
+    </>
   )
 }
 
-export default SosialTelimatlar
+export default EmekHuquqlari
