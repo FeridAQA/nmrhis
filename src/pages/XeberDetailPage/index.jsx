@@ -1,15 +1,14 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import PageTitle from '../../components/common components/PageTitle';
+import { baseURL } from '../../confiq';
+import { FormatDate } from '../../funcs/tarix';
 import SonXeberler from '../../layout/commonlayout/SonXeberler';
 import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import ContentBox from './Content';
 import ImageBox from './Image';
 import style from "./index.module.scss";
-import ImageData from '../../Data/ImageData';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
-import { baseURL } from '../../confiq';
-import { FormatDate } from '../../funcs/tarix';
 
 function XeberDetailPage() {
 

@@ -1,10 +1,11 @@
-import React from 'react'
-import style from "./index.module.scss"
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import style from "./index.module.scss";
+import { imageURL } from '../../../../../confiq';
 
 function ImageSlider(props) {
   return (
@@ -19,7 +20,7 @@ function ImageSlider(props) {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        loop={true}
+        loop={props.images && props.images.length > 1}
         pagination={{
           clickable: true,
         }}
@@ -28,7 +29,7 @@ function ImageSlider(props) {
 
           return (
             <SwiperSlide className={style.imgBox} key={i}>
-              <img src={item.image} />
+              <img src={imageURL.concat(item)} />
             </SwiperSlide>
           )
         })}
