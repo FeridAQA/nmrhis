@@ -17,7 +17,7 @@ function BizeYazirlarDetailContainer() {
   async function GetData() {
     try {
       const response = await (await axios.get(baseURL.concat(`bize-yazirlar/${id}`))).data
-      console.log(response);
+      // console.log(response);
       setData(response[0])
 
     } catch (error) {
