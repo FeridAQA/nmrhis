@@ -1,9 +1,11 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
-import style from "./index.module.scss";
 import FotoXronikaCard from "../../components/common components/FotoXronikaCard";
 import PageTitle from "../../components/common components/PageTitle";
-import axios from "axios";
 import { baseURL } from "../../confiq";
+import { FullDate } from "../../funcs/tarix";
+import Gerb from "./../../assets/img/NMR-HIŞ.png";
+import style from "./index.module.scss";
 
 function FotoXronikaPage() {
   const [data, setData] = useState([]);
@@ -56,11 +58,22 @@ function FotoXronikaPage() {
       </div>
       <div className={style.container}>
         {data.map((item, i) => (
-          <FotoXronikaCard key={i} date={item.date} image={item.name} />
+          <FotoXronikaCard key={i} date={FullDate(item.date)} image={item.name} />
         ))}
       </div>
-      {loading && <p>Loading more...</p>}
-      {!hasMore && <p>No more data available.</p>}
+      {
+        loading &&
+        <div className='CC'>
+          <p className='resultText'>Ətraflı yüklənir...</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
+      {!hasMore &&
+        <div className='CC'>
+          <p className='resultText'>Daha xəbər yoxdur.</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
     </>
   );
 }

@@ -55,8 +55,19 @@ function EmekHuquqlari() {
         <CardHolder data={data} path={"sosial_telimatlar"} />
       </div>
 
-      {loading && <p className='resultText'>Ətraflı yüklənir...</p>}
-      {!hasMore && <p className='resultText'>Daha xəbər yoxdur.</p>}
+      {
+        loading &&
+        <div className='CC'>
+          <p className='resultText'>Ətraflı yüklənir...</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
+      {!hasMore &&
+        <div className='CC'>
+          <p className='resultText'>Daha xəbər yoxdur.</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
       <img className={"Gerb"} id={"bottom"} src={Gerb} alt="Gerb" />
     </>
   )

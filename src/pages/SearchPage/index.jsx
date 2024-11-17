@@ -87,9 +87,15 @@ function SearchPage() {
           <img id={"bottom"} src={Gerb} alt="Gerb" />
         </div>
       }
-      {!hasMore &&
+      {(!hasMore && data.length > 0) &&
         <div className='CC'>
           <p className='resultText'>Daha xəbər yoxdur.</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
+      {(!hasMore && data.length <= 0) &&
+        <div className='CC'>
+          <p className='resultText'> "{title}" üçün uyğun nəticə tapılmadı. Zəhmət olmasa, başqa bir söz və ya ifadə ilə yenidən cəhd edin.</p>
           <img id={"bottom"} src={Gerb} alt="Gerb" />
         </div>
       }

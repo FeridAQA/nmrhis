@@ -37,3 +37,20 @@ export function OnlyDate(incomeDate) {
   const formattedDate = `${day} ${month} ${year}`;
   return formattedDate
 }
+
+export function FullDate(dateStr) {
+  const date = new Date(dateStr);
+
+  // Tarix hissələrini alırıq
+  const day = String(date.getDate()).padStart(2, "0"); // Gün
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Ay (getMonth 0-dan başlayır)
+  const year = date.getFullYear(); // İl
+
+  // Saat hissələrini alırıq
+  const hours = String(date.getHours()).padStart(2, "0"); // Saat
+  const minutes = String(date.getMinutes()).padStart(2, "0"); // Dəqiqə
+  const seconds = String(date.getSeconds()).padStart(2, "0"); // Saniyə
+
+  // Formatlaşdırılmış nəticə
+  return `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
+}
