@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 22px;
     padding: 0px 32px;
     position: sticky;
     top: 0;
@@ -33,7 +34,7 @@
       display: flex;
       align-items: center;
       background-color: white;
-      border-radius: 20px;
+      border-radius: 24px;
       padding: 5px 10px;
       border: 2px solid #29a0c6;
 
@@ -41,7 +42,7 @@
         width: 100%;
         border: none;
         outline: none;
-        font-size: 14px;
+        font-size: 20px;
         padding: 5px;
       }
 
