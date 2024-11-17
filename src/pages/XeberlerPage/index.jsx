@@ -14,7 +14,7 @@ function XeberlerPage() {
   async function fetchData(currentPage) {
     try {
       setLoading(true);
-      const response = await axios.get(`${baseURL}news?page=${currentPage}&count=8`);
+      const response = await axios.get(`${baseURL}news?page=${currentPage}`);
       const news = response.data;
 
       if (news.length === 0) {
@@ -36,7 +36,7 @@ function XeberlerPage() {
   const handleScroll = () => {
     if (
       window.innerHeight + document.documentElement.scrollTop >=
-      document.documentElement.offsetHeight - 400 // Threshold of 400px
+      document.documentElement.offsetHeight - 200 // Threshold of 200px
     ) {
       if (!loading && hasMore) {
         setPage((prevPage) => prevPage + 1);
