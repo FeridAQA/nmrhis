@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: "Ağbulaq İstirahət Mərkəzi",
-    image: "https://img.freepik.com/premium-photo/mountain-lake-with-reflection-trees-mountains-background_583952-93299.jpg",
+    image: "https://agbulaq.com/images/speasyimagegallery/albums/10/images/13.jpg",
     info: [
       {
         title: "Ağbulaq İstirahət Mərkəzi",
@@ -73,7 +73,7 @@ export default [
   {
     id: 2,
     title: "“Darıdağ Arsenli Su Müalicə Mərkəzi” MMC",
-    image: "https://plus.unsplash.com/premium_photo-1669295395768-6ef852fddc90?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww",
+    image: "https://lh3.googleusercontent.com/p/AF1QipPKHzNYiB3r7EcW8hECktMqyXxkxzVOuZ1HrOdm=s680-w680-h510",
     info: [
       {
         title: "“Darıdağ Arsenli Su Müalicə Mərkəzi” MMC",
@@ -84,7 +84,7 @@ export default [
   {
     id: 3,
     title: "Darıdağ Arsenli Su Müalicə və İstirahət Kompleksi",
-    image: "https://static.vecteezy.com/system/resources/previews/032/259/695/large_2x/beautiful-peacock-in-the-water-flowers-house-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg",
+    image: "https://nmrhis.az/his/assets/img/istkk.jpg",
     info: [
       {
         title: "Darıdağ Arsenli Su Müalicə və İstirahət Kompleksi",
@@ -95,7 +95,7 @@ export default [
   {
     id: 4,
     title: "“Duzdağ” Hotel",
-    image: "https://static.vecteezy.com/system/resources/previews/032/266/838/large_2x/wallpaper-water-flowers-house-nature-nature-wallpaper-wallpaper-hd-nature-wallpaper-ai-generated-free-photo.jpg",
+    image: "https://nmrhis.az/his/assets/img/duzdagg.jpg",
     info: [
       {
         title: "“Duzdağ” Hotel",

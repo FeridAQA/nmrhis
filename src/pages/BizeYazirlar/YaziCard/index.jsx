@@ -8,7 +8,7 @@ function YaziCard(props) {
   const navigate = useNavigate()
 
   function Detail(id) {
-    navigate(`${id}`)
+    navigate(`/bize_yazirlar/${id}`)
   }
 
   return (

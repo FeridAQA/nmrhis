@@ -11,7 +11,7 @@ import MekanData from '../../../Data/MekanData';
 function MekanSlider({ title = "" }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const slidesPerView = 3;
-  const totalSlides = 8;
+  const totalSlides = 4;
 
   return (
     <div className={style.container}>
@@ -22,7 +22,7 @@ function MekanSlider({ title = "" }) {
         className={style.content}
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={slidesPerView}
-        spaceBetween={64}
+        spaceBetween={40}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
@@ -34,7 +34,7 @@ function MekanSlider({ title = "" }) {
           clickable: true,
         }}
         breakpoints={{
-          300: {
+          200: {
             spaceBetween: 20,
           },
           400: {
@@ -48,7 +48,7 @@ function MekanSlider({ title = "" }) {
           },
         }}
       >
-        {MekanData && MekanData.map((item, i) => {
+        {MekanData.map((item, i) => {
           const isCenterSlide =
             (i === (activeIndex + Math.floor(slidesPerView / 2)) % totalSlides);
 
