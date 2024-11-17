@@ -42,7 +42,7 @@ function XeberlerSwiperMobile() {
                     delay: 4000,
                     pauseOnMouseEnter: true,
                 }}
-                loop={true}
+                loop={newsData && newsData.length > 1}
                 pagination={{
                     clickable: true,
                 }}

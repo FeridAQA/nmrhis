@@ -76,8 +76,12 @@
     }
 
     .slide.active {
+      border: 1px solid #2393bb;
+      border-radius: 10px;
       transform: scale(1);
-      transition: transform 0.3s ease-in-out;
+      transition:
+        border 0.2s,
+        transform 0.3s ease-in-out;
     }
 
     @media only screen and (max-width: 768px) {
@@ -101,7 +105,7 @@
   .nextBtn {
     position: absolute;
     bottom: 45%;
-    z-index: 10;
+    z-index: 4;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;

@@ -4,18 +4,23 @@ import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import XeberCard from '../../components/home components/XeberCard';
 import axios from 'axios';
 import { baseURL } from '../../confiq';
+import { useParams } from 'react-router-dom';
 
-function XeberlerPage() {
+function SearchPage() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
+  const { title } = useParams()
+
   async function fetchData(currentPage) {
     try {
       setLoading(true);
-      const response = await axios.get(`${baseURL}news?page=${currentPage}`);
-      const news = response.data;
+      const response = await axios.get(
+        `${baseURL}search?id=${title}&page=${currentPage}`
+      );
+      const news = response.data.results;
 
       if (news.length === 0) {
         setHasMore(false); // No more data
@@ -30,13 +35,20 @@ function XeberlerPage() {
   }
 
   useEffect(() => {
+    // Reset state when the search term changes
+    setData([]);
+    setPage(1);
+    setHasMore(true);
+  }, [title]);
+
+  useEffect(() => {
     fetchData(page);
-  }, [page]);
+  }, [page, title]);
 
   const handleScroll = () => {
     if (
       window.innerHeight + document.documentElement.scrollTop >=
-      document.documentElement.offsetHeight - 200 // Threshold of 200px
+      document.documentElement.offsetHeight - 400 // Threshold of 400px
     ) {
       if (!loading && hasMore) {
         setPage((prevPage) => prevPage + 1);
@@ -50,9 +62,9 @@ function XeberlerPage() {
   }, [loading, hasMore]);
 
   return (
-    <div className={style.XeberlerPage}>
+    <div className={style.container}>
       <div className={style.titleBox}>
-        <h1 className={style.title}>XƏBƏRLƏR</h1>
+        <h1 className={style.title}>Axtarış</h1>
         <div className={style.line}></div>
       </div>
 
@@ -75,16 +87,20 @@ function XeberlerPage() {
           <img id={"bottom"} src={Gerb} alt="Gerb" />
         </div>
       }
-      {!hasMore &&
+      {(!hasMore && data.length > 0) &&
         <div className='CC'>
           <p className='resultText'>Daha xəbər yoxdur.</p>
           <img id={"bottom"} src={Gerb} alt="Gerb" />
         </div>
       }
-
-      <img className={"Gerb"} id={"bottom"} src={Gerb} alt="Gerb" />
+      {(!hasMore && data.length <= 0) &&
+        <div className='CC'>
+          <p className='resultText'> "{title}" üçün uyğun nəticə tapılmadı. Zəhmət olmasa, başqa bir söz və ya ifadə ilə yenidən cəhd edin.</p>
+          <img id={"bottom"} src={Gerb} alt="Gerb" />
+        </div>
+      }
     </div>
   );
 }
 
-export default XeberlerPage;
+export default SearchPage;

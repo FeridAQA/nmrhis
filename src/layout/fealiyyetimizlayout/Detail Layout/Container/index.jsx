@@ -6,14 +6,14 @@ import ContentBox from '../Content'
 import SonXeberler from '../../../commonlayout/SonXeberler'
 import Gerb from "./../../../../assets/img/NMR-HIŞ.png"
 
-function FealiyyetimizContainer({ pageTitle, date, image, content, xeberTitle }) {
+function FealiyyetimizContainer({ pageTitle, date, images, content, xeberTitle }) {
   return (
     <>
       <div className={style.container}>
         <PageTitle>{pageTitle}</PageTitle>
         <div className={style.xeberBox}>
           <ImageBox
-            images={image}
+            images={images}
             date={date}
           >
             {xeberTitle}

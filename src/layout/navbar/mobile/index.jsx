@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../../../components/navbar components/dropdown';
-import NavLogo from "./../../../assets/NavLogo.png";
+import NavLogo from "./../../../assets/img/Mobile_Logo_HIS.png";
 import style from "./index.module.scss";
 
 function MobileNavbar() {
@@ -17,7 +17,7 @@ function MobileNavbar() {
       <i onClick={() => setIsOpen(!isOpen)} className={`fa-solid fa-bars ${style.toggleBar}`}></i>
       <div className={`${style.dropdownMenu} ${isOpen ? "" : style.hide}`}>
         <Dropdown title={"HIŞ"}>
-          <Link onClick={() => setIsOpen(false)} to={"rehberlik/sedr/sedr"}>Rəhbərlik</Link>
+          <Link onClick={() => setIsOpen(false)} to={"rehberlik/sedr"}>Rəhbərlik</Link>
           <Link onClick={() => setIsOpen(false)} to={"struktur"}>Stuktur</Link>
           <Link onClick={() => setIsOpen(false)} to={"orqanlar"}>Orqanlar</Link>
           <Link onClick={() => setIsOpen(false)} to={"haqqimizda"}>Haqqımızda</Link>

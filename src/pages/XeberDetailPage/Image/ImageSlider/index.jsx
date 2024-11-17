@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import style from "./index.module.scss";
+import { imageURL } from '../../../../confiq';
 
 function ImageSlider(props) {
   return (
@@ -19,22 +20,19 @@ function ImageSlider(props) {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        loop={true}
+        loop={props.images && props.images.length > 1} // Only loop if there are multiple images
         pagination={{
           clickable: true,
         }}
       >
-        {props.images && props.images.map((item, i) => {
-
-          return (
-            <SwiperSlide className={style.imgBox} key={i}>
-              <img src={item.image} />
-            </SwiperSlide>
-          )
-        })}
+        {props.images && props.images.map((item, index) => (
+          <SwiperSlide className={style.imgBox} key={item.id || `${index}-${item}`}>
+            <img src={imageURL.concat(item)} alt={`Slide ${index + 1}`} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
-  )
+  );
 }
 
-export default ImageSlider
+export default ImageSlider;

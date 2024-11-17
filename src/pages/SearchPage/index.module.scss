@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 5rem 0rem;
+
+  .titleBox {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 0 116px;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27.6px;
+    }
+
+    .line {
+      width: 100%;
+      height: 1.5px;
+      background-color: #bbdeea;
+    }
+  }
+
+  .content {
+    width: 100%;
+    padding: 0px 4rem;
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 64px;
+    row-gap: 48px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .XeberlerPage {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 3rem 0rem;
+
+    .titleBox {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 0px;
+
+      .title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      .line {
+        width: 100%;
+        height: 1.5px;
+        background-color: #bbdeea;
+      }
+    }
+
+    .content {
+      width: 100%;
+      padding: 0px 2rem;
+      display: grid;
+      justify-items: stretch;
+      grid-template-columns: 100%;
+      column-gap: 64px;
+      row-gap: 48px;
+    }
+  }
+}

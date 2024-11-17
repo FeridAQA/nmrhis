@@ -14,7 +14,6 @@ import { baseURL } from '../../../confiq';
 function FotoXronikaSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
   const slidesPerView = 4;
-  const totalSlides = 8;
 
   const [Data, setData] = useState([])
 
@@ -50,7 +49,7 @@ function FotoXronikaSlider() {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        loop={true}
+        loop={Data && Data.length > 1}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         navigation={{
           prevEl: "#prevBtnFoto",
@@ -76,7 +75,7 @@ function FotoXronikaSlider() {
       >
         {Data && Data.map((item, i) => {
           const isCenterSlide =
-            (i === (activeIndex + Math.floor(1)) % totalSlides);
+            (i === (activeIndex + Math.floor(1)) % 9);
 
           return (
             <SwiperSlide

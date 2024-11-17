@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import style from "./index.module.scss";
-import { imageURL } from '../../../../../confiq';
+import { imageURL } from '../../../../confiq';
 
 function ImageSlider(props) {
   return (

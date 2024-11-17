@@ -6,17 +6,17 @@
 
   .imgBox {
     width: 100%;
-    aspect-ratio: 10 / 6;
+    aspect-ratio: 3 / 2;
     overflow: hidden;
-    border: 1px solid #2393bb;
+    // border: 1px solid #2393bb;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-      width: min(100%);
-      height: min(100%);
+      min-width: 100%;
+      min-height: 100%;
     }
   }
 

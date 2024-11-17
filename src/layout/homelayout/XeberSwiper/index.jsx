@@ -49,7 +49,7 @@ function XeberSwiper() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          loop={true}
+          loop={Data && Data.length > 1}
           navigation={{
             prevEl: "#prevBtn",
             nextEl: "#nextBtn",
@@ -58,6 +58,7 @@ function XeberSwiper() {
           {Data && Data.map((item, i) => (
             <SwiperSlide key={i}>
               <XeberCard
+                id={item.id}
                 description={item.tarix}
                 title={item.baslik}
                 image={item.baslik_foto_url}
