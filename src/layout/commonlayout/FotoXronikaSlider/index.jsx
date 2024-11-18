@@ -59,13 +59,13 @@ function FotoXronikaSlider() {
           clickable: true,
         }}
         breakpoints={{
-          300: {
+          200: {
             slidesPerView: 1,
-            spaceBetween: 24,
+            spaceBetween: 52,
           },
           500: {
             slidesPerView: 1,
-            spaceBetween: 24,
+            spaceBetween: 52,
           },
           992: {
             slidesPerView: 4,

@@ -35,7 +35,7 @@ function MekanSlider({ title = "" }) {
         }}
         breakpoints={{
           200: {
-            spaceBetween: 20,
+            spaceBetween: 30,
           },
           400: {
             spaceBetween: 30,

@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 52px;
     user-select: none;
 
     .title {
@@ -30,7 +30,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     row-gap: 2rem;
 
     .titleBox {
@@ -42,7 +42,7 @@
     }
   }
 
-  @media screen and (max-width: 468px) {
+  @media screen and (max-width: 500px) {
     row-gap: 1.5rem;
 
     .titleBox {
@@ -54,21 +54,21 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
-    .titleBox {
-      .title {
-        padding: 0px 21px;
-        font-size: 12px;
-        line-height: 10px;
-      }
-    }
-  }
+  // @media screen and (max-width: 400px) {
+  //   .titleBox {
+  //     .title {
+  //       padding: 0px 21px;
+  //       font-size: 12px;
+  //       line-height: 10px;
+  //     }
+  //   }
+  // }
 
   .content {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0px 0px 7rem 0px;
+    padding: 0px 0px 7rem;
 
     .slide {
       transition: transform 0.3s ease-in-out;
@@ -84,10 +84,9 @@
         transform 0.3s ease-in-out;
     }
 
-    @media only screen and (max-width: 768px) {
-      width: 110%;
-      padding: 0px 0px 5rem 0px;
-      transform: translateX(-5%);
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+      padding: 0px 52px 5rem;
 
       .slide {
         transform: scale(1);
@@ -95,7 +94,7 @@
     }
 
     @media only screen and (max-width: 400px) {
-      padding: 0px 0px 3rem 0px;
+      padding: 0px 22px 3rem;
     }
   }
 
@@ -132,7 +131,7 @@
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       display: none;
     }
   }
@@ -164,13 +163,13 @@
       width: 28px;
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .swiper-pagination-bullet {
         visibility: hidden !important;
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
