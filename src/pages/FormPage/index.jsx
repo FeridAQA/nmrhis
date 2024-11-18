@@ -5,6 +5,7 @@ import gerb from '../../assets/img/image.png';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet-async';
 
 function FormPage() {
     const [formData, setFormData] = useState({
@@ -61,6 +62,9 @@ function FormPage() {
 
     return (
         <div id="Form_page">
+            <Helmet>
+                <title>Müraciət</title>
+            </Helmet>
             <div className="rectangle">
                 <div className="img">
                     <img src={gerb} alt="" />

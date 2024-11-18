@@ -12,6 +12,7 @@ import style from "./index.module.scss";
 import CategoriesData from "../../Data/CategoriesData";
 import YTBlock from "../../layout/commonlayout/YTBlock";
 import PDFBlock from "../../layout/commonlayout/PDFBlock";
+import { Helmet } from "react-helmet-async";
 
 function XeberDetailPage() {
   const { id } = useParams();
@@ -41,6 +42,9 @@ function XeberDetailPage() {
   return (
     <>
       <div className={style.container}>
+        <Helmet>
+          <title>Xəbərlər</title>
+        </Helmet>
         <PageTitle>
           {CategoriesData &&
             CategoriesData.filter((item) => Categories.includes(item.code))
