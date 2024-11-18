@@ -4,10 +4,14 @@ import style from "./index.module.scss";
 import PageTitle from '../../components/common components/PageTitle';
 import HaqqimizdaSection from '../../components/haqqimizda components/HaqqimizdaSection';
 import HaqqimizdaSectionForList from '../../components/haqqimizda components/HaqqimizdaSectionForList';
+import { Helmet } from 'react-helmet-async';
 
 function HaqqimizdaPage() {
   return (
     <div className={style.container}>
+      <Helmet>
+        <title>Haqqımızda</title>
+      </Helmet>
       <PageTitle>Haqqımızda</PageTitle>
       <HaqqimizdaSection title={"Ümumi məlumat:"}>
         Yaradılma tarixi – 04.12.1921

@@ -3,6 +3,7 @@ import SubNavbar_iki from '../../components/Subnav_iki';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './index.scss';
+import { Helmet } from 'react-helmet-async';
 
 const myArr = [
     {
@@ -155,6 +156,9 @@ const myArr = [
 function Uzv_teskilat() {
     return (
         <div id='Uzv_teskilat'>
+            <Helmet>
+                <title>Üzv Təşkilatlar</title>
+            </Helmet>
             <SubNavbar_iki />
 
             <div className="container">

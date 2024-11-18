@@ -1,10 +1,14 @@
 import React from 'react'
 import Struk_uc from '../../components/stuk_components'
+import { Helmet } from 'react-helmet-async'
 
 function Struktur() {
   return (
     <div>
-        <Struk_uc></Struk_uc>
+      <Helmet>
+        <title>Struktur</title>
+      </Helmet>
+      <Struk_uc></Struk_uc>
     </div>
   )
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 function Kecidler() {
     return (
         <div id='kecidler'>
+            <Helmet>
+                <title>Keçidlər</title>
+            </Helmet>
             <div className="container">
                 <div className="title">
                     KEÇİDLƏR
@@ -45,7 +49,7 @@ function Kecidler() {
                 </div>
                 <div className="down">
                     <div className="text">
-                        
+
                     </div>
                 </div>
             </div>

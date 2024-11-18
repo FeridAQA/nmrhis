@@ -6,6 +6,7 @@ import { baseURL } from "../../confiq";
 import { FullDate } from "../../funcs/tarix";
 import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import style from "./index.module.scss";
+import { Helmet } from "react-helmet-async";
 
 function FotoXronikaPage() {
   const [data, setData] = useState([]);
@@ -54,6 +55,9 @@ function FotoXronikaPage() {
   return (
     <>
       <div className={style.titleBox}>
+        <Helmet>
+          <title>Foto Xronika</title>
+        </Helmet>
         <PageTitle>Foto Xronika</PageTitle>
       </div>
       <div className={style.container}>

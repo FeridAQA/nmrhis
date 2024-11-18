@@ -4,6 +4,7 @@ import CardHolder from '../../components/common components/FealiyyetimizCardHold
 import PageTitle from '../../components/common components/PageTitle';
 import { baseURL } from '../../confiq';
 import Gerb from "./../../assets/img/NMR-HIŞ.png"
+import { Helmet } from 'react-helmet-async';
 
 function SosialTerefdasliq() {
 
@@ -52,6 +53,9 @@ function SosialTerefdasliq() {
 
   return (
     <>
+      <Helmet>
+        <title>Sosial Tərəfdaşlıq</title>
+      </Helmet>
       <PageTitle>Sosial Tərəfdaşlıq</PageTitle>
       <CardHolder data={data} path={"sosial_terefdasliq"} />
 

@@ -5,6 +5,7 @@ import XeberCard from '../../components/home components/XeberCard';
 import axios from 'axios';
 import { baseURL } from '../../confiq';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 function SearchPage() {
   const [data, setData] = useState([]);
@@ -63,6 +64,9 @@ function SearchPage() {
 
   return (
     <div className={style.container}>
+      <Helmet>
+        <title>Axtarış</title>
+      </Helmet>
       <div className={style.titleBox}>
         <h1 className={style.title}>Axtarış</h1>
         <div className={style.line}></div>

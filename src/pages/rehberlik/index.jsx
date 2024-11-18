@@ -1,12 +1,16 @@
 import React from 'react'
 import SubNavbar from '../../components/rehberlik-C/subNavbar'
 import { Outlet } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 function Rehberlik() {
   return (
     <div>
-        <SubNavbar/>
-        <Outlet></Outlet>
+      <Helmet>
+        <title>Rəhbərlik</title>
+      </Helmet>
+      <SubNavbar />
+      <Outlet></Outlet>
     </div>
   )
 }

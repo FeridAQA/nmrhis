@@ -4,6 +4,7 @@ import Gerb from "./../../assets/img/NMR-HIŞ.png";
 import XeberCard from '../../components/home components/XeberCard';
 import axios from 'axios';
 import { baseURL } from '../../confiq';
+import { Helmet } from 'react-helmet-async';
 
 function XeberlerPage() {
   const [data, setData] = useState([]);
@@ -51,6 +52,9 @@ function XeberlerPage() {
 
   return (
     <div className={style.XeberlerPage}>
+      <Helmet>
+        <title>Xəbərlər</title>
+      </Helmet>
       <div className={style.titleBox}>
         <h1 className={style.title}>XƏBƏRLƏR</h1>
         <div className={style.line}></div>

@@ -5,9 +5,13 @@ import ulfet from '../../assets/img/ulfet.png'
 
 import './index.scss'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 function Organlar() {
     return (
         <div id='organlar'>
+            <Helmet>
+                <title>Orqanlar</title>
+            </Helmet>
             <div className="img">
                 <img src={gerb} alt="gerb" />
             </div>
@@ -16,11 +20,11 @@ function Organlar() {
                     <Link className='l C' to='konfrans'>
                         <div className="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="121" height="120" viewBox="0 0 121 120" fill="none">
-                                <circle className='line'  cx="30.5" cy="20" r="10" stroke="#FAFFFE" stroke-width="3" />
-                                <ellipse className='line'  cx="30.5" cy="40" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
-                                <circle  className='line' cx="90.5" cy="80" r="10" stroke="#FAFFFE" stroke-width="3" />
+                                <circle className='line' cx="30.5" cy="20" r="10" stroke="#FAFFFE" stroke-width="3" />
+                                <ellipse className='line' cx="30.5" cy="40" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
+                                <circle className='line' cx="90.5" cy="80" r="10" stroke="#FAFFFE" stroke-width="3" />
                                 <path className='line' d="M110.5 60C110.5 32.3858 88.1142 10 60.5 10M60.5 110C32.8858 110 10.5 87.6142 10.5 60" stroke="#FAFFFE" stroke-width="3" stroke-linecap="round" />
-                                <ellipse className='line'  cx="90.5" cy="100" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
+                                <ellipse className='line' cx="90.5" cy="100" rx="15" ry="10" stroke="#FAFFFE" stroke-width="3" />
                             </svg>
                         </div>
                         <div className="text">KONFRANS</div>
@@ -68,7 +72,7 @@ function Organlar() {
                         </div>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     )

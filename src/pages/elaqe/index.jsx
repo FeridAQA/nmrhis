@@ -10,10 +10,14 @@ import EmailIcon from '@mui/icons-material/Email';
 import WebIcon from '@mui/icons-material/Web';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 function Elaqe() {
     return (
         <div id='elaqe'>
+            <Helmet>
+                <title>Əlaqə</title>
+            </Helmet>
             <div className="img">
                 <img src={gerb} alt="gerb" />
             </div>

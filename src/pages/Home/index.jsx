@@ -7,10 +7,14 @@ import MekanSlider from '../../layout/commonlayout/MekanSlider'
 import BizeYazirlar from '../../layout/homelayout/BizeYazirlar'
 import QuickAccessPanel from '../../layout/homelayout/QuickAccessPanel'
 import XeberSwiper from '../../layout/homelayout/XeberSwiper'
+import { Helmet } from 'react-helmet-async'
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Ana Sehife</title>
+      </Helmet>
       <Main_header></Main_header>
       <XeberSwiper />
       <Resmi_xronika></Resmi_xronika>
