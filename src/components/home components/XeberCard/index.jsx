@@ -18,7 +18,7 @@ function XeberCard({ image, title, description, id }) {
   return (
     <div className={style.XeberCard}>
       <div className={style.imgBox}>
-        <img alt='NewsPhoto' src={imageURL.concat(image)} />
+        <img loading='eager' alt='NewsPhoto' src={imageURL.concat(image)} />
       </div>
       <div className={style.content}>
         <div className={style.textBox}>

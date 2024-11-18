@@ -64,16 +64,14 @@ function FotoXronikaPage() {
       {
         loading &&
         <div className='CC'>
-          <p className='resultText'>Ətraflı yüklənir...</p>
-          <img id={"bottom"} src={Gerb} alt="Gerb" />
+          <span className="loaderText"></span>
         </div>
       }
-      {!hasMore &&
+      {/* {!hasMore &&
         <div className='CC'>
           <p className='resultText'>Daha xəbər yoxdur.</p>
-          <img id={"bottom"} src={Gerb} alt="Gerb" />
         </div>
-      }
+      } */}
     </>
   );
 }

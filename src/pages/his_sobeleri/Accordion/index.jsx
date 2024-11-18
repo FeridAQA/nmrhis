@@ -32,7 +32,7 @@ function Sobe_Accordion(props) {
           Tel: <span className={style.text} dangerouslySetInnerHTML={{ __html: props.tel }}></span>
         </p>
         {props.email && <p className={style.textBox}>
-          Email: <span className={style.text}>{props.mudir}</span>
+          Email: <span className={style.text}>{props.email}</span>
         </p>}
 
       </div>

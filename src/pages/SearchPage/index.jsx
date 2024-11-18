@@ -83,20 +83,17 @@ function SearchPage() {
       {
         loading &&
         <div className='CC'>
-          <p className='resultText'>Ətraflı yüklənir...</p>
-          <img id={"bottom"} src={Gerb} alt="Gerb" />
+          <span className="loaderText"></span>
         </div>
       }
       {(!hasMore && data.length > 0) &&
         <div className='CC'>
-          <p className='resultText'>Daha xəbər yoxdur.</p>
-          <img id={"bottom"} src={Gerb} alt="Gerb" />
+          <p className='resultText'>Axtarışa uyğun {data.length} xəbər tapıldı.</p>
         </div>
       }
       {(!hasMore && data.length <= 0) &&
         <div className='CC'>
-          <p className='resultText'> "{title}" üçün uyğun nəticə tapılmadı. Zəhmət olmasa, başqa bir söz və ya ifadə ilə yenidən cəhd edin.</p>
-          <img id={"bottom"} src={Gerb} alt="Gerb" />
+          <p className='resultText'> "{title}" üçün uyğun nəticə tapılmadı.</p>
         </div>
       }
     </div>
