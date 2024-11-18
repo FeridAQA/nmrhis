@@ -11,13 +11,14 @@
     justify-content: space-between;
 
     .title {
-      font-size: 15px;
+      font-size: 10px;
       font-weight: 700;
       line-height: 14.95px;
       letter-spacing: -0.3px;
     }
 
     .icon {
+      font-size: 10px;
       transition: transform 300ms;
     }
 
@@ -34,18 +35,18 @@
     opacity: 0;
     max-height: 0rem;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: -0.3px;
     line-height: 13.8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    row-gap: 2px;
     transition: 0.3s;
   }
 
   .open {
     padding-top: 16px;
-    padding: 8px 0px 8px 4px;
+    padding: 4px 0px 4px 4px;
     visibility: visible;
     opacity: 1;
     max-height: 10rem;

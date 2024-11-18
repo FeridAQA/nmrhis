@@ -108,16 +108,16 @@
         }
       }
 
-      @media only screen and (max-width: 400px) {
-        --title: 8px;
-        --line_height: 12px;
-        --date: 6px;
-        --gap: 6px;
+      // @media only screen and (max-width: 400px) {
+      //   --title: 8px;
+      //   --line_height: 12px;
+      //   --date: 6px;
+      //   --gap: 6px;
 
-        .date {
-          line-height: 10px;
-        }
-      }
+      //   .date {
+      //     line-height: 10px;
+      //   }
+      // }
     }
 
     .btn {
@@ -185,7 +185,7 @@
         justify-content: center;
       }
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 350px) {
         width: 57px;
         height: 25.5px;
         border-radius: 10.5px;
