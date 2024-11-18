@@ -41,6 +41,7 @@ import BizeYazirlarDetailPage from './pages/BizeYazirlarDetail';
 import Qanunvericilik from './pages/qanunvericilik';
 import SearchPage from './pages/SearchPage';
 import Kecidler from './pages/kecidler';
+import ServerErrorPage from './pages/Error';
 
 function App() {
 
@@ -94,6 +95,7 @@ function App() {
               <Route path='/bize_yazirlar' element={<BizeYazirlarPage />} />
               <Route path='/bize_yazirlar/:id' element={<BizeYazirlarDetailPage />} />
               <Route path='/axtar/:title' element={<SearchPage />} />
+              <Route path='*' element={<ServerErrorPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
