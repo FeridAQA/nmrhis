@@ -3,13 +3,13 @@ import STDContent from '../Content'
 import STDImage from '../Image'
 import Gerb from "./../../../assets/img/NMR-HIŞ.png"
 import style from "./index.module.scss"
-import PDF from "./../../../TEST/PythonParallelProgramming.pdf"
 import PDFBlock from './../../commonlayout/PDFBlock/index';
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { baseURL } from '../../../confiq'
 import { FormatDate } from '../../../funcs/tarix'
 import SonXeberler from '../../commonlayout/SonXeberler'
+import YTBlock from '../../commonlayout/YTBlock'
 
 function STDContainer() {
 
@@ -21,7 +21,7 @@ function STDContainer() {
   async function GetData() {
     try {
       const response = await (await axios.get(baseURL.concat(`news/${id}`))).data
-      // console.log(response[0]);
+      console.log((await axios.get(baseURL.concat(`news/${id}`))));  
       setData(response[0])
       setImages(response[0].images.split(","))
 
@@ -43,14 +43,16 @@ function STDContainer() {
       <div className={style.box}>
         <h2 className={style.title}>{Data.baslik}</h2>
         <div className={style.content}>
-          <STDContent>{Data.mesaj}</STDContent>
+          <STDContent>{Data && Data.mesaj}</STDContent>
           <STDImage
-            images={Images}
-            date={FormatDate(Data.tarix)}
+            images={Images && Images}
+            date={Data && FormatDate(Data.tarix)}
           />
         </div>
       </div>
-      <PDFBlock src={PDF} />
+
+      {Data && Data.pdf ? <YTBlock src={"https://www.youtube.com/embed/Cdxtz-fwNzw"} /> : ""}
+      {Data && Data.pdf ? <PDFBlock src={Data && Data.pdf} /> : ""}
       <img className={`Gerb`} id={"top"} src={Gerb} />
       <img className={"Gerb"} id={'bottom'} src={Gerb} />
 

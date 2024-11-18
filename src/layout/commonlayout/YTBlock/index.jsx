@@ -8,6 +8,7 @@ function YTBlock({ src }) {
       <iframe
         className={style.pdf}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
         src={src && src.startsWith("http") ? src : youtubeURL.concat(src)}
       ></iframe>
     </div>

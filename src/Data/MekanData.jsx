@@ -84,7 +84,7 @@ export default [
   {
     id: 3,
     title: "Darıdağ Arsenli Su Müalicə və İstirahət Kompleksi",
-    image: "https://nmrhis.az/his/assets/img/istkk.jpg",
+    image: "https://old.nmrhis.az/his/assets/img/istkk.jpg",
     info: [
       {
         title: "Darıdağ Arsenli Su Müalicə və İstirahət Kompleksi",
@@ -95,7 +95,7 @@ export default [
   {
     id: 4,
     title: "“Duzdağ” Hotel",
-    image: "https://nmrhis.az/his/assets/img/duzdagg.jpg",
+    image: "https://old.nmrhis.az/his/assets/img/duzdagg.jpg",
     info: [
       {
         title: "“Duzdağ” Hotel",

@@ -5,23 +5,27 @@ import ImageBox from '../Image/index'
 import ContentBox from '../Content'
 import SonXeberler from '../../../commonlayout/SonXeberler'
 import Gerb from "./../../../../assets/img/NMR-HIŞ.png"
+import PDFBlock from '../../../commonlayout/PDFBlock'
+import YTBlock from '../../../commonlayout/YTBlock'
 
-function FealiyyetimizContainer({ pageTitle, date, images, content, xeberTitle }) {
+function FealiyyetimizContainer(props) {
   return (
     <>
       <div className={style.container}>
-        <PageTitle>{pageTitle}</PageTitle>
+        <PageTitle>{props.pageTitle}</PageTitle>
         <div className={style.xeberBox}>
           <ImageBox
-            images={images}
-            date={date}
+            images={props.images}
+            date={props.date}
           >
-            {xeberTitle}
+            {props.xeberTitle}
           </ImageBox>
-          <ContentBox date={date}>
-            {content}
+          <ContentBox date={props.date}>
+            {props.content}
           </ContentBox>
         </div>
+        {props.yt ? <YTBlock src={props.yt} /> : ""}
+        {props.pdf ? <PDFBlock src={props.pdf} /> : ""}
         <hr className={`line`} />
         <SonXeberler />
         <img className={"Gerb"} id={"bottom"} src={Gerb} />

@@ -36,6 +36,8 @@ function EmekHuqulariDetail() {
         date={FormatDate(Data.tarix)}
         xeberTitle={Data.baslik}
         content={Data.mesaj}
+        pdf={Data.pdf && Data.pdf}
+        yt={Data.yt && Data.yt}
       />
     </>
   )

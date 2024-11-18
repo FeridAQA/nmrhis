@@ -10,6 +10,8 @@ import ContentBox from "./Content";
 import ImageBox from "./Image";
 import style from "./index.module.scss";
 import CategoriesData from "../../Data/CategoriesData";
+import YTBlock from "../../layout/commonlayout/YTBlock";
+import PDFBlock from "../../layout/commonlayout/PDFBlock";
 
 function XeberDetailPage() {
   const { id } = useParams();
@@ -55,6 +57,8 @@ function XeberDetailPage() {
           </ImageBox>
           <ContentBox date={FormatDate(Data.tarix)}>{Data.mesaj}</ContentBox>
         </div>
+        {Data && Data.pdf ? <YTBlock src={"https://www.youtube.com/embed/Cdxtz-fwNzw"} /> : ""}
+        {Data && Data.pdf ? <PDFBlock src={Data && Data.pdf} /> : ""}
         <hr className={`line`} />
         <SonXeberler />
         <img className={"Gerb"} id={"bottom"} src={Gerb} />
