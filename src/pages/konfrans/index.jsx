@@ -10,7 +10,7 @@ function Konfrans() {
                 <div id="SubNavbar_iki">
                     <div className="tab-menu">
                         <NavLink to="/orqanlar/konfrans" className="tab-item">Konfrans</NavLink>
-                        <NavLink to="/struktur/tabe_teskilatlar" className="tab-item ">Tabe Təşkilatlar</NavLink>
+                        <NavLink to="/struktur/tabe_teskilatlar/1" className="tab-item ">Tabe Təşkilatlar</NavLink>
                         <NavLink to="/struktur/his_sobeleri" className="tab-item">HİŞ Şöbələri və Bölmələri</NavLink>
                     </div>
                 </div>
