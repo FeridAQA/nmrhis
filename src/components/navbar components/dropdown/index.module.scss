@@ -11,10 +11,10 @@
     justify-content: space-between;
 
     .title {
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 700;
-      line-height: 14.95px;
-      letter-spacing: -0.3px;
+      line-height: 18px;
+      user-select: none;
     }
 
     .icon {
@@ -31,6 +31,7 @@
   .subMenu {
     padding-top: 0px;
     padding: 0px 0px 0px 4px;
+    margin-left: 8px;
     visibility: hidden;
     opacity: 0;
     max-height: 0rem;
@@ -38,10 +39,27 @@
     font-size: 10px;
     letter-spacing: -0.3px;
     line-height: 13.8px;
+    row-gap: 0px;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
-    row-gap: 2px;
-    transition: 0.3s;
+
+    li.item {
+      cursor: pointer;
+      list-style-type: "•";
+      padding-left: 8px;
+      user-select: none;
+    }
+
+    li.line {
+      list-style-type: "|";
+      line-height: 8px;
+      user-select: none;
+    }
+
+    li.line:last-child {
+      display: none;
+    }
   }
 
   .open {
