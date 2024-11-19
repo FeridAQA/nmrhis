@@ -1,13 +1,34 @@
+.con_lodigg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.lodigg {
+    margin-block: 2rem 7rem;
+    font-size: 10px;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.1s infinite ease;
+    transform: translateZ(0);
+}
 
 .news-swiper {
     position: relative;
     border-radius: 12px;
     min-height: 550px;
     width: 100%;
-    
+
     .borde_radius {
         border-radius: 12px;
     }
+
     .corner {
         position: absolute;
         bottom: 50px;

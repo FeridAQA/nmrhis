@@ -39,7 +39,10 @@ const NewsSwiper = () => {
     }, []);
 
     if (loading) {
-        return <div>Yüklənir...</div>; // Yükləmə ekranı
+        return (<div className='con_lodigg'>
+            <span className='lodigg'></span>
+        </div> // Yükləmə ekranı
+        )
     }
 
     return (
@@ -58,7 +61,7 @@ const NewsSwiper = () => {
                 speed={500} // Keçid sürətini sürətləndirir
             >
                 {newsData.map((news, index) => (
-                    <SwiperSlide className='trrrrr'  key={news.id || index}>
+                    <SwiperSlide className='trrrrr' key={news.id || index}>
                         <div className="news-slide">
                             <div className="imgbox">
                                 <img src={`https://api.nmrhis.az/uploads/${news.baslik_foto_url}`} alt={news.baslik} className="news-image" />
@@ -82,7 +85,7 @@ const NewsSwiper = () => {
                     <ArrowOutwardIcon className="oxx" />
                 </div>
             </Link>
-           
+
             <div className="custom-navigation">
                 <div
                     className="custom-prev"
