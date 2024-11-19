@@ -79,15 +79,15 @@ function Elaqe() {
                             <div className="tel">
                                 <LocalPhoneIcon />
                                 <div className="tel_box">
-                                    <a href="tel:+(036) 545-31-28">(036) 545-31-28</a>
-                                    <a href="tel:+(060) 211 21 91">(060) 211 21 91</a>
-                                    <a href="tel:+(060) 200 22 00">(060) 200 22 00</a>
+                                    <a href="tel:+(994) 36-545-31-28">(036) 545-31-28</a>
+                                    <a href="tel:+(994) 36-211 21 91">(060) 211 21 91</a>
+                                    <a href="tel:+(994) 36-200 22 00">(060) 200 22 00</a>
                                 </div>
                             </div>
                         </div>
                         <div className="down">
                             <div className="title">
-                                MÜRACİYƏT FORMASI
+                                MÜRACİƏT FORMASI
                             </div>
                             <Link to={'/form'}>
                                 <div className="mesaj">
