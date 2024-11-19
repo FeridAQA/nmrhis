@@ -21,7 +21,7 @@ function STDContainer() {
   async function GetData() {
     try {
       const response = await (await axios.get(baseURL.concat(`news/${id}`))).data
-      console.log((await axios.get(baseURL.concat(`news/${id}`))));  
+      console.log((await axios.get(baseURL.concat(`news/${id}`))));
       setData(response[0])
       setImages(response[0].images.split(","))
 
@@ -51,7 +51,7 @@ function STDContainer() {
         </div>
       </div>
 
-      {Data && Data.pdf ? <YTBlock src={"https://www.youtube.com/embed/Cdxtz-fwNzw"} /> : ""}
+      {Data && Data.youtube ? <YTBlock src={Data.youtube} /> : ""}
       {Data && Data.pdf ? <PDFBlock src={Data && Data.pdf} /> : ""}
       <img className={`Gerb`} id={"top"} src={Gerb} />
       <img className={"Gerb"} id={'bottom'} src={Gerb} />

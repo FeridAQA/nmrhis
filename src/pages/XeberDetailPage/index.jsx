@@ -61,7 +61,7 @@ function XeberDetailPage() {
           </ImageBox>
           <ContentBox date={FormatDate(Data.tarix)}>{Data.mesaj}</ContentBox>
         </div>
-        {Data && Data.pdf ? <YTBlock src={"https://www.youtube.com/embed/Cdxtz-fwNzw"} /> : ""}
+        {Data && Data.youtube ? <YTBlock src={Data.youtube} /> : ""}
         {Data && Data.pdf ? <PDFBlock src={Data && Data.pdf} /> : ""}
         <hr className={`line`} />
         <SonXeberler />
