@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./index.module.scss"
-import Iphone12 from './../../../components/common components/Iphone12/index';
 import Yazilar from './Yazilar';
+import Iphone13 from '../../../components/common components/Iphone13';
 
 function BizeYazirlar() {
   return (
@@ -12,9 +12,7 @@ function BizeYazirlar() {
         <Yazilar />
       </div>
 
-      <Iphone12 src={
-        "https://www.facebook.com/naxcivanhemkarlar?ref=embed_page"
-      } />
+      <Iphone13 />
     </div>
   )
 }

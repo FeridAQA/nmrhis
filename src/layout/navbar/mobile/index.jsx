@@ -65,8 +65,6 @@ function MobileNavbar() {
     },
   ]
 
-  // const FealLinks = ["Gənclər Siyasəti", "Əmək Hüquqları", "Əməyin Təhlükəsizliyi", "Sosial Təlimatlar"]
-
   return (
     <nav className={style.container}>
       <Link to={"/"} className={style.logo}>

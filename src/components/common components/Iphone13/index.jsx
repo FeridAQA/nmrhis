@@ -2,7 +2,7 @@ import React from "react";
 import style from "./index.module.scss";
 import IPhone from "./../../../assets/img/IphoneFrame(6).png";
 
-function Iphone12({ src }) {
+function Iphone13({ src }) {
   return (
     <div className={style.container}>
       <img id={style.phone} src={IPhone} alt="iPhone Frame" />
@@ -10,7 +10,7 @@ function Iphone12({ src }) {
         <div className={style.facebook}>
           <iframe
             className={style.first}
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPresidentIlhamAliyev%3Flocale%3Daz_AZ&tabs=timeline&width=264&height=570&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnaxcivanhemkarlar&tabs=timeline&width=264&height=570&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="264"
             height="570"
             loading="lazy"
@@ -23,7 +23,7 @@ function Iphone12({ src }) {
           ></iframe>
           <iframe
             className={style.second}
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPresidentIlhamAliyev%3Flocale%3Daz_AZ&tabs=timeline&width=228&height=496&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnaxcivanhemkarlar&tabs=timeline&width=228&height=496&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="228"
             height="496"
             loading="lazy"
@@ -40,4 +40,4 @@ function Iphone12({ src }) {
   );
 }
 
-export default Iphone12;
+export default Iphone13;
