@@ -15,6 +15,11 @@
       font-weight: 700;
       line-height: 18px;
       user-select: none;
+
+      @media screen and (max-width: 400px) {
+        font-size: 13px;
+        line-height: 15px;
+      }
     }
 
     .icon {
@@ -36,7 +41,7 @@
     opacity: 0;
     max-height: 0rem;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: -0.3px;
     line-height: 13.8px;
     row-gap: 0px;
@@ -64,7 +69,7 @@
 
   .open {
     padding-top: 16px;
-    padding: 4px 0px 4px 4px;
+    padding: 8px 0px 8px 4px;
     visibility: visible;
     opacity: 1;
     max-height: 10rem;

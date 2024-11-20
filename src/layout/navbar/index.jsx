@@ -2,7 +2,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Links from '../../components/navbar components/links';
-import NavLogo from "./../../assets/img/Mobile_Logo_HIS.png";
+import NavLogo from "./../../assets/img/image.png";
 import style from "./index.module.scss";
 import MobileNavbar from './mobile';
 
