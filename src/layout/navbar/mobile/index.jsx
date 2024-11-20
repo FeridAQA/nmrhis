@@ -15,11 +15,11 @@ function MobileNavbar() {
     },
     {
       title: "Stuktur",
-      to: "orqanlar"
+      to: "struktur"
     },
     {
       title: "Orqanlar",
-      to: "qanunvericilik"
+      to: "orqanlar"
     },
     {
       title: "Haqqımızda",

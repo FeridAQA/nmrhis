@@ -15,9 +15,15 @@
     }
 
     .slide {
-      max-height: 50%;
       width: 100%;
-      align-self: flex-end;
+
+      @media only screen and (min-width: 992px) {
+        margin-top: 170px;
+      }
+    }
+
+    .firstSlide {
+      margin-top: 0px;
     }
 
     :global {

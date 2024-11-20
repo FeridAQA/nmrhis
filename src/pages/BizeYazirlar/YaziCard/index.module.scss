@@ -34,6 +34,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18.4px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 24px;
+      line-height: 26.7px;
+    }
   }
 
   .content.truncate {
@@ -41,17 +46,18 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 14;
+    -webkit-line-clamp: 11;
     transition: 0.4s;
+
+    @media screen and (max-width: 992px) {
+      -webkit-line-clamp: 14;
+    }
   }
 
   .content.firstSlide {
     font-size: 24px;
     line-height: 26.7px;
-
-    @media screen and (max-width: 992px) {
-      line-height: 31.2px;
-    }
+    -webkit-line-clamp: 14;
   }
 
   .date {

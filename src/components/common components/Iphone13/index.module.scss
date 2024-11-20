@@ -2,10 +2,6 @@
   --width: 300px;
   --height: calc(var(--width) * 2);
 
-  @media only screen and (max-width: 992px) {
-    --width: 260px;
-  }
-
   min-width: var(--width);
   width: 100%;
   max-width: var(--width);
@@ -14,6 +10,10 @@
   display: flex;
   overflow: hidden;
   border-radius: calc(var(--width) / 5);
+
+  @media only screen and (max-width: 992px) {
+    --width: 260px;
+  }
 
   #phone {
     height: 100%;
