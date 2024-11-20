@@ -37,7 +37,7 @@ function EmekHuqulariDetail() {
         xeberTitle={Data.baslik}
         content={Data.mesaj}
         pdf={Data.pdf && Data.pdf}
-        yt={Data.yt && Data.yt}
+        yt={Data.youtube && Data.youtube}
       />
     </>
   )

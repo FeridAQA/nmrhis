@@ -9,44 +9,47 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 48px;
+    height: 102px;
     padding: 4px 16px;
-    background-color: #2393bb;
+    background-color: #d7ebf3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 16px;
     color: white;
 
     .logo {
       max-width: 60px;
-      min-width: 60px;
+      min-width: 40px;
       display: flex;
       align-items: center;
     }
 
     .title {
-      font-weight: 400;
+      color: #2393bb;
+      width: max-content;
+      font-weight: 700;
       text-align: center;
-      font-size: 14px;
-      line-height: 16.8px;
-      letter-spacing: -0.3px;
+      font-size: 15px;
+      line-height: 18px;
       text-wrap: balance;
-      margin-right: 88px;
-      margin-left: 44px;
+      // margin-right: 88px;
+      // margin-left: 44px;
 
       @media screen and (max-width: 430px) {
-        margin-right: 44px !important;
-        margin-left: 0px !important;
+        // margin-right: 44px !important;
+        // margin-left: 0px !important;
       }
 
       @media screen and (max-width: 345px) {
-        font-size: 10px !important;
+        // font-size: 10px !important;
       }
     }
 
     .toggleBar {
       cursor: pointer;
-      font-size: 18px;
+      font-size: 28px;
+      color: #2393bb;
     }
 
     .dropdownMenu {
@@ -54,13 +57,12 @@
       opacity: 1;
       width: 100%;
       height: max-content;
-      background-color: #e9f4f8 !important;
+      background-color: #2393bb;
       display: flex;
       flex-direction: column;
       gap: 8px;
       padding: 12px 34px;
-      color: black;
-      background-color: white;
+      color: #fff;
       position: absolute;
       top: 100%;
       left: 0;
@@ -68,7 +70,7 @@
       transition: all 0.2s;
 
       .link {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 700;
         line-height: 14.95px;
         letter-spacing: -0.3px;
@@ -88,9 +90,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 48px;
     padding: 4px 16px;
-    background-color: #2393bb;
     gap: 1em;
     color: white;
 
@@ -104,26 +104,23 @@
       }
     }
 
-    .title {
-      font-weight: 400;
-      text-align: center;
-      font-size: 12px;
-      line-height: 13.8px;
-      letter-spacing: -0.3px;
-    }
+    // .title {
+    //   font-weight: 400;
+    //   text-align: center;
+    //   font-size: 12px;
+    //   line-height: 13.8px;
+    //   letter-spacing: -0.3px;
+    // }
 
-    .toggleBar {
-      cursor: pointer;
-      font-size: 16px;
-    }
+    // .toggleBar {
+    //   cursor: pointer;
+    //   font-size: 16px;
+    // }
 
     .dropdownMenu {
-      background-color: #bbdeea;
       display: flex;
       flex-direction: column;
       padding: 12px 34px;
-      color: black;
-      background-color: white;
       width: 100%;
       position: absolute;
       top: 100%;
