@@ -20,7 +20,45 @@
     }
 
     @media only screen and (max-width: 400px) {
-      width: 100%;
+      transform: scale(0.8); /* Scale down the calendar */
+      width: 300px; /* Ensure it fits within 300px width */
+      padding: 8px; /* Adjust padding for smaller screens */
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    height: auto;
+    width: fit-content;
+
+    .calendar {
+      border: 1px solid #2393bb;
+      border-radius: 16px;
+      padding: 16px; /* Add padding for better spacing */
+      transform: scale(1.2); /* Scale up the calendar */
+      transform-origin: center; /* Ensure scaling is centered */
+
+      :global {
+        .Mui-selected {
+          background-color: #2393bb !important; /* Custom background color */
+          color: #ffffff !important; /* Custom text color */
+          font-weight: bold; /* Make the text bold */
+          border-radius: 50%; /* Make it circular */
+        }
+
+        .Mui-selected:hover {
+          background-color: #1e7ca1 !important; /* Change hover color */
+        }
+
+        .MuiTypography-root {
+          font-size: 1.2rem !important; /* Increase font size for better readability */
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        transform: scale(0.4); /* Reset scale for small screens */
+      }
     }
   }
 }

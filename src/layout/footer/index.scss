@@ -1,6 +1,6 @@
 #footer {
     position: relative;
-    background-color: #2393BB;
+    background-color: #2393bb;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     padding: 70px 200px;
@@ -16,10 +16,34 @@
     }
 
     .en_alt {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         position: absolute;
-        bottom: 10px;
-        left: 20px;
+        bottom: 0;
+        left: 0;
         color: white;
+
+        .copyright_text {
+            padding: 10px 20px;
+        }
+
+        .rzayev_logo {
+            cursor: pointer;
+            width: 20%;
+
+            @media only screen and (max-width: 992px) {
+                width: 250px;
+            }
+        }
+
+        
+        @media only screen and (max-width: 992px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 1rem;
+        }
     }
 
     .img {
@@ -79,7 +103,6 @@
                 color: white;
                 @media (max-width: 370px) {
                     width: 100px;
-                    
                 }
             }
 
@@ -93,7 +116,7 @@
                 align-items: center;
 
                 .icon {
-                    color: #2393BB;
+                    color: #2393bb;
                 }
             }
         }
@@ -125,7 +148,6 @@
                     transition: color 0.3s ease;
                 }
             }
-
         }
     }
 }
@@ -144,6 +166,7 @@
 
         .under {
             flex-direction: column;
+            padding-bottom: 4rem;
         }
 
         .bigbox {
@@ -155,7 +178,6 @@
                     font-weight: 400;
                     color: white;
                 }
-                
             }
         }
     }

@@ -1,8 +1,11 @@
 .FotoXronikaCard {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  border-radius: 10px;
+  overflow: hidden;
 
   .imgBox {
     width: 100%;
@@ -21,24 +24,34 @@
   }
 
   .date {
-    color: #707372;
+    width: 100%;
+    padding: 16px 14px;
+    position: absolute;
+    bottom: 0;
+
+    background-color: #000000c1;
+    text-align: center;
+    color: #fafffe;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
 
     @media only screen and (max-width: 992px) {
-      font-size: 14px;
+      padding: 20px 18px;
+      font-size: 20px;
+      line-height: 23.2px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 14px 12px;
+      font-size: 16px;
       line-height: 15.2px;
     }
 
-    @media only screen and (max-width: 676px) {
+    @media only screen and (max-width: 400px) {
+      padding: 8px 6px;
       font-size: 10px;
-      line-height: 11.2px;
-    }
-
-    @media only screen and (max-width: 676px) {
-      font-size: 6px;
-      line-height: 7px;
+      line-height: 12.2px;
     }
   }
 }

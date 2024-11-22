@@ -10,7 +10,7 @@ function FotoXronikaCard({ image, date }) {
       <div className={style.imgBox}>
         <img alt='Photo' src={url.concat(image)} />
       </div>
-      {date ? <span className={style.date}>{date}</span> : ""}
+      {date ? <p className={style.date}>{date}</p> : ""}
     </div>
   )
 }

@@ -23,6 +23,11 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+
+    @media screen and (max-width: 992px) {
+      font-size: 32px;
+      font-weight: 36.8px;
+    }
   }
 
   .writer.firstSlide {
