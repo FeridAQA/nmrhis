@@ -5,8 +5,7 @@ import axios from 'axios';
 import style from "./index.module.scss";
 import { baseURL } from '../../../../confiq';
 
-
-
+// Add a simple spinner or placeholder style
 function XeberlerSwiperMobile() {
     const [newsData, setNewsData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -28,7 +27,12 @@ function XeberlerSwiperMobile() {
     }, []);
 
     if (loading) {
-        return <div>Yüklənir...</div>; // Yükləmə ekranı
+        // Yükləmə ekranı (Spinner və ya "Yüklənir...")
+        return (
+            <div className={style.loadingContainer}>
+                <span className="loaderText"></span>
+            </div>
+        );
     }
 
     return (
@@ -56,7 +60,7 @@ function XeberlerSwiperMobile() {
                 }}
             >
                 {/* API-dən gələn verilənləri göstərmək */}
-                {newsData.map((news, i) => (
+                {newsData && newsData.map((news, i) => (
                     <SwiperSlide key={news.id || i}>
                         {/* Yuxarı Məzmun: Şəkil */}
                         <div className={style.imgBox}>

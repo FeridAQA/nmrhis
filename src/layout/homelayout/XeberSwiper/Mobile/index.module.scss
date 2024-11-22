@@ -1,3 +1,11 @@
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70svh; // Fill the screen or a specific height
+}
+
 .box {
   width: 100%;
   height: max-content;
