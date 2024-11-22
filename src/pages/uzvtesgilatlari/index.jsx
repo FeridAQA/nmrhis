@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import SubNavbar_iki from '../../components/Subnav_iki';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -153,28 +153,51 @@ const myArr = [
 ];
 
 
-function Uzv_teskilat() {
-    return (
-        <div id='Uzv_teskilat'>
-            <Helmet>
-                <title>Üzv Təşkilatlar</title>
-            </Helmet>
-            <SubNavbar_iki />
+const Uzv_teskilat = () => {
+    const swiperRef = useRef(null);
+    const [activeId, setActiveId] = useState(null);
 
+    const handleSlideChange = (swiper) => {
+        const currentIndex = swiper.realIndex; // Mövcud slaydın indeksi
+        setActiveId(myArr[currentIndex]?.title); // Mövcud slaydın ID-sini təyin edir
+    };
+
+    return (
+        <div id="Uzv_teskilat">
+                <SubNavbar_iki></SubNavbar_iki>
             <div className="container">
+                {/* <div className="new_title">
+                    <p>
+                        Üzv Təşkilatlar
+                    </p>
+                </div> */}
+                {/* <div className="line"></div> */}
+
+                {/* Üzv ID və Başlıq */}
                 <div className="text">
-                    Dövlət və Bələdiyyə İdarələri İşçiləri Həmkarlar İttifaqı Naxçıvan MR Komitəsi
+                    {activeId ? ` ${activeId}` : 'Üzv seçilməyib'}
                 </div>
                 <div className="line"></div>
 
                 {/* Swiper Slider */}
-                <Swiper spaceBetween={20} slidesPerView={1} loop={true}
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    onSlideChange={handleSlideChange}
                 >
                     {myArr.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="box">
                                 <div className="number">
+                                    <div className="custom-prev" onClick={() => swiperRef.current?.slidePrev()}>
+                                        &lt;
+                                    </div>
                                     {`${myArr.length}/${item.id}`}
+                                    <div className="custom-next" onClick={() => swiperRef.current?.slideNext()}>
+                                        &gt;
+                                    </div>
                                 </div>
                                 <div className="title">{item.title}</div>
                                 <ul>
@@ -189,6 +212,7 @@ function Uzv_teskilat() {
             </div>
         </div>
     );
-}
+};
+
 
 export default Uzv_teskilat;

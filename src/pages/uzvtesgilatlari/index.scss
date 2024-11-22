@@ -1,10 +1,43 @@
-#Uzv_teskilat{
+#Uzv_teskilat {
     width: 100%;
-    .container{
-        width: 80% ;
+
+    .new_title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        p{
+            display: inline;
+            font-family: Arial;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27.6px;
+            letter-spacing: -0.30000001192092896px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            background-color: #2393BB;
+            padding: 10px 20px; 
+            color: white;
+            border-radius: 20px;
+        }
+
+    }
+
+    .custom-prev {
+        cursor: pointer;
+    }
+
+    .custom-next {
+        cursor: pointer;
+    }
+
+    .container {
+        width: 80%;
         margin: auto;
         margin-top: 3em;
-        .text{
+
+        .text {
+            margin-top: 2em;
             margin-bottom: 1em;
             text-align: center;
             font-size: 24px;
@@ -12,7 +45,8 @@
             letter-spacing: -0.3px;
             line-height: 27.6px;
         }
-        .line{
+
+        .line {
             margin-top: 10px;
             width: 100%;
             height: 2px;
@@ -20,7 +54,8 @@
             margin-top: 10px;
             // margin-bottom: 4em;
         }
-        .box{
+
+        .box {
             color: #313333;
             font-size: 20px;
             font-weight: 400;
@@ -29,15 +64,21 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            .number{
+
+            .number {
                 text-align: center;
                 margin-top: 1em;
                 margin-bottom: 3em;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
             }
-            ul{
+
+            ul {
                 padding-left: 30px;
-                li{
-                    list-style-type: disc;  
+
+                li {
+                    list-style-type: disc;
                 }
             }
         }
