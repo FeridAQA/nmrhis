@@ -25,7 +25,7 @@ function Footer() {
           <div>
             <ul>
               <p>HƏMKARLAR İTTİFAQLARI ŞUARASI</p>
-              <li><Link to="/haqqimizda" >Haqqımızd</Link></li>
+              <li><Link to="/haqqimizda" >Haqqımızda</Link></li>
               <li><Link to="/his_in_orqanlari" >HİŞ-in orqanları</Link></li>
               <li><Link to="/struktur" >Struktur</Link></li>
               <li><Link to="/rehberlik/sedr" >Sədr</Link></li>
