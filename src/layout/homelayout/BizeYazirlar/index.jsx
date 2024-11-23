@@ -12,7 +12,9 @@ function BizeYazirlar() {
         <Yazilar />
       </div>
 
-      <Iphone13 />
+      <div className={style.phoneBox}>
+        <Iphone13 />
+      </div>
     </div>
   )
 }

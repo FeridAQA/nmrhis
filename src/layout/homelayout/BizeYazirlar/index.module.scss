@@ -7,6 +7,7 @@
   padding-block: 7.5rem;
 
   @media only screen and (max-width: 992px) {
+    padding-block: 0.5rem;
     flex-direction: column;
     row-gap: 54px;
   }
@@ -19,7 +20,7 @@
 
     @media only screen and (max-width: 992px) {
       width: 100%;
-      row-gap: 68px;
+      row-gap: 18px;
     }
 
     .title {
@@ -31,6 +32,14 @@
         font-size: 20px;
         line-height: 23px;
       }
+    }
+  }
+
+  .phoneBox {
+    width: max-content;
+
+    @media only screen and (max-width: 992px) {
+      display: none;
     }
   }
 }
