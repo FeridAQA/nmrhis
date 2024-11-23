@@ -69,12 +69,12 @@ function Resmi_xronika() {
                 </div>
                 <div className="container">
 
-                    <div className="text">
+                    {/* <div className="text1">
                         Rəsmi xronika
                     </div>
                     <div className="left">
                         <Iphone12 image={foto}></Iphone12>
-                    </div>
+                    </div> */}
                     <div className="text">
                         Bizi izlə
                     </div>

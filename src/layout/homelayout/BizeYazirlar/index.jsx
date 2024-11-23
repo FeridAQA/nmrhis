@@ -12,7 +12,7 @@ function BizeYazirlar() {
         <Yazilar />
       </div>
 
-      <Iphone13 />
+      {/* <Iphone13 /> */}
     </div>
   )
 }
