@@ -1,18 +1,17 @@
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   .navbar {
     height: 112px;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 22px;
     padding: 0px 32px;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 5;
-    transition: 0.15s;
+    transition: 0.5s;
 
     .triangle {
       padding: 5px 0px 0px 10px;
@@ -23,10 +22,11 @@
       left: 0;
       background-color: #2394bc;
       clip-path: polygon(0px 0px, 0px 100%, 206px 0px);
-      transition: 0.15s;
+      transition: 0.5s;
 
       img {
         width: 70px;
+        transition: 0.2s;
       }
     }
 
@@ -34,7 +34,7 @@
       display: flex;
       align-items: center;
       background-color: white;
-      border-radius: 24px;
+      border-radius: 20px;
       padding: 5px 10px;
       border: 2px solid #29a0c6;
 
@@ -42,7 +42,7 @@
         width: 100%;
         border: none;
         outline: none;
-        font-size: 18px;
+        font-size: 14px;
         padding: 5px;
       }
 
@@ -59,7 +59,7 @@
 
   .navbar.scrolled {
     height: 112px;
-    background-color: #2393bb;
+    background-color: #29a0c6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,44 +72,17 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     .triangle {
-      width: 90px;
-      background-color: #2393bb;
-      clip-path: none;
+      background-color: #29a0c6;
 
       img {
-        margin: 15px 15px;
-      }
-    }
-
-    .navbar_search {
-      display: flex;
-      align-items: center;
-      background-color: white;
-      border-radius: 24px;
-      padding: 5px 10px;
-      border: 2px solid #29a0c6;
-
-      input {
-        width: 100%;
-        border: none;
-        outline: none;
-        font-size: 18px;
-        padding: 5px;
-      }
-
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        svg {
-          fill: #29a0c6;
-        }
+        margin: 14px 0px;
+        transition: 0.2s;
       }
     }
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1300px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .navbar {
     height: 112px;
     color: black;
@@ -117,13 +90,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 24px;
-    column-gap: 16px;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 5;
-    transition: 0.15s;
+    transition: 0.5s;
 
     .triangle {
       padding: 5px 0px 0px 10px;
@@ -134,10 +106,11 @@
       left: 0;
       background-color: #2394bc;
       clip-path: polygon(0px 0px, 0px 100%, 206px 0px);
-      transition: 0.15s;
+      transition: 0.5s;
 
       img {
         width: 70px;
+        transition: 0.2s;
       }
     }
 
@@ -172,11 +145,11 @@
 
   .navbar.scrolled {
     height: 112px;
-    background-color: #2393bb;
+    background-color: #29a0c6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 24px;
+    padding: 0px 32px;
     position: sticky;
     top: 0;
     left: 0;
@@ -185,40 +158,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     .triangle {
-      width: 90px;
-      background-color: #2393bb;
-      clip-path: none;
+      background-color: #29a0c6;
 
       img {
-        margin: 15px 15px;
-      }
-    }
-
-    .navbar_search {
-      display: flex; /* Ensure it is visible */
-      align-items: center;
-      background-color: white;
-      border-radius: 36px;
-      width: 143px; /* Or adjust based on your design */
-      height: 32px;
-      padding: 8px 12px;
-      border: 2px solid #29a0c6;
-
-      input {
-        width: 100%;
-        border: none;
-        outline: none;
-        font-size: 14px;
-        padding: 5px;
-      }
-
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        svg {
-          fill: #29a0c6;
-        }
+        margin: 14px 0px;
+        transition: 0.3s;
       }
     }
   }
