@@ -160,24 +160,24 @@
             margin-top: 100px;
         }
     }
-}
-
-.box {
-    .icon svg {
-        fill: #2393BB; /* Varsayılan rəng */
-        transition: fill 0.3s ease; /* Rəng dəyişimi üçün keçid */
-    }
-
-    &:hover {
+    .box {
         .icon svg {
-            fill: white; /* Hover zamanı rəng */
+            fill: #2393BB; /* Varsayılan rəng */
+            transition: fill 0.3s ease; /* Rəng dəyişimi üçün keçid */
+        }
+    
+        &:hover {
+            .icon svg {
+                fill: white; /* Hover zamanı rəng */
+            }
+        }
+    
+        &.active {
+            .icon svg {
+                fill: white; /* Aktiv olduğu zaman rəng */
+            }
         }
     }
-
-    &.active {
-        .icon svg {
-            fill: white; /* Aktiv olduğu zaman rəng */
-        }
-    }
 }
+
 
