@@ -26,7 +26,7 @@ function Footer() {
             <ul>
               <p>HƏMKARLAR İTTİFAQLARI ŞUARASI</p>
               <li><Link to="/haqqimizda" >Haqqımızda</Link></li>
-              <li><Link to="/his_in_orqanlari" >HİŞ-in orqanları</Link></li>
+              <li><Link to="/orqanlar" >HİŞ-in orqanları</Link></li>
               <li><Link to="/struktur" >Struktur</Link></li>
               <li><Link to="/rehberlik/sedr" >Sədr</Link></li>
               <li><Link to="/rehberlik/muavinler" >Müavinlər</Link></li>
@@ -39,8 +39,8 @@ function Footer() {
               <p>İCTİMAİYYƏTLƏ ƏLAQƏLƏR</p>
               <li><Link to="/xeberler" >Xəbərlər</Link></li>
               <li><Link to="/sosial_terefdasliq" >Sosial tərəfdaşlıq</Link></li>
-              <li><Link to="/uzv_teskilatlar" >Üzv Təşkilatlar</Link></li>
-              <li><Link to="/tabe_teskilatlar" >Tabelikdə olan təşkilatlar</Link></li>
+              <li><Link to="/struktur/uzv_teskilatlar" >Üzv Təşkilatlar</Link></li>
+              <li><Link to="/struktur/tabe_teskilatlar/1" >Tabelikdə olan təşkilatlar</Link></li>
               <li><Link to="/foto_xronika" >Foto Xronika</Link></li>
               <li><Link to="/bize_yazirlar" >Bizə yazırlar</Link></li>
             </ul>
@@ -51,7 +51,7 @@ function Footer() {
               <p>FƏALİYYƏTİMİZ</p>
               <li><Link to="/emek_huquqlari" >Əmək hüquqları</Link></li>
               <li><Link to="/emeyin_tehlukesizliyi" >Əməyin təhlükəsizliyi</Link></li>
-              <li><Link to="/sosial_teminatlar" >Sosial təminatlar</Link></li>
+              <li><Link to="/sosial_telimatlar" >Sosial təlimatlar</Link></li>
               <li><Link to="/gencler_siyaseti" >Gənclər Siyasəti</Link></li>
               <li><Link to="/kecidler" >Keçidlər</Link></li>
             </ul>
