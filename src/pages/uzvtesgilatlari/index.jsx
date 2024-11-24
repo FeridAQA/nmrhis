@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './index.scss';
 import { Helmet } from 'react-helmet-async';
+import PageTitle from '../../components/common components/PageTitle';
 
 const myArr = [
     {
@@ -163,8 +164,13 @@ const Uzv_teskilat = () => {
     };
 
     return (
-        <div id="Uzv_teskilat">
-                <SubNavbar_iki></SubNavbar_iki>
+        <div id='Uzv_teskilat'>
+            <Helmet>
+                <title>Üzv Təşkilatlar</title>
+            </Helmet>
+            {/* <SubNavbar_iki /> */}
+            <PageTitle>Üzv Təskilatlar</PageTitle>
+
             <div className="container">
                 {/* <div className="new_title">
                     <p>
