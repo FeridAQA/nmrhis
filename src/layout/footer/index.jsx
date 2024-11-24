@@ -60,9 +60,9 @@ function Footer() {
       </div>
       <div className='en_alt'>
         <p className='copyright_text'>© Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurası</p>
-        <Link to={"#"} className="rzayev_logo">
+        <a target='balank' href='https://rzayevkenan.com' className="rzayev_logo">
           <img src={"https://rzayevkenan.com/uploads/tweb/5.png"} />
-        </Link>
+        </a>
       </div>
     </div>
 
