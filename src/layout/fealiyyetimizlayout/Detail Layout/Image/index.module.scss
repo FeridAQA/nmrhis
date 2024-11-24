@@ -87,6 +87,7 @@
     @media screen and (max-width: 992px) {
       width: 100%;
       flex-direction: row-reverse;
+      align-items: flex-end;
     }
 
     .date {
@@ -97,18 +98,18 @@
       line-height: 16.1px;
 
       @media screen and (max-width: 992px) {
-        font-size: 10px;
-        line-height: 11.5px;
+        font-size: 16px;
+        line-height: 17.5px;
       }
 
-      @media only screen and (max-width: 500px) {
-        font-size: 8px;
-        line-height: 10px;
+      @media only screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 13px;
       }
 
       @media only screen and (max-width: 400px) {
-        font-size: 5px;
-        line-height: 7px;
+        font-size: 8px;
+        line-height: 9px;
       }
     }
   }
