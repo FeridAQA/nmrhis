@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './index.scss'
 import { Helmet } from 'react-helmet-async'
+import PageTitle from '../../components/common components/PageTitle'
 
 function Konfrans() {
     return (
@@ -9,14 +10,15 @@ function Konfrans() {
             <Helmet>
                 <title>Konfrans</title>
             </Helmet>
+            <PageTitle>Konfrans</PageTitle>
             <div className="container">
-                <div id="SubNavbar_iki">
+                {/* <div id="SubNavbar_iki">
                     <div className="tab-menu">
                         <NavLink to="/orqanlar/konfrans" className="tab-item">Konfrans</NavLink>
                         <NavLink to="/struktur/tabe_teskilatlar/1" className="tab-item ">Tabe Təşkilatlar</NavLink>
                         <NavLink to="/struktur/his_sobeleri" className="tab-item">HİŞ Şöbələri və Bölmələri</NavLink>
                     </div>
-                </div>
+                </div> */}
                 <div className="down">
 
                     <div className="title">

@@ -2,6 +2,7 @@ import React from 'react'
 import SubNavbar_iki from '../../components/Subnav_iki'
 import MekanSliderWithNav from '../Tabe_Teskilatlar_Detail'
 import { Helmet } from 'react-helmet-async'
+import PageTitle from '../../components/common components/PageTitle'
 
 function Tabe_teskilatlar() {
     return (
@@ -9,7 +10,8 @@ function Tabe_teskilatlar() {
             <Helmet>
                 <title>Tabe Təşkilatlar</title>
             </Helmet>
-            <SubNavbar_iki></SubNavbar_iki>
+            {/* <SubNavbar_iki></SubNavbar_iki> */}
+            <PageTitle>Tabe Təşkilatlar</PageTitle>
             <MekanSliderWithNav />
         </div>
     )
