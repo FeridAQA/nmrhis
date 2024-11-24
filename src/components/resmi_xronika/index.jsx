@@ -69,7 +69,7 @@ function Resmi_xronika() {
                 </div>
                 <div className="container">
 
-                    <div className="text">
+                    <div className="text text1">
                         Rəsmi xronika
                     </div>
                     <div className="left">
