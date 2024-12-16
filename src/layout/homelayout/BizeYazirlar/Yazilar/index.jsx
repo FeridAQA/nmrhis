@@ -8,8 +8,11 @@ import style from "./index.module.scss";
 import YaziCard from '../YaziCard';
 import axios from 'axios';
 import { baseURL } from "./../../../../confiq"
+import { useNavigate } from 'react-router-dom';
 
 function Yazilar() {
+
+  const navigate = useNavigate()
 
   const [Data, setData] = useState([])
 
@@ -27,6 +30,10 @@ function Yazilar() {
   useEffect(() => {
     GetData()
   }, [])
+
+  function handleClick(id) {
+    navigate(`/bize_yazirlar/${id}`)
+  }
 
   return (
     <div className={style.container}>
@@ -57,7 +64,11 @@ function Yazilar() {
       >
         {Data && Data.map((item, i) => {
           return (
-            <SwiperSlide key={i} className={`${style.slide}`}>
+            <SwiperSlide
+              key={i}
+              className={`${style.slide}`}
+              onClick={() => handleClick(item.id)}
+            >
               <YaziCard {...item} />
             </SwiperSlide>
           )

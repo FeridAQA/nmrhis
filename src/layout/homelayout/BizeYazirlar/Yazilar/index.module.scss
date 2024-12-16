@@ -4,6 +4,10 @@
   .content {
     padding-top: 42px;
 
+    .slide {
+      cursor: pointer;
+    }
+
     .none {
       display: none;
     }
