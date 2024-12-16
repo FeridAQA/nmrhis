@@ -256,7 +256,7 @@
                         overflow: hidden;
                         display: flex;
                         flex-direction: column-reverse;
-                        gap: 30px;
+                        gap: 10px;
 
                         .logo {
                             border-radius: 25px;
@@ -273,6 +273,7 @@
                         }
 
                         .text {
+                            padding: 20px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
