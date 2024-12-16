@@ -108,7 +108,7 @@
                         overflow: hidden;
                         display: flex;
                         flex-direction: column-reverse;
-                        gap: 40px;
+                        gap: 20px;
 
                         .logo {
                             border-radius: 25px;
@@ -125,6 +125,7 @@
                         }
 
                         .text {
+                            padding: 10px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -134,7 +135,7 @@
                             letter-spacing: -0.30000001192092896px;
                             text-underline-position: from-font;
                             text-decoration-skip-ink: none;
-                            // text-align: center;
+                            text-align: center;
                         }
                     }
                 }

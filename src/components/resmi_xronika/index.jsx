@@ -35,7 +35,7 @@ function Resmi_xronika() {
                         <div className="right">
                             <div className="box1">
                                 <div className="border">
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/naxcivanhemkarlar/" target="_blank" rel="noopener noreferrer">
                                         <div className="logo">
                                             <InstagramIcon className='icon'></InstagramIcon>
                                         </div>
@@ -48,7 +48,7 @@ function Resmi_xronika() {
                             </div>
                             <div className="box2">
                                 <div className="border">
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/naxcivanhemkarlar" target="_blank" rel="noopener noreferrer">
                                         <div className="logo">
                                             <FacebookIcon className='icon'></FacebookIcon>
                                         </div>
@@ -81,7 +81,7 @@ function Resmi_xronika() {
                     <div className="right">
                         <div className="box1">
                             <div className="border">
-                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/naxcivanhemkarlar/" target="_blank" rel="noopener noreferrer">
                                     <div className="logo">
                                         <InstagramIcon className='icon'></InstagramIcon>
                                     </div>
@@ -94,7 +94,7 @@ function Resmi_xronika() {
                         </div>
                         <div className="box2">
                             <div className="border">
-                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/naxcivanhemkarlar" target="_blank" rel="noopener noreferrer">
                                     <div className="logo">
                                         <FacebookIcon className='icon'></FacebookIcon>
                                     </div>
