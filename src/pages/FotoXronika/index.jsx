@@ -56,7 +56,7 @@ function FotoXronikaPage() {
     <>
       <div className={style.titleBox}>
         <Helmet>
-          <title>Foto Xronika</title>
+          <title>Foto Xronika - HİŞ </title>
         </Helmet>
         <PageTitle>Foto Xronika</PageTitle>
       </div>

@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Ana Sehife</title>
+        <title>Ana Səhifə - Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurası </title>
       </Helmet>
       <Main_header></Main_header>
       <XeberSwiper />

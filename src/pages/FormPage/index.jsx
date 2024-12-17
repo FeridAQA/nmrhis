@@ -63,7 +63,7 @@ function FormPage() {
     return (
         <div id="Form_page">
             <Helmet>
-                <title>Müraciət</title>
+                <title>Müraciət - HİŞ</title>
             </Helmet>
             <div className="rectangle">
                 <div className="img">

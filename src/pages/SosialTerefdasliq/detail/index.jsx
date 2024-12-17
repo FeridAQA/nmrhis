@@ -7,7 +7,7 @@ function SosialTerefdasliqDetail() {
   return (
     <div>
       <Helmet>
-        <title>Sosial Tərəfdaşlıq</title>
+        <title>Sosial Tərəfdaşlıq - HİŞ </title>
       </Helmet>
       <PageTitle>Sosial Tərəfdaşlıq</PageTitle>
       <STDContainer />

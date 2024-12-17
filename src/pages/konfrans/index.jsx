@@ -8,7 +8,7 @@ function Konfrans() {
     return (
         <div id='konfrans'>
             <Helmet>
-                <title>Konfrans</title>
+                <title>Qurultay - HİŞ </title>
             </Helmet>
             <PageTitle>Konfrans</PageTitle>
             <div className="container">

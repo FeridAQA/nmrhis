@@ -8,7 +8,7 @@ function Tabe_teskilatlar() {
     return (
         <div id='Tabe_teskilatlar'>
             <Helmet>
-                <title>Tabe Təşkilatlar</title>
+                <title>Tabe Təşkilatlar - HİŞ </title>
             </Helmet>
             {/* <SubNavbar_iki></SubNavbar_iki> */}
             <PageTitle>Tabe Təşkilatlar</PageTitle>

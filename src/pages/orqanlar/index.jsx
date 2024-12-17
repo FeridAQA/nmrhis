@@ -10,7 +10,7 @@ function Organlar() {
     return (
         <div id='organlar'>
             <Helmet>
-                <title>Orqanlar</title>
+                <title>Orqanlar - HİŞ </title>
             </Helmet>
             <div className="img">
                 <img src={gerb} alt="gerb" />

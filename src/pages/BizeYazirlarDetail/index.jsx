@@ -8,7 +8,7 @@ function BizeYazirlarDetailPage() {
   return (
     <div className={style.container}>
       <Helmet>
-        <title>Bizə Yazırlar</title>
+        <title>Bizə Yazırlar - HİŞ</title>
       </Helmet>
       <div className={style.titleBox}>
         <PageTitle>Bizə Yazırlar</PageTitle>

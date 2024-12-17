@@ -166,7 +166,7 @@ const Uzv_teskilat = () => {
     return (
         <div id='Uzv_teskilat'>
             <Helmet>
-                <title>Üzv Təşkilatlar</title>
+                <title>Üzv Təşkilatlar - HİŞ </title>
             </Helmet>
             {/* <SubNavbar_iki /> */}
             <PageTitle>Üzv Təskilatlar</PageTitle>

@@ -10,7 +10,7 @@ function HaqqimizdaPage() {
   return (
     <div className={style.container}>
       <Helmet>
-        <title>Haqqımızda</title>
+        <title>Haqqımızda - HİŞ </title>
       </Helmet>
       <PageTitle>Haqqımızda</PageTitle>
       <HaqqimizdaSection title={"Ümumi məlumat:"}>

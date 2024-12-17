@@ -6,7 +6,7 @@ function Kecidler() {
     return (
         <div id='kecidler'>
             <Helmet>
-                <title>Keçidlər</title>
+                <title>Keçidlər - HİŞ</title>
             </Helmet>
             <div className="container">
                 <div className="title">

@@ -54,7 +54,7 @@ function SosialTerefdasliq() {
   return (
     <>
       <Helmet>
-        <title>Sosial Tərəfdaşlıq</title>
+        <title>Sosial Tərəfdaşlıq - HİŞ </title>
       </Helmet>
       <PageTitle>Sosial Tərəfdaşlıq</PageTitle>
       <CardHolder data={data} path={"sosial_terefdasliq"} />

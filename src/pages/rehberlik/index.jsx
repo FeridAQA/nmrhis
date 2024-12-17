@@ -7,7 +7,7 @@ function Rehberlik() {
   return (
     <div>
       <Helmet>
-        <title>Rəhbərlik</title>
+        <title>Rəhbərlik - HİŞ </title>
       </Helmet>
       <SubNavbar />
       <Outlet></Outlet>

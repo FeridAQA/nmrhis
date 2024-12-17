@@ -43,7 +43,7 @@ function XeberDetailPage() {
     <>
       <div className={style.container}>
         <Helmet>
-          <title>Xəbərlər</title>
+          <title>Xəbərlər - HİŞ </title>
         </Helmet>
         <PageTitle>
           {CategoriesData &&

@@ -53,7 +53,7 @@ function XeberlerPage() {
   return (
     <div className={style.XeberlerPage}>
       <Helmet>
-        <title>Xəbərlər</title>
+        <title>Xəbərlər - HİŞ </title>
       </Helmet>
       <div className={style.titleBox}>
         <h1 className={style.title}>XƏBƏRLƏR</h1>

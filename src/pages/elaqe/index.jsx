@@ -16,7 +16,7 @@ function Elaqe() {
     return (
         <div id='elaqe'>
             <Helmet>
-                <title>Əlaqə</title>
+                <title>Əlaqə - HİŞ</title>
             </Helmet>
             <div className="img">
                 <img src={gerb} alt="gerb" />

@@ -6,7 +6,7 @@ function FealiyyetimizDetailPage() {
   return (
     <>
       <Helmet>
-        <title>Fəaliyyətimiz</title>
+        <title>Fəaliyyətimiz - HİŞ </title>
       </Helmet>
       <Outlet />
     </>

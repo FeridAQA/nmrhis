@@ -10,7 +10,7 @@ function His_sobeleri() {
   return (
     <div id='His_sobeleri'>
       <Helmet>
-        <title>HİŞ Şöbələri</title>
+        <title>Şöbələr - HİŞ </title>
       </Helmet>
       {/* <SubNavbar_iki></SubNavbar_iki> */}
       <PageTitle>HİŞ Şöbələrİ və Bölmələrİ</PageTitle>

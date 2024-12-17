@@ -6,7 +6,7 @@ function Struktur() {
   return (
     <div>
       <Helmet>
-        <title>Struktur</title>
+        <title>Struktur - HİŞ </title>
       </Helmet>
       <Struk_uc></Struk_uc>
     </div>

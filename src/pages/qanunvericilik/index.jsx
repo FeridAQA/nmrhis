@@ -25,7 +25,7 @@ function Qanunvericilik() {
     return (
         <div id="qanun">
             <Helmet>
-                <title>Qanunvericilik</title>
+                <title>Qanunvericilik - HİŞ </title>
             </Helmet>
             <div className="container">
                 <div className="bigbox">

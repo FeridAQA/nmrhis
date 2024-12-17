@@ -9,7 +9,7 @@ function FealiyyetmizPage() {
   return (
     <div>
       <Helmet>
-        <title>Fəaliyyətimiz</title>
+        <title>Fəaliyyətimiz - HİŞ </title>
       </Helmet>
       <PageTabs title={"FƏALİYYƏTİMİZ"} tabs={FealiyyetimizRoutes} />
       <Outlet />
