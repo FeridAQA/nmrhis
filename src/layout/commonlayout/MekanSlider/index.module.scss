@@ -55,11 +55,16 @@
     }
 
     @media only screen and (max-width: 992px) {
-      width: 250%;
-      transform: translateX(-31%);
+      width: 100%;
+      // transform: translateX(-31%);
 
       .slide {
         transform: scale(1);
+      }
+
+      .slide.active {
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
       }
     }
 

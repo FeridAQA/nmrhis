@@ -6,7 +6,7 @@
   row-gap: 24px;
 
   @media screen and (max-width: 992px) {
-    row-gap: 12px;
+    row-gap: 32px;
   }
 
   .imgBox {
@@ -79,27 +79,27 @@
       }
 
       @media only screen and (max-width: 992px) {
-        --title: 18px;
-        --line_height: 20px;
-        --description: 12px;
-        --gap: 8px;
+        --title: 24px;
+        --line_height: 28px;
+        --description: 18px;
+        --gap: 16px;
 
         .description {
           max-width: 80%;
-          line-height: 14px;
+          line-height: 22px;
         }
       }
 
-      // @media only screen and (max-width: 400px) {
-      //   --title: 8px;
-      //   --line_height: 12px;
-      //   --description: 6px;
-      //   --gap: 6px;
+      @media only screen and (max-width: 400px) {
+        --title: 16px;
+        --line_height: 20px;
+        --description: 12px;
+        --gap: 16px;
 
-      //   .description {
-      //     line-height: 10px;
-      //   }
-      // }
+        .description {
+          line-height: 16px;
+        }
+      }
     }
 
     .btn {
@@ -144,21 +144,21 @@
       }
 
       @media only screen and (max-width: 992px) {
-        width: 76px;
-        height: 34px;
-        border-radius: 14px;
-        font-size: 11px;
+        width: 138px;
+        height: 58px;
+        border-radius: 24px;
+        font-size: 20px;
         line-height: 13.2px;
-        padding: 16px 18px;
+        padding: 18px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      @media only screen and (max-width: 370px) {
-        width: 57px;
-        height: 25.5px;
-        border-radius: 10.5px;
+      @media only screen and (max-width: 400px) {
+        width: 65px;
+        height: 33px;
+        border-radius: 22px;
         font-size: 8.25px;
         line-height: 9.9px;
         padding: 12px 13.5px;
