@@ -52,12 +52,9 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Mainlayout />} >
-              <Route path='/test' element={<Test />} />
-              {/* <Route path='/struktur' element={<Struktur />} /> */}
               <Route index element={<Home></Home>}></Route>
               <Route path='orqanlar/konfrans' element={<Konfrans></Konfrans>}></Route>
               <Route path='orqanlar' element={<Organlar></Organlar>}></Route>
-              <Route path='about' element={<About></About>}></Route>
               <Route path='kecidler' element={<Kecidler></Kecidler>}></Route>
               <Route path='qanunvericilik' element={<Qanunvericilik></Qanunvericilik>}></Route>
               <Route path='elaqe' element={<Elaqe></Elaqe>}></Route>

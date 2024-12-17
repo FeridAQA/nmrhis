@@ -1,12 +1,15 @@
 #header {
     .container {
-        width: 80%;
+        width: 90%;
         margin: auto;
         display: flex;
         gap: 20px;
         // justify-content: space-between;
 
         // margin:auto;
+        @media screen and (min-width: 1600px) {
+            width: 80%;
+        }
         .left {
             display: flex;
             flex-direction: column;
@@ -14,6 +17,9 @@
             max-width: 550px;
             width: 100%;
             min-width: 400px;
+            @media screen and (min-width: 1800px) {
+                max-width: 650px;
+            }
 
 
             .up {
@@ -148,7 +154,7 @@
         }
 
         .right {
-            max-width: 700px;
+            // max-width: 700px;
             width: 100%;
             min-width: 300px;
         }

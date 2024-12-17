@@ -20,9 +20,11 @@ function Main_header() {
                             <img src={img1} alt="" />
                         </div>
                         <div className="title">
+                            <Link to={'haqqimizda'}>
                             <h2>
                                 Naxçıvan Muxtar Respublikası Həmkarlar İttifaqları Şurası
                             </h2>
+                            </Link>
                         </div>
                         <div className="text">
                             Haqqımızda
