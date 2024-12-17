@@ -51,17 +51,21 @@ function MekanSliderWithNav({ initialSlide }) {
           swiper.params.navigation.nextEl = nextRef.current;
         }}
         breakpoints={{
-          300: {
+          200: {
             spaceBetween: 20,
+            slidesPerView: 1,
           },
           400: {
             spaceBetween: 30,
+            slidesPerView: 1,
           },
           500: {
             spaceBetween: 40,
+            slidesPerView: 1,
           },
           992: {
             spaceBetween: 0,
+            slidesPerView: 3,
           },
         }}
       >

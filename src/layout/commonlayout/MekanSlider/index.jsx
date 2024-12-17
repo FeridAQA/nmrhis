@@ -22,7 +22,7 @@ function MekanSlider({ title = "" }) {
         className={style.content}
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={slidesPerView}
-        spaceBetween={40}
+        spaceBetween={50}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
@@ -41,10 +41,10 @@ function MekanSlider({ title = "" }) {
             spaceBetween: 30,
           },
           500: {
-            spaceBetween: 40,
+            spaceBetween: 30,
           },
           768: {
-            spaceBetween: 64,
+            spaceBetween: 30,
           },
         }}
       >

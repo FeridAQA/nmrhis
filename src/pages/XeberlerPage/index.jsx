@@ -37,7 +37,7 @@ function XeberlerPage() {
   const handleScroll = () => {
     if (
       window.innerHeight + document.documentElement.scrollTop >=
-      document.documentElement.offsetHeight - 200 // Threshold of 200px
+      document.documentElement.offsetHeight - (window.innerHeight / 2 * 3) // Threshold of 200px
     ) {
       if (!loading && hasMore) {
         setPage((prevPage) => prevPage + 1);

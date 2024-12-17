@@ -18,7 +18,7 @@ function MekanCard({ image, title, description, id }) {
       <div className={style.content}>
         <div className={style.textBox}>
           <span className={style.title}>{title}</span>
-          <time className={style.description}>{description}</time>
+          <p className={style.description}>{description}</p>
         </div>
         <button
           onClick={handleNavigate}

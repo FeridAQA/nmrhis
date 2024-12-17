@@ -36,7 +36,7 @@ function EmekHuquqlari() {
   const handleScroll = () => {
     if (
       window.innerHeight + document.documentElement.scrollTop >=
-      document.documentElement.offsetHeight - 400 // Threshold of 400px
+      document.documentElement.offsetHeight - (window.innerHeight / 2 * 3) // Threshold of 400px
     ) {
       if (!loading && hasMore) {
         setPage((prevPage) => prevPage + 1);

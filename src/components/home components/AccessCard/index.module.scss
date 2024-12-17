@@ -7,7 +7,7 @@
   align-items: center;
 
   img {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .title {
@@ -28,13 +28,13 @@
     align-items: center;
 
     img {
-      max-width: 60px;
+      min-width: 80px;
     }
 
     .title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 400;
-      line-height: 27.6px;
+      line-height: 29.6px;
       letter-spacing: -0.3px;
     }
   }

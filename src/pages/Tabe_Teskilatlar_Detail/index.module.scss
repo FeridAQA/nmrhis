@@ -51,8 +51,8 @@
     }
 
     @media only screen and (max-width: 992px) {
-      width: 190%;
-      transform: translateX(-24%);
+      width: 100%;
+      // transform: translateX(-24%);
 
       .slide {
         transform: scale(1);
