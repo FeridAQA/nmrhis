@@ -67,7 +67,9 @@ function Organlar() {
                 </div>
                 <div className="box C">
                     <a href="https://ulfet-az.com/" target="_blank" rel="noopener noreferrer" className='l C'>
-                        <img src={ulfet} alt="" />
+                        <div className="imgboxxx">
+                            <img src={ulfet} alt="" />
+                        </div>
                         <div className="text u ">MƏTBU ORQAN ÜLFƏT QƏZETİ
                         </div>
                     </a>

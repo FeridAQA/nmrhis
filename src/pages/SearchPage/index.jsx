@@ -65,7 +65,7 @@ function SearchPage() {
   return (
     <div className={style.container}>
       <Helmet>
-        <title>Axtarış</title>
+        <title>Axtarış - HİS</title>
       </Helmet>
       <div className={style.titleBox}>
         <h1 className={style.title}>Axtarış</h1>
